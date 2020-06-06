@@ -1,0 +1,11 @@
+{
+  "values": [
+    "x:init/rules",
+    "x:init/forceload",
+    "x:init/score",
+    "s:reset",
+    "s:marker",
+    "lang:setup",
+    "x:init/teams"
+  ]
+}

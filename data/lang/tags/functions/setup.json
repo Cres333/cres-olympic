@@ -1,0 +1,7 @@
+{
+  "values": [
+    "lang:define/init",
+    "lang:define/description",
+    "lang:define/point"
+  ]
+}

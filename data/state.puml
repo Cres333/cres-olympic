@@ -1,0 +1,27 @@
+@startuml statemachine
+
+[*] --> 基本設定
+[*] --> 開始
+
+開始 --> チーム選択
+チーム選択 : - 赤 / 青 / 黄 / 緑
+
+チーム選択 --> ゲーム設定
+ゲーム設定 : - チーム戦 / 個人戦
+ゲーム設定 : - 参加上限
+
+state fork_state <<fork>>
+ゲーム設定 --> fork_state
+fork_state --> 参加者選択 : チーム戦
+
+state join_state <<join>>
+fork_state --> join_state : 個人戦
+参加者選択 --> join_state
+
+join_state --> 競技
+競技 --> fork_state : 他に競技がある
+
+競技 --> 最終結果 : 他に競技が無い
+最終結果 --> [*]
+
+@enduml

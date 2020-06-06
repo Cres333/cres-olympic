@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:location_check",
+  "offsetX": 987,
+  "offsetY": 31,
+  "offsetZ": -1243,
+  "predicate": {
+    "block": {
+      "block": "minecraft:redstone_lamp",
+      "state": {
+        "lit": "true"
+      }
+    }
+  }
+}

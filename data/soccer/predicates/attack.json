@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:damage_source_properties",
+  "predicate": {
+    "direct_entity": {
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:lead"
+        }
+      }
+    }
+  }
+}
