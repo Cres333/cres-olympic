@@ -20,6 +20,9 @@ execute unless entity @p[scores={_HAS=1}] as @e[tag=ground] at @s positioned ~ ~
 # ボールを持っているプレイヤーがいたら、ボールを追っかけさせる
 execute as @p[scores={_HAS=1}] at @s positioned ^ ^ ^2 run tp @e[tag=ground] ~ 30.7 ~
 
+# ボールを持っているプレイヤーがいたら、ゴール判定
+execute if entity @p[scores={_HAS=1}] run function soccer:system/goal/check-direct
+
 # ボールを持っているプレイヤーが叩かれたら、ボールを落とす
 execute as @p[scores={_HAS=1},predicate=soccer:attack] run function soccer:system/drop
 
