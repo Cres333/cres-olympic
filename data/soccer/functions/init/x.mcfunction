@@ -14,6 +14,14 @@ scoreboard players reset * _
 scoreboard players set $stop _ 0
 scoreboard players set $w _ 0
 scoreboard players set $b _ 0
+scoreboard players set $time _ 6000
+
+# bossbar 作成
+bossbar add time "残り時間"
+bossbar set time color white
+bossbar set time style notched_6
+bossbar set time players @a
+bossbar set time visible false
 
 # ready
 function soccer:ready/x

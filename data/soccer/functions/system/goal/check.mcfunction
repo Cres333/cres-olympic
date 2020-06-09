@@ -3,13 +3,11 @@ scoreboard players set $isW _ 0
 scoreboard players set $isB _ 0
 
 # goal in white side
-# TODO: Coordinate
-execute store success score $isGoal _ if entity @e[type=snowball,x=0,y=0,z=0,dx=3,dy=3,dz=3] run scoreboard players add $b _ 1
+execute store success score $isGoal _ if entity @e[type=snowball,x=1055,y=32,z=-1295,dx=8,dy=4,dz=2] run scoreboard players add $b _ 1
 execute if score $isGoal _ matches 1.. run scoreboard players set $isB _ 1
 
 # goal in black side
-# TODO: Coordinate
-execute store success score $isGoal _ if entity @e[type=snowball,x=0,y=0,z=0,dx=3,dy=3,dz=3] run scoreboard players add $w _ 1
+execute store success score $isGoal _ if entity @e[type=snowball,x=1055,y=32,z=-1399,dx=8,dy=4,dz=2] run scoreboard players add $w _ 1
 execute if score $isGoal _ matches 1.. if score $isB _ matches 0 run scoreboard players set $isW _ 1
 
 execute if score $isGoal _ matches 1.. run function soccer:system/goal/in

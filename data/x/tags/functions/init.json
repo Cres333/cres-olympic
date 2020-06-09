@@ -5,7 +5,7 @@
     "x:init/score",
     "s:reset",
     "s:marker",
-    "lang:setup",
+    "#lang:setup",
     "x:init/teams"
   ]
 }
