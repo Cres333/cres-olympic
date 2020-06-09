@@ -1,12 +1,12 @@
 # クールダウンの時間を下げる
-execute as @a[scores={_COOL=1..}] run scoreboard players remove @s _COOL 1
+scoreboard players remove @a[scores={_COOL=1..}] _COOL 1
 
 # クールダウン中を表示する
-execute as @a[scores={_COOL=1..}] run title @s actionbar {"text":":: 現在、ボールを持てません ::","color":"red"}
+title @a[scores={_COOL=1..}] actionbar {"text":":: 現在、ボールを持てません ::","color":"red"}
 
 # クールダウンが0ならリードを手に入れる
-execute as @a[scores={_COOL=1..}] run clear @s lead
-execute as @a[scores={_COOL=0},nbt=!{Inventory:[{id:"minecraft:lead"}]}] run give @s lead
+clear @a[scores={_COOL=1..},predicate=soccer:has-lead] lead
+execute as @a[scores={_COOL=0,_HAS=0},predicate=!soccer:has-lead] run give @s lead
 
 # 雪玉を検出した時の処理
 execute if entity @e[type=snowball] run function soccer:system/no-snow

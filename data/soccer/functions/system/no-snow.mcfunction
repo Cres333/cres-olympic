@@ -3,7 +3,6 @@ effect clear @p[scores={_HAS=1}] slowness
 
 # 雪玉を検出したら、ボールを持っている人判定を消す
 clear @a snowball
-clear @a lead
 scoreboard players set @a[predicate=util:play] _HAS 0
 
 # 雪玉を追いかけさせる
