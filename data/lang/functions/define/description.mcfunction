@@ -8,17 +8,16 @@ data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上でも、ライフが無くなると、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["力尽きて、失格となります。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
-data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、2人を選出してください。"]}'
+data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 # サッカーの説明
-# TODO: サッカーの説明
 data modify storage lang soccer.descNum set value 9
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["= サッカー ="]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、4人を選出してください。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っている選手には雪玉が渡されます。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["雪玉を投げるとボールも飛んでいきます。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っていない選手はリードを持っているため、"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["リードでボールを持っている選手を叩くとボールを落とします。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["制限時間の３分以内に相手のゴールへたくさんボールを入れてください。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'

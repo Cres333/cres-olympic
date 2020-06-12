@@ -1,5 +1,5 @@
 # scoreboard 設定
-scoreboard players set $time _ 6000
+scoreboard players set $time _ 3600
 
 # bossbar 設定
 bossbar set time players @a
