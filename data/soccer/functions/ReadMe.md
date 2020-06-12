@@ -1,4 +1,8 @@
 # サッカー
+
+## Storage設定
+main {game:soccer,join:4}
+
 ## 全体の流れ
 ### 初期化
 function soccer:init/init
