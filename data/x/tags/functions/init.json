@@ -3,8 +3,7 @@
     "x:init/rules",
     "x:init/forceload",
     "x:init/score",
-    "s:reset",
-    "s:marker",
+    "#storage:setup",
     "#lang:setup",
     "x:init/teams"
   ]

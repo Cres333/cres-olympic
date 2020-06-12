@@ -1,0 +1,8 @@
+{
+  "values": [
+    "storage:settings/game",
+    "storage:settings/summon",
+    "storage:settings/score",
+    "storage:settings/id"
+  ]
+}
