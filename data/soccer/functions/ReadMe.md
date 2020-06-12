@@ -13,7 +13,7 @@ function soccer:init/description
 ### メンバー選出
 function soccer:init/select-member
 ### チーム構成
-function soccer:init/select-team
+function soccer:init/generate-team
 ### ゲーム開始
 function soccer:game/start
 ### 次のゲーム

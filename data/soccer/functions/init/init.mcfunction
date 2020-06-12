@@ -15,6 +15,7 @@ scoreboard players set $stop _ 0
 scoreboard players set $w _ 0
 scoreboard players set $b _ 0
 scoreboard players set $time _ 3600
+scoreboard players set $team _ 0
 
 ## bossbar 作成
 bossbar add time "残り時間"

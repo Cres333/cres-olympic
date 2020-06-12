@@ -9,8 +9,7 @@ bossbar set time visible true
 scoreboard players set @a[predicate=util:play] _COOL 0
 scoreboard players set @a[predicate=util:play] _HAS 0
 
-# TODO: チームを選択
-
-# TODO: 背番号設定
+# チームを選択
+function soccer:game/priv/select-team
 
 # TODO: 開始前の処理
