@@ -20,6 +20,7 @@ scoreboard objectives remove _B
 scoreboard players reset * SCORE
 scoreboard players reset * _
 bossbar remove time
+data remove storage soccer battle
 
 ## ゲームモード設定
 data merge storage main {game:"",join:0}

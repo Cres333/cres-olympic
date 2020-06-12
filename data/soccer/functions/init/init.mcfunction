@@ -23,5 +23,8 @@ bossbar set time style notched_6
 bossbar set time players @a
 bossbar set time visible false
 
+## storage 作成
+data merge storage soccer {battle:[]}
+
 ## Next: フィールド生成
 function soccer:init/field

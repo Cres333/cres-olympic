@@ -9,5 +9,8 @@ bossbar set time visible true
 scoreboard players set @a[predicate=util:play] _COOL 0
 scoreboard players set @a[predicate=util:play] _HAS 0
 
-# 競技の開始
+# TODO: チームを選択
+
+# TODO: 背番号設定
+
 # TODO: 開始前の処理
