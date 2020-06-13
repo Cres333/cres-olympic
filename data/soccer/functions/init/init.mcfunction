@@ -1,6 +1,6 @@
 # 初期化
 ## ゲームモード設定
-data merge storage main {game:soccer,join:4}
+data merge storage main {game:soccer,join:4,team:true}
 
 ## scoreboard 作成
 scoreboard objectives add _HAS dummy "ボールを持っているプレイヤー"
