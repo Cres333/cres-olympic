@@ -37,9 +37,6 @@ execute if score $check _TICKET matches 3 if score $team _TICKET matches 2 run t
 execute if score $check _TICKET matches 3 if score $team _TICKET matches 3 run tellraw @a[team=yellow] {"interpret":true,"nbt":"util.select.ok","storage":"lang"}
 execute if score $check _TICKET matches 3 if score $team _TICKET matches 4 run tellraw @a[team=green] {"interpret":true,"nbt":"util.select.ok","storage":"lang"}
 
-## チームをリセット
-scoreboard players set $team _TICKET 0
-
 ## 全チームの人数が揃ったら各競技に戻す
 execute if score $teamSum _TICKET >= $teamNum _TICKET run function util:select/return
 
