@@ -1,5 +1,6 @@
 # メンバー選出
 ## 初期化
+scoreboard players reset * JOIN
 scoreboard objectives add _TICKET dummy
 scoreboard players set $team _TICKET 0
 scoreboard players set $teamSum _TICKET 0
