@@ -1,4 +1,6 @@
 # スコアボード設定
+scoreboard players set $w _ 0
+scoreboard players set $b _ 0
 scoreboard players set $time _ 3600
 
 # bossbar 設定
