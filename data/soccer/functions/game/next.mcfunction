@@ -2,7 +2,12 @@
 ## タイマーの表示を消す
 bossbar set time visible false
 
-# TODO: 現在のチームを解体
+## 現在のチームを解体
+scoreboard players reset * _W
+scoreboard players reset * _B
+scoreboard players reset * PLAY
+
+## TODO: 各チームに得点を加算
 
 ## 次のチームのチェック
 scoreboard players set $nextTeam _ 0
