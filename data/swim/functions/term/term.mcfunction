@@ -17,8 +17,6 @@ scoreboard objectives remove _R
 scoreboard objectives remove _B
 scoreboard objectives remove _Y
 scoreboard objectives remove _G
-scoreboard players reset * SCORE
-scoreboard players reset * _
 
-## ゲームモード設定
-data merge storage main {game:"",join:0,team:false}
+# 共通処理をリセット
+function util:term/reset-common

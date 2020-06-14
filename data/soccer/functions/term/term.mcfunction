@@ -17,10 +17,8 @@ scoreboard objectives remove _HAS
 scoreboard objectives remove _COOL
 scoreboard objectives remove _W
 scoreboard objectives remove _B
-scoreboard players reset * SCORE
-scoreboard players reset * _
 bossbar remove time
 data remove storage soccer battle
 
-## ゲームモード設定
-data merge storage main {game:"",join:0,team:false}
+# 共通処理をリセット
+function util:term/reset-common
