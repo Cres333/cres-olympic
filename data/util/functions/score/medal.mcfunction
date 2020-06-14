@@ -1,6 +1,11 @@
-# TODO: メダル計算
+# メダル計算
+## 初期化
+scoreboard objectives add _MEDAL dummy
+scoreboard players set $remainMedal _MEDAL 3
+
 ## チーム戦か個人戦か判断
-## 金メダルを配分
-## 銀メダルを配分 (1人/1チーム以上残っていれば)
-## 銅メダルを配分 (1人/1チーム以上残っていれば)
-## スコアをリセット
+execute if data storage main {team:true} run function util:score/priv/team-medal
+execute if data storage main {team:false} run function util:score/priv/single-medal
+
+## 破棄
+scoreboard objectives remove _MEDAL
