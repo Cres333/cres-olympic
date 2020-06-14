@@ -3,14 +3,14 @@ scoreboard players add $up _CLICK 1
 execute as @a[predicate=util:play] if score @s _CLICK >= $up _CLICK run scoreboard players operation @s _SHOW = $up _CLICK
 
 # 金床を連打数に応じて持ち上げる
-execute if score @p[scores={JOIN=0,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.0,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=1,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.1,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=2,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.2,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=3,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.3,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=4,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.4,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=5,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.5,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=6,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.6,limit=1] at @s run tp @s ~ ~0.2 ~
-execute if score @p[scores={JOIN=7,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=join.7,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=1,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.0,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=2,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.1,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=3,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.2,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=4,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.3,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=5,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.4,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=6,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.5,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=7,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.6,limit=1] at @s run tp @s ~ ~0.2 ~
+execute if score @p[scores={_ID=8,PLAY=1}] _CLICK >= $up _CLICK as @e[tag=id.7,limit=1] at @s run tp @s ~ ~0.2 ~
 
 # パーティクル
 execute as @e[tag=anvil] at @s run particle minecraft:totem_of_undying ~ ~1.5 ~ 0.1 0 0.1 0 2

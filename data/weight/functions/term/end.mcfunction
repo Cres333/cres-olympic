@@ -5,3 +5,4 @@ scoreboard players reset * _
 scoreboard objectives remove _CLICK
 scoreboard objectives remove _LIFE
 scoreboard objectives remove _SHOW
+scoreboard objectives remove _ID
