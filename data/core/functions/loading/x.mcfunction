@@ -12,4 +12,4 @@ bossbar set loading players @a
 bossbar set loading style progress
 bossbar set loading visible true
 
-function x:loading/load
+function core:loading/load
