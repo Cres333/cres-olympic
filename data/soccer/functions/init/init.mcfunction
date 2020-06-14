@@ -1,4 +1,7 @@
 # 初期化
+## 共通処理の初期化
+function util:term/reset-common
+
 ## ゲームモード設定
 data merge storage main {game:soccer,join:4,team:true}
 
@@ -9,8 +12,6 @@ scoreboard objectives add _W dummy "白チームの背番号"
 scoreboard objectives add _B dummy "黒チームの背番号"
 
 ## scoreboard 初期値設定
-scoreboard players reset * SCORE
-scoreboard players reset * _
 scoreboard players set $stop _ 0
 scoreboard players set $w _ 0
 scoreboard players set $b _ 0
