@@ -3,7 +3,7 @@ scoreboard players set $if _ 0
 execute store success score $if _ if score $round _ matches ..4 if entity @a[scores={_LIFE=1..}]
 
 # ロード表示
-function x:loading/x
+function core:loading/x
 scoreboard players set $max _LOADING 80
 
 # TRUE
