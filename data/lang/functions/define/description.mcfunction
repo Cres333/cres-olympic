@@ -45,3 +45,5 @@ data modify storage lang swim.player prepend value '{"translate":":: あなた�
 data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"２","color":"red"}]}'
 data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"３","color":"red"}]}'
 data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"４","color":"red"}]}'
+
+data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red"}'

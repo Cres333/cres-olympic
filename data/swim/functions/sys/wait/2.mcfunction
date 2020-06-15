@@ -2,10 +2,10 @@
 ## TODO: フィールド座標
 ## ゴールした泳者の選出
 scoreboard players set $2 _ 0
-execute as @p[scores={_R=2},gamemode=adventure] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 1
-execute as @p[scores={_B=2},gamemode=adventure] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 2
-execute as @p[scores={_Y=2},gamemode=adventure] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 3
-execute as @p[scores={_G=2},gamemode=adventure] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 4
+execute as @p[scores={_R=2},predicate=util:play] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 1
+execute as @p[scores={_B=2},predicate=util:play] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 2
+execute as @p[scores={_Y=2},predicate=util:play] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 3
+execute as @p[scores={_G=2},predicate=util:play] at @s if block ~ 0 ~ red_concrete run scoreboard players set $2 _ 4
 
 ## 現在の泳者の処理
 execute if score $2 _ matches 1 as @p[scores={_R=2}] run function swim:sys/priv/goal

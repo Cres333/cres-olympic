@@ -28,6 +28,3 @@ scoreboard players set @r[limit=1,scores={_G=0}] _G 1
 scoreboard players set @r[limit=1,scores={_G=0}] _G 2
 scoreboard players set @r[limit=1,scores={_G=0}] _G 3
 scoreboard players set @r[limit=1,scores={_G=0}] _G 4
-
-## PLAYに追加
-scoreboard players set @a[predicate=util:join] PLAY 1

@@ -2,6 +2,9 @@
 ## ゲームモード切替
 gamemode spectator @s
 
+## PLAYから外す
+scoreboard players reset @s PLAY
+
 ## アイテムを消す
 clear @s
 
