@@ -3,10 +3,5 @@
 scoreboard players set $count _ 5
 function swim:sys/priv/count
 
-## TODO: 各チーム代表が第１レーンの最後に到着
-## TODO: 各チーム代表が第２レーンの最後に到着
-## TODO: 各チーム代表が第３レーンの最後に到着
-## TODO: 各チーム代表が第４レーンの最後に到着 + タイマー停止
 ## TODO: 全員が第４レーンの最後したらゲーム終了 / タイマーがポイント
 ## TODO: 槍を使ったらクールダウン
-## TODO: 「あなたは第n泳者です」の表示

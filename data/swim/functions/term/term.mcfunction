@@ -12,11 +12,14 @@ fill 0 0 0 0 0 0 air
 ## フィールドの読み込みを解除
 forceload remove 0 0 0 0
 
-# ゲーム設定を削除
+## スケジュールを削除
+schedule clear swim:sys/wait/loop
+
+## ゲーム設定を削除
 scoreboard objectives remove _R
 scoreboard objectives remove _B
 scoreboard objectives remove _Y
 scoreboard objectives remove _G
 
-# 共通処理をリセット
+## 共通処理をリセット
 function util:term/reset-common

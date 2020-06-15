@@ -1,4 +1,6 @@
 # カウントダウン
+## TODO: 「あなたは第n泳者です」の表示
+
 ## カウントを表示する
 execute if score $count _ matches 1.. run title @a title {"score": {"name": "$count","objective": "_"},"color":"yellow"}
 execute if score $count _ matches 0 run title @a title {"text":"!! START !!","color":"green"}
