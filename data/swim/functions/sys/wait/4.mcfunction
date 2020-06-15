@@ -19,4 +19,5 @@ execute if score $4 _ matches 2 run scoreboard players operation $b SCORE = $tim
 execute if score $4 _ matches 3 run scoreboard players operation $y SCORE = $time _
 execute if score $4 _ matches 4 run scoreboard players operation $g SCORE = $time _
 
-## TODO: 全員がゴールしたらゲーム終了 / タイマーがポイント
+## 全員がゴールしたらゲーム終了
+execute if score $4 _ matches 1.. unless entity @p[predicate=swim:4,gamemode=adventure] run function swim:game/end
