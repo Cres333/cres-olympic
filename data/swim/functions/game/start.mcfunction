@@ -6,7 +6,7 @@ function swim:game/priv/setting-number
 function swim:game/priv/setting-position
 
 ## TODO: 観覧プレイヤーを配置
-gamemode spectator @a[predicate=!util:play]
+gamemode spectator @a[predicate=!util:join]
 
 ## ゲーム開始
 function swim:sys/main
