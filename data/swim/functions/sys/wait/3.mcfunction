@@ -18,3 +18,10 @@ execute if score $3 _ matches 1 as @p[scores={_R=4}] run function swim:sys/priv/
 execute if score $3 _ matches 2 as @p[scores={_B=4}] run function swim:sys/priv/change
 execute if score $3 _ matches 3 as @p[scores={_Y=4}] run function swim:sys/priv/change
 execute if score $3 _ matches 4 as @p[scores={_G=4}] run function swim:sys/priv/change
+
+## フィールド開放
+## TODO: フィールド座標
+execute if score $1 _ matches 1 run fill 0 0 0 0 0 0 water
+execute if score $1 _ matches 2 run fill 0 0 0 0 0 0 water
+execute if score $1 _ matches 3 run fill 0 0 0 0 0 0 water
+execute if score $1 _ matches 4 run fill 0 0 0 0 0 0 water
