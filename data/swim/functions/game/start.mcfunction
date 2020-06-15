@@ -5,5 +5,7 @@ function swim:game/priv/setting-number
 ## 各場所に配置
 function swim:game/priv/setting-position
 
+## TODO: 観覧プレイヤーを配置
+
 ## ゲーム開始
-function swim:system/main
+function swim:sys/main
