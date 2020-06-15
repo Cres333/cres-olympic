@@ -1,3 +1,7 @@
+# 全体
+data modify storage lang util.select.ng set value '{"text":"[システム] 参加人数が足りていません","color":"red"}'
+data modify storage lang util.select.ok set value '{"text":"[システム] 参加者を確定しました","color":"yellow"}'
+
 # ウェイトリフティングの説明
 data modify storage lang weight.descNum set value 9
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["= ウェイトリフティング ="]}'
@@ -21,3 +25,25 @@ data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["制限時間の３分以内に相手のゴールへたくさんボールを入れてください。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
+
+data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを持てません ::","color":"red"}'
+
+# TODO: 水泳の説明
+data modify storage lang swim.descNum set value 9
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
+
+data modify storage lang swim.player prepend value '{"translate":""}'
+data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"１","color":"red"}]}'
+data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"２","color":"red"}]}'
+data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"３","color":"red"}]}'
+data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"４","color":"red"}]}'
+
+data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red"}'

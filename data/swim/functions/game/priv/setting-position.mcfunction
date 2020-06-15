@@ -1,6 +1,8 @@
 # 各場所に配置
-## TODO: TP座標
+## ゲームモード変更
+gamemode adventure @a[predicate=util:play]
 
+## TODO: TP座標
 ## 第１レーン
 tp @p[scores={_R=1}] 0 0 0 0 0
 tp @p[scores={_B=1}] 0 0 0 0 0
