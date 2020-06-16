@@ -12,7 +12,7 @@ execute at @e[type=snowball] run tp @e[tag=ball,limit=1] ~ ~-1.5 ~
 tag @e[tag=ground] remove ground
 
 # ゴール判定
-function soccer:system/goal/check-throw
+function soccer:sys/goal/check-throw
 
 # コーナー判定
-function soccer:system/cornor
+function soccer:sys/cornor
