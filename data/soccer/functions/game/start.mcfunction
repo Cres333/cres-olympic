@@ -17,4 +17,4 @@ scoreboard players set @a[predicate=util:play] _HAS 0
 function soccer:game/priv/select-team
 
 ## ゲーム開始
-function soccer:system/main
+function soccer:sys/main

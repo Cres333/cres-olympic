@@ -10,13 +10,13 @@ execute if score $isGoal _ matches 1.. run scoreboard players set $isB _ 1
 execute if score $isGoal _ matches 0 store success score $isGoal _ if entity @e[type=snowball,predicate=soccer:black-goal] run scoreboard players add $w _ 1
 execute if score $isGoal _ matches 1.. run scoreboard players set $isW _ 1
 
-execute if score $isGoal _ matches 1.. run function soccer:system/goal/in
+execute if score $isGoal _ matches 1.. run function soccer:sys/goal/in
 
 # ゴールポスト(外側判定)
 scoreboard players set $cornor _ 0
 execute if score $isGoal _ matches 0 as @e[type=snowball] at @s if block ~ 35 ~ white_stained_glass run scoreboard players set $cornor _ 4
 execute if score $isGoal _ matches 0 as @e[type=snowball] at @s if block ~ 35 ~ black_stained_glass run scoreboard players set $cornor _ 5
-execute if score $cornor _ matches 1.. run function soccer:system/cornor/out
+execute if score $cornor _ matches 1.. run function soccer:sys/cornor/out
 scoreboard players reset $cornor _
 
 scoreboard players reset $isGoal _
