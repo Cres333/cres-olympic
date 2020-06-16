@@ -45,3 +45,13 @@ data modify storage lang swim.player prepend value '{"translate":":: あなた�
 data modify storage lang swim.player prepend value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"４","color":"red"}]}'
 
 data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red"}'
+
+# TODO: クレー射撃の説明
+data modify storage lang clay.descNum set value 7
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
