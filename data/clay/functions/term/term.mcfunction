@@ -9,5 +9,8 @@ fill 0 0 0 0 0 0 air
 ## フィールドの読み込みを解除
 forceload remove 0 0 0 0
 
+## スコアボード破棄
+scoreboard objectives remove _ID
+
 ## 共通処理をリセット
 function util:term/reset-common

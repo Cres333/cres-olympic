@@ -5,5 +5,8 @@ function util:term/reset-common
 ## ゲームモード設定
 data merge storage main {game:clay,join:2,team:false}
 
+## スコア設定
+scoreboard objectives add _ID dummy "背番号"
+
 ## Next: フィールド生成
 function clay:init/field
