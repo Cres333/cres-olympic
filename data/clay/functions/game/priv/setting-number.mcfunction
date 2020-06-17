@@ -10,5 +10,8 @@ scoreboard players set @r[limit=1,scores={_ID=0}] _ID 6
 scoreboard players set @r[limit=1,scores={_ID=0}] _ID 7
 scoreboard players set @r[limit=1,scores={_ID=0}] _ID 8
 
+## 現在のID
+scoreboard players set $current _ID 0
+
 ## 最初のプレイヤーをPLAYに設定
-scoreboard players set @a[scores={_ID=1}] PLAY 1
+function clay:game/priv/next-player
