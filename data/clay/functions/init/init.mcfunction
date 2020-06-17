@@ -7,6 +7,7 @@ data merge storage main {game:clay,join:2,team:false}
 
 ## スコア設定
 scoreboard objectives add _ID dummy "背番号"
+scoreboard objectives add _KILL killed:pig "キルカウント"
 
 ## Next: フィールド生成
 function clay:init/field
