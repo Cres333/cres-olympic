@@ -1,6 +1,6 @@
 # 終了処理
 ## キルカウントをスコアへ置き換え
-execute as @p[predicate=util:play] run scoreboard players operation @s SCORE > @s _KILL
+execute as @p[predicate=util:play] run scoreboard players operation @s SCORE < @s _KILL
 
 ## 会場を掃除
 clear @a
