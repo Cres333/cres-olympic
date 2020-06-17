@@ -13,8 +13,3 @@ give @p[predicate=util:play] arrow 15
 ## カウントダウン
 scoreboard players set $count _ 5
 function clay:sys/priv/count
-
-## TODO: 豚の射出 10 回 -> 豚のキル
-## TODO: キルカウントをスコアへ置き換え
-## TODO: 会場を掃除
-## TODO: 次の選手へ (クリア)
