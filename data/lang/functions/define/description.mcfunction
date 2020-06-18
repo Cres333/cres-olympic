@@ -46,12 +46,13 @@ data modify storage lang swim.player prepend value '{"translate":":: あなた�
 
 data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red"}'
 
-# TODO: クレー射撃の説明
-data modify storage lang clay.descNum set value 7
+# クレー射撃の説明
+data modify storage lang clay.descNum set value 8
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["奥から飛んでくるブタを撃ち抜く競技です。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["選手にはクロスボウと、１５本の矢が渡されます。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["その後にカウントダウンが始まり、"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["５秒ごとに連続で１０匹のブタが飛んできます。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["より多くのブタをクロスボウで撃ち抜いてください。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
