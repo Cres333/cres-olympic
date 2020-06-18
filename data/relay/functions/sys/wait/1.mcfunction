@@ -20,6 +20,10 @@ execute if score $1 _ matches 3 as @p[scores={_Y=2}] run function relay:sys/priv
 execute if score $1 _ matches 4 as @p[scores={_G=2}] run function relay:sys/priv/change
 
 ## 第３走者を配置
+execute if score $1 _ matches 1 run gamemode adventure @p[scores={_R=3}]
+execute if score $1 _ matches 2 run gamemode adventure @p[scores={_B=3}]
+execute if score $1 _ matches 3 run gamemode adventure @p[scores={_Y=3}]
+execute if score $1 _ matches 4 run gamemode adventure @p[scores={_G=3}]
 ## TODO: TP座標
 execute if score $1 _ matches 1 run tp @p[scores={_R=3}] 0 0 0 0 0
 execute if score $1 _ matches 2 run tp @p[scores={_B=3}] 0 0 0 0 0
