@@ -1,10 +1,10 @@
 {
   "values": [
-    "x:init/rules",
-    "x:init/forceload",
-    "x:init/score",
+    "core:init/rules",
+    "core:init/forceload",
+    "core:init/score",
     "#storage:setup",
     "#lang:setup",
-    "x:init/teams"
+    "core:init/teams"
   ]
 }

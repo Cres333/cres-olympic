@@ -1,4 +1,7 @@
 # ゲームの機構
+## 初期化
+scoreboard players set $summon _ 0
+
 ## キルカウントリセット
 scoreboard players reset * _KILL
 
