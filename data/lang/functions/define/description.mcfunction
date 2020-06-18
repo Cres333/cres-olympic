@@ -57,14 +57,13 @@ data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
-# TODO: リレーの説明
-data modify storage lang relay.descNum set value 7
+# リレーの説明
+data modify storage lang relay.descNum set value 6
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
-data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で他のチームよりも速く走り抜ける競技です。"]}'
-data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で様々な障害物を乗り越えて２周走る競技です。"]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各選手はトラックを半周して、次の選手につなぎます。"]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["トラック上にはダイヤモンドブロックと金ブロックがあり、"]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["それぞれのブロックの上を通過するとスピードが上昇します。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang relay.player prepend value '{"translate":""}'
