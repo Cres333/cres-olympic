@@ -11,3 +11,4 @@ scoreboard players add @a[predicate=util:join] COUNT 1
 execute if data storage main {game:soccer} run function soccer:init/generate-team
 execute if data storage main {game:swim} run function swim:game/start
 execute if data storage main {game:clay} run function clay:game/start
+execute if data storage main {game:relay} run function relay:game/start
