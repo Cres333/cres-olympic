@@ -21,7 +21,7 @@ execute if score $2 _ matches 4 as @p[scores={_G=3}] run function swim:sys/priv/
 
 ## フィールド開放
 ## TODO: フィールド座標
-execute if score $1 _ matches 1 run fill 0 0 0 0 0 0 water
-execute if score $1 _ matches 2 run fill 0 0 0 0 0 0 water
-execute if score $1 _ matches 3 run fill 0 0 0 0 0 0 water
-execute if score $1 _ matches 4 run fill 0 0 0 0 0 0 water
+execute if score $2 _ matches 1 run fill 0 0 0 0 0 0 water
+execute if score $2 _ matches 2 run fill 0 0 0 0 0 0 water
+execute if score $2 _ matches 3 run fill 0 0 0 0 0 0 water
+execute if score $2 _ matches 4 run fill 0 0 0 0 0 0 water

@@ -19,9 +19,25 @@ execute if score $1 _ matches 2 as @p[scores={_B=2}] run function relay:sys/priv
 execute if score $1 _ matches 3 as @p[scores={_Y=2}] run function relay:sys/priv/change
 execute if score $1 _ matches 4 as @p[scores={_G=2}] run function relay:sys/priv/change
 
-## フィールド開放
+## 第３走者を配置
+execute if score $1 _ matches 1 run gamemode adventure @p[scores={_R=3}]
+execute if score $1 _ matches 2 run gamemode adventure @p[scores={_B=3}]
+execute if score $1 _ matches 3 run gamemode adventure @p[scores={_Y=3}]
+execute if score $1 _ matches 4 run gamemode adventure @p[scores={_G=3}]
+## TODO: TP座標
+execute if score $1 _ matches 1 run tp @p[scores={_R=3}] 0 0 0 0 0
+execute if score $1 _ matches 2 run tp @p[scores={_B=3}] 0 0 0 0 0
+execute if score $1 _ matches 3 run tp @p[scores={_Y=3}] 0 0 0 0 0
+execute if score $1 _ matches 4 run tp @p[scores={_G=3}] 0 0 0 0 0
+
+## フィールド開放 & 閉鎖
 ## TODO: フィールド座標
 execute if score $1 _ matches 1 run fill 0 0 0 0 0 0 air
 execute if score $1 _ matches 2 run fill 0 0 0 0 0 0 air
 execute if score $1 _ matches 3 run fill 0 0 0 0 0 0 air
 execute if score $1 _ matches 4 run fill 0 0 0 0 0 0 air
+
+execute if score $1 _ matches 1 run fill 0 0 0 0 0 0 white_stained_glass
+execute if score $1 _ matches 2 run fill 0 0 0 0 0 0 white_stained_glass
+execute if score $1 _ matches 3 run fill 0 0 0 0 0 0 white_stained_glass
+execute if score $1 _ matches 4 run fill 0 0 0 0 0 0 white_stained_glass

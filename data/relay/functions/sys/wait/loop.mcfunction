@@ -4,9 +4,12 @@ execute if entity @a[predicate=relay:2,predicate=util:play] run function relay:s
 execute if entity @a[predicate=relay:3,predicate=util:play] run function relay:sys/wait/3
 execute if entity @a[predicate=relay:4,predicate=util:play] run function relay:sys/wait/4
 
-scoreboard players add $time _ 1
+## ブースト処理
+function relay:sys/wait/boost
 
-## TODO: ブースト処理
-## TODO: エフェクト処理
+## エフェクト処理
+function relay:sys/wait/effect
+
+scoreboard players add $time _ 1
 
 schedule function relay:sys/wait/loop 1t
