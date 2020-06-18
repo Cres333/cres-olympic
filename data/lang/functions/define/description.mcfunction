@@ -56,3 +56,19 @@ data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["より多くのブタをクロスボウで撃ち抜いてください。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
+
+# TODO: リレーの説明
+data modify storage lang relay.descNum set value 7
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で他のチームよりも速く走り抜ける競技です。"]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
+
+data modify storage lang relay.player prepend value '{"translate":""}'
+data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"１","color":"red"}]}'
+data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"２","color":"red"}]}'
+data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"３","color":"red"}]}'
+data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"４","color":"red"}]}'
