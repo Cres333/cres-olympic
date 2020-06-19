@@ -1,5 +1,6 @@
 # ゲームの機構
 ## 初期化
+scoreboard players set $end _ 0
 scoreboard players set @a[predicate=util:join] PLAY 1
 
 ## カウントダウン開始
