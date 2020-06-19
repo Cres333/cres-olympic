@@ -12,3 +12,4 @@ execute if data storage main {game:soccer} run function soccer:init/generate-tea
 execute if data storage main {game:swim} run function swim:game/start
 execute if data storage main {game:clay} run function clay:game/start
 execute if data storage main {game:relay} run function relay:game/start
+execute if data storage main {game:dodge} run function dodge:game/start
