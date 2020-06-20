@@ -1,6 +1,7 @@
 # 脱落検知
-## TODO: 爆発に巻き込まれたプレイヤーを検知
-## TODO: 爆発に巻き込まれたプレイヤーを設定
+## 爆発に巻き込まれたプレイヤーを検知
+## TODO: ボール追跡用のアマスタを用意
+execute unless entity @e[type=fireball] at @e[tag=ball] as @a[predicate=util:play,distance=..2] at @s run function dodge:sys/priv/out
+
 ## TODO: チームメンバーが残っているかチェック
 ## TODO: チームメンバーが残っていないエリアを開放
-## TODO: 残り1チーム未満だったらゲーム終了
