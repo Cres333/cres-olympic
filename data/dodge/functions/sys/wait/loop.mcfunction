@@ -1,8 +1,8 @@
 # 各waitを一括管理
 function dodge:sys/wait/retire
+function dodge:sys/wait/effect
 
 ## TODO: ボールの動作
-## TODO: 禁止エリアへの侵入
 
 scoreboard players add $time _ 1
 
