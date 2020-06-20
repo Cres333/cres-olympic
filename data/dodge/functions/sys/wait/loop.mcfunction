@@ -6,8 +6,7 @@ function dodge:sys/wait/retire
 
 scoreboard players add $time _ 1
 
-## TODO: 残り1チーム以上だったらループ
-schedule function dodge:sys/wait/loop 1t
-
-## TODO: 残り1チーム未満だったら終了
-function dodge:game/end
+## 残り1チーム以上だったらループ
+function dodge:sys/wait/remain
+execute if score $end _ matches 1 run function dodge:game/end
+execute unless score $end _ matches 1 run schedule function dodge:sys/wait/loop 1t
