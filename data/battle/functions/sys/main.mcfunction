@@ -1,7 +1,9 @@
 # ゲームの機構
-## TODO: プレイヤー選択
+## プレイヤー選択
+function battle:sys/priv/select-player
 
-## TODO: プレイヤーを配置
+## プレイヤーを配置
+function battle:sys/priv/setting-position
 
 ## カウントダウン開始
 scoreboard players set $count _ 5
