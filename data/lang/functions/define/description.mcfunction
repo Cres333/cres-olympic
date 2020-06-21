@@ -83,3 +83,14 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["また、各チームのエリアでボールが爆発すると、そのエリアは狭くなります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["狭くなった壁の中に埋まってしまった場合は、中央にテレポートします。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
+
+# TODO: 勝ち抜き戦の説明
+data modify storage lang clay.descNum set value 8
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
