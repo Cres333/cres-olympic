@@ -71,3 +71,12 @@ data modify storage lang relay.player prepend value '{"translate":":: あなた�
 data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"２","color":"red"}]}'
 data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"３","color":"red"}]}'
 data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"４","color":"red"}]}'
+
+# TODO: ドッヂの説明
+data modify storage lang dodge.descNum set value 6
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["= ドッヂボール ="]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
