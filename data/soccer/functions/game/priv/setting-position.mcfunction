@@ -1,4 +1,6 @@
-# 各プレイヤーの位置をリセット
+# 各プレイヤーの位置を設定
+gamemode adventure @a[predicate=util:play]
+
 tp @p[scores={_W=1}] 1059 32 -1332 180 0
 tp @p[scores={_W=2}] 1065 32 -1326 180 0
 tp @p[scores={_W=3}] 1053 32 -1326 180 0

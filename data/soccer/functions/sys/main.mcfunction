@@ -1,11 +1,19 @@
-# ジャンプした時のエフェクト
-execute as @e[predicate=util:play] run effect give @s jump_boost 10 2 true
+# ゲームの機構
+## 初期化
+scoreboard players reset * _
+scoreboard players reset * _HAS
+scoreboard players reset * _COOL
+scoreboard players set $w _ 0
+scoreboard players set $b _ 0
+scoreboard players set $time _ 3600
+scoreboard players set @a[predicate=util:play] _HAS 0
+scoreboard players set @a[predicate=util:play] _COOL 0
 
-# ボールの動き
-execute unless score $stop _ matches 1 run function soccer:sys/loop
+execute store result bossbar time max run scoreboard players get $time _
+execute store result bossbar time value run scoreboard players get $time _
+bossbar set time players @a
+bossbar set time visible true
 
-# ゲーム終了
-execute if score $time _ matches ..0 run function soccer:game/next
-
-# ループ
-execute unless score $time _ matches ..0 run schedule function soccer:sys/main 1t
+## カウントダウン開始
+scoreboard players set $count _ 5
+function relay:sys/priv/count

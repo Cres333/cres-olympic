@@ -23,6 +23,3 @@ data modify storage soccer battle append value {w:empty,b:empty}
 
 ## スコアボードを破棄
 scoreboard players reset $teamNum _
-
-## Next: ゲーム開始
-function soccer:game/start
