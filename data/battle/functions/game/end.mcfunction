@@ -1,7 +1,4 @@
 # ゲーム終了
-## スケジュールを停止
-schedule clear battle:sys/wait/loop
-
 ## アイテム削除
 clear @a
 
