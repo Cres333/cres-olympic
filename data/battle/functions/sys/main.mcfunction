@@ -1,4 +1,7 @@
 # ゲームの機構
+## フィールドリセット
+function battle:sys/priv/field/reset
+
 ## プレイヤー選択
 function battle:sys/priv/select-player
 

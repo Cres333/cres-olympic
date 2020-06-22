@@ -9,5 +9,4 @@ tp @p[team=y,predicate=util:play] 0 0 0 0 0
 tp @p[team=g,predicate=util:play] 0 0 0 0 0
 
 ## 剣を渡す
-## TODO: ノックバック追加
-give @a[predicate=util:play] diamond_sword
+give @a[predicate=util:play] diamond_sword{Enchantments:[{id:"minecraft:knockback",lvl:2}]}
