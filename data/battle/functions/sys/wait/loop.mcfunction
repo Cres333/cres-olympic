@@ -1,6 +1,4 @@
 # 各waitを一括管理
-## TODO: エフェクト処理
-
 ## リタイア判定
 function battle:sys/wait/retire
 

@@ -2,6 +2,9 @@
 ## ゲームモード変更
 gamemode spectator @a
 
+## 装備削除
+clear @a
+
 ## スケジュール削除
 schedule clear battle:sys/priv/field/1
 schedule clear battle:sys/priv/field/2

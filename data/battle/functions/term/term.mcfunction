@@ -18,6 +18,7 @@ scoreboard objectives remove _B
 scoreboard objectives remove _Y
 scoreboard objectives remove _G
 scoreboard objectives remove _DEATH
+scoreboard objectives remove _LOG
 
 ## 共通処理をリセット
 function util:term/reset-common
