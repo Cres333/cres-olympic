@@ -1,4 +1,4 @@
-# タイマー1tick減少
+# タイマー処理
 scoreboard players remove $time _ 1
 execute store result bossbar time value run scoreboard players get $time _
 

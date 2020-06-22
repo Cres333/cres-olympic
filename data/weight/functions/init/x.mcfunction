@@ -8,8 +8,6 @@ scoreboard objectives add _SHOW dummy "右クリック連打数"
 scoreboard objectives add _ID dummy "ウェイトリフティングのID"
 
 # scoreboard 初期値設定
-scoreboard players reset * SCORE
-scoreboard players reset * _
 scoreboard players set $round _ 0
 scoreboard players set $show _ 0
 

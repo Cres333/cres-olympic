@@ -15,3 +15,5 @@ tp @p[scores={_R=2}] 0 0 0 0 0
 tp @p[scores={_B=2}] 0 0 0 0 0
 tp @p[scores={_Y=2}] 0 0 0 0 0
 tp @p[scores={_G=2}] 0 0 0 0 0
+
+

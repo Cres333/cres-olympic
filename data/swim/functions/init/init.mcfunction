@@ -13,9 +13,5 @@ scoreboard objectives add _G dummy "緑チームの背番号"
 scoreboard objectives add _USE used:trident "トライデントの利用フラグ"
 scoreboard objectives add _COOL dummy "クールダウンの時間"
 
-## scoreboard 初期値設定
-scoreboard players reset * SCORE
-scoreboard players reset * _
-
 ## Next: フィールド生成
 function swim:init/field

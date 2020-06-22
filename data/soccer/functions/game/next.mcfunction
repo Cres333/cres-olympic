@@ -15,7 +15,6 @@ scoreboard players reset * _B
 scoreboard players reset * _HAS
 scoreboard players reset * _COOL
 scoreboard players reset * PLAY
-scoreboard players set $stop _ 1
 
 ## 次のチームのチェック
 scoreboard players set $nextTeam _ 0
@@ -25,7 +24,9 @@ function soccer:game/priv/check-team
 execute if score $nextTeam _ matches 0 run function soccer:term/score
 
 ## 次のチームがいれば再度開始
-execute unless score $nextTeam _ matches 0 run schedule function soccer:game/start 5s
+execute unless score $nextTeam _ matches 0 run function soccer:game/priv/select-team
+execute unless score $nextTeam _ matches 0 run function soccer:game/priv/setting-position
+execute unless score $nextTeam _ matches 0 run schedule function soccer:sys/main 3s
 
 ## スコアボードを破棄
 scoreboard players reset $nextTeam _
