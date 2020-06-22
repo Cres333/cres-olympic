@@ -11,9 +11,5 @@ scoreboard objectives add _B dummy "青チームの背番号"
 scoreboard objectives add _Y dummy "黄チームの背番号"
 scoreboard objectives add _G dummy "緑チームの背番号"
 
-## scoreboard 初期値設定
-scoreboard players reset * SCORE
-scoreboard players reset * _
-
 ## Next: フィールド生成
 function relay:init/field
