@@ -84,13 +84,14 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["狭くなった壁の中に埋まってしまった場合は、中央にテレポートします。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
 
-# TODO: 勝ち抜き戦の説明
-data modify storage lang clay.descNum set value 8
+# 勝ち抜き戦の説明
+data modify storage lang clay.descNum set value 9
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["全員参加のバトルロワイアル競技です。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからランダムに選ばれた１人がそのラウンドに参加します。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各プレイヤーはノックバック付きのダイアモンド剣を所持しています。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["リタイアさせる方法は、フィールド外に落とすか、倒すかになります。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["フィールド中央にはエフェクトがランダムで発生しており、"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["有利になるエフェクトと不利になるエフェクトがあります。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["他のチームの競技参加者を全員倒せば、次のラウンドが始まります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
