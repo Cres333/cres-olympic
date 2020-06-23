@@ -1,16 +1,10 @@
 # フィールド削除
 # TODO: フィールド座標
-## フィールドを読み込み
-forceload add 0 0 0 0
-
 ## 各エリアを削除
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
-
-## フィールドの読み込みを解除
-forceload remove 0 0 0 0
 
 ## スケジュールを削除
 schedule clear dodge:sys/wait/loop
