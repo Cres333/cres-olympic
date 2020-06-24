@@ -3,7 +3,7 @@
 function fenc:game/priv/setting-number
 
 ## TODO: 観覧プレイヤーを配置
-gamemode spectator @a[predicate=!util:join]
+gamemode spectator @a
 
 ## ゲーム開始
 function fenc:sys/main
