@@ -13,3 +13,6 @@ execute if score $next _ matches 1 run function fenc:sys/main
 
 ## 次の選手がいない場合
 execute if score $next _ matches 0 run function fenc:term/score
+
+## TODO: 一通りの対戦が終了したら、次の対戦に移る
+## TODO: 決勝まで行ったら、ゲーム終了
