@@ -7,7 +7,8 @@ gamemode spectator @a
 
 ## TODO: 選手を2人選び出す
 
-## TODO: 選手をTPする
+## 選手をTPする
+function fenc:game/priv/setting-position
 
 ## ゲーム開始
 function fenc:sys/main
