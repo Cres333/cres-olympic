@@ -7,6 +7,7 @@ fill 0 0 0 0 0 0 air
 scoreboard objectives remove _ID
 scoreboard objectives remove _GP
 scoreboard objectives remove _ATTACK
+scoreboard objectives remove _DAMAGE
 
 ## 共通処理をリセット
 function util:term/reset-common

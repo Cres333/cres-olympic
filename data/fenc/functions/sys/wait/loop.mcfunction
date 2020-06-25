@@ -1,2 +1,7 @@
-## TODO: 敗北した方は即座に吹き飛ぶ
-## TODO: 次の選手を選び出す
+# ループ処理
+## 敗北したかチェック
+execute as @a[predicate=util:play,scores={_DAMAGE=1..}] run function fenc:sys/priv/lose
+
+## 決着がついていたらループ
+execute if score $end _ matches 0 run schedule function fenc:sys/wait/loop 1t
+execute if score $end _ matches 1 run function fenc:sys/priv/end
