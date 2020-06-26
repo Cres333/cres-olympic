@@ -1,4 +1,4 @@
-# リレー
+# 勝ち抜き戦
 
 ## Storage設定
 main {game:battle,join:3,team:true}

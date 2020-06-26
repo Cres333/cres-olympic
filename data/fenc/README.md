@@ -1,4 +1,4 @@
-# クレー射撃
+# フェンシング
 
 ## Storage設定
 main {game:fenc,join:2,team:false}

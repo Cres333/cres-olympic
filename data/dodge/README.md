@@ -1,4 +1,4 @@
-# リレー
+# ドッヂボール
 
 ## Storage設定
 main {game:dodge,join:3,team:true}
