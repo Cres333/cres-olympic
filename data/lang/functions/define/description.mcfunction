@@ -85,13 +85,23 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
 
 # 勝ち抜き戦の説明
-data modify storage lang clay.descNum set value 9
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["全員参加のバトルロワイアル競技です。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからランダムに選ばれた１人がそのラウンドに参加します。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各プレイヤーはノックバック付きのダイアモンド剣を所持しています。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["リタイアさせる方法は、フィールド外に落とすか、倒すかになります。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["フィールド中央にはエフェクトがランダムで発生しており、"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["有利になるエフェクトと不利になるエフェクトがあります。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["他のチームの競技参加者を全員倒せば、次のラウンドが始まります。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
+data modify storage lang battle.descNum set value 9
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加のバトルロワイアル競技です。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["各チームからランダムに選ばれた１人がそのラウンドに参加します。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["各プレイヤーはノックバック付きのダイアモンド剣を所持しています。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["リタイアさせる方法は、フィールド外に落とすか、倒すかになります。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["フィールド中央にはエフェクトがランダムで発生しており、"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["有利になるエフェクトと不利になるエフェクトがあります。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["他のチームの競技参加者を全員倒せば、次のラウンドが始まります。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
+
+# フェンシングの説明
+data modify storage lang battle.descNum set value 7
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["= フェンシング ="]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式で２人ずつ戦う競技です。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["試合が始まると、鉄の剣が渡され、カウントダウンが始まります。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["カウントダウン中にも攻撃可能ですが、攻撃すると敗北します。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、先に相手に攻撃を与えた選手が勝利します。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式ですので、勝った方だけが次のラウンドに進めます。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'

@@ -1,7 +1,5 @@
 # フィールドロード
-forceload add 1045 -1332 1073 -1360
 clone 0 1 0 32 8 32 1045 32 -1360
-forceload remove 1045 -1332 1073 -1360
 
 ## ロードの成功フラグ
 #scoreboard players set $load _ 0
