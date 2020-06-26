@@ -28,25 +28,3 @@ scoreboard players set @p[scores={_ID=6}] _GP 30
 scoreboard players set @p[scores={_ID=4}] _GP 31
 scoreboard players set @p[scores={_ID=8}] _GP 40
 scoreboard players set @p[scores={_ID=2}] _GP 41
-
-## もしグループnに二人いるならGPがnの二人をplayにして実行
-scoreboard players set $gp _ 0
-execute unless entity @p[predicate=util:play] run scoreboard players operation $gp _ += @a[scores={_GP=1}] JOIN
-execute if score $gp _ matches 2 run scoreboard players set @a[scores={_GP=1}] PLAY 1
-
-scoreboard players set $gp _ 0
-execute unless entity @p[predicate=util:play] run scoreboard players operation $gp _ += @a[scores={_GP=2}] JOIN
-execute if score $gp _ matches 2 run scoreboard players set @a[scores={_GP=2}] PLAY 1
-
-scoreboard players set $gp _ 0
-execute unless entity @p[predicate=util:play] run scoreboard players operation $gp _ += @a[scores={_GP=3}] JOIN
-execute if score $gp _ matches 2 run scoreboard players set @a[scores={_GP=3}] PLAY 1
-
-scoreboard players set $gp _ 0
-execute unless entity @p[predicate=util:play] run scoreboard players operation $gp _ += @a[scores={_GP=4}] JOIN
-execute if score $gp _ matches 2 run scoreboard players set @a[scores={_GP=4}] PLAY 1
-
-## もし各グループに一人しかいないなら次に進める
-execute unless entity @p[predicate=util:play] run schedule function fenc:game/priv/next-round 1t
-
-execute if entity @p[predicate=util:play] run function fenc:sys/main

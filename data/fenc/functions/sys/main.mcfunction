@@ -3,6 +3,9 @@
 scoreboard players reset * _ATTACK
 scoreboard players reset * _DAMAGE
 
+## 選手をTPする
+function fenc:sys/priv/setting-position
+
 ## 選手に剣を持たせる
 give @a[predicate=util:play] iron_sword{Enchantments:[{id:"minecraft:knockback",lvl:100}]}
 
