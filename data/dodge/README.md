@@ -1,7 +1,7 @@
 # ドッヂボール
 
 ## Storage設定
-main {game:dodge,join:3,team:true}
+main {game:dodge,join:3,team:true,score:time}
 
 ## 全体の流れ
 ### 初期化

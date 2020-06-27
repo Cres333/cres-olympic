@@ -1,7 +1,7 @@
 # 勝ち抜き戦
 
 ## Storage設定
-main {game:battle,join:3,team:true}
+main {game:battle,join:3,team:true,score:point}
 
 ## 全体の流れ
 ### 初期化

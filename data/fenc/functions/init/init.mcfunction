@@ -3,7 +3,7 @@
 function util:term/reset-common
 
 ## ゲームモード設定
-data merge storage main {game:fenc,join:2,team:false}
+data merge storage main {game:fenc,join:2,team:false,score:point}
 
 ## スコア設定
 scoreboard objectives add _ID dummy "背番号"

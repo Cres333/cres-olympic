@@ -1,7 +1,7 @@
 # クレー射撃
 
 ## Storage設定
-main {game:clay,join:2,team:false}
+main {game:clay,join:2,team:false,score:point}
 
 ## 全体の流れ
 ### 初期化

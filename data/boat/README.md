@@ -1,7 +1,7 @@
 # ボート
 
 ## Storage設定
-main {game:boat,join:2,team:false}
+main {game:boat,join:2,team:false,score:time}
 
 ## 全体の流れ
 ### 初期化

@@ -1,7 +1,7 @@
 # リレー
 
 ## Storage設定
-main {game:relay,join:4,team:true}
+main {game:relay,join:4,team:true,score:time}
 
 ## 全体の流れ
 ### 初期化

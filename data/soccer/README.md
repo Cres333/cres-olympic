@@ -1,7 +1,7 @@
 # サッカー
 
 ## Storage設定
-main {game:soccer,join:4,team:true}
+main {game:soccer,join:4,team:true,score:point}
 
 ## 全体の流れ
 ### 初期化

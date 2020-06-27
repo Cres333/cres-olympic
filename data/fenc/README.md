@@ -1,7 +1,7 @@
 # フェンシング
 
 ## Storage設定
-main {game:fenc,join:2,team:false}
+main {game:fenc,join:2,team:false,score:point}
 
 ## 全体の流れ
 ### 初期化
