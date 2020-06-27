@@ -1,9 +1,11 @@
 {
   "condition": "minecraft:location_check",
-  "offsetX": 1006,
-  "offsetY": 31,
-  "offsetZ": -1468,
   "predicate": {
+    "positon": {
+      "x": 1006,
+      "y": 31,
+      "z": -1468
+    },
     "block": {
       "block": "minecraft:redstone_lamp",
       "state": {
