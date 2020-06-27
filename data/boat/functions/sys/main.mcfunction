@@ -1,5 +1,6 @@
 # TODO: ゲームの機構
 ## 初期化
+scoreboard players set $end _ 0
 
 ## 選手をTPする
 function boat:sys/priv/setting-position
