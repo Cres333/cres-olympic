@@ -4,11 +4,11 @@
     "name": "util:play"
   },
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
+    "condition": "minecraft:location_check",
+    "offsetY": -1,
     "predicate": {
-      "vehicle": {
-        "type": "boat"
+      "block": {
+        "block": "gold_block"
       }
     }
   }
