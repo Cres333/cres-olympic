@@ -1,6 +1,4 @@
-# TODO: ゲーム開始
-## 初期化
-
+# ゲーム開始
 ## 背番号を設定
 function boat:game/priv/setting-number
 

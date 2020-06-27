@@ -8,5 +8,8 @@ kill @e[type=item]
 kill @e[type=boat]
 kill @e[type=arrow]
 
-## 次のゲーム
+## PLAYから外す
+scoreboard players reset * PLAY
+
+## ゲーム終了
 function boat:game/next
