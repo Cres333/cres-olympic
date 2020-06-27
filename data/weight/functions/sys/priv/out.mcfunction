@@ -26,7 +26,7 @@ execute as @a[scores={_LIFE=0}] unless score @s _CLICK < $value _CLICK run title
 gamemode spectator @a[scores={_LIFE=0}]
 
 # ライフが0ならPLAYも0にする
-scoreboard players set @a[scores={_LIFE=0}] PLAY 0
+scoreboard players reset @a[scores={_LIFE=0}] PLAY
 
 # ライフのスコアボードから削除
 scoreboard players reset @a[scores={_LIFE=0}] _LIFE

@@ -1,4 +1,4 @@
-# ウェイトリフティング
+# ボート
 
 ## Storage設定
 main {game:weight,join:2,team:false,score:point}
