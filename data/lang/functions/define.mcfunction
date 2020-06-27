@@ -1,7 +1,11 @@
 # 全体
 data remove storage lang util
+## メンバー選択
 data modify storage lang util.select.ng set value '{"text":"[システム] 参加人数が足りていません","color":"red"}'
 data modify storage lang util.select.ok set value '{"text":"[システム] 参加者を確定しました","color":"yellow"}'
+## カウントダウン
+data modify storage lang util.count.num set value '{"translate":"= %s =","with":[{"score": {"name": "$util:count","objective": "_"},"color":"yellow"}]}'
+data modify storage lang util.count.start set value '{"text":"!! START !!","color":"green"}'
 
 # ウェイトリフティングの説明
 data remove storage lang weight

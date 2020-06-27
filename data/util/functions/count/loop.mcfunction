@@ -1,7 +1,7 @@
 # カウントダウン
 ## カウントを表示する
-execute if score $util:count _ matches 1.. run title @a title {"score": {"name": "$util:count","objective": "_"},"color":"yellow"}
-execute if score $util:count _ matches 0 run title @a title {"text":"!! START !!","color":"green"}
+execute if score $util:count _ matches 1.. run title @a title {"interpret":true,"storage":"lang","nbt":"util.count.num"}
+execute if score $util:count _ matches 0 run title @a title {"interpret":true,"storage":"lang","nbt":"util.count.start"}
 
 ## カウントを減らす
 scoreboard players remove $util:count _ 1
