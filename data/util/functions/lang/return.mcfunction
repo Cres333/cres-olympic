@@ -6,3 +6,4 @@ execute if data storage main {game:relay} run function relay:init/select-member
 execute if data storage main {game:dodge} run function dodge:init/select-member
 execute if data storage main {game:battle} run function battle:init/select-member
 execute if data storage main {game:fenc} run function fenc:init/select-member
+execute if data storage main {game:boat} run function boat:init/select-member

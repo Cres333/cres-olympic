@@ -1,0 +1,15 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "util:play"
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "block": "gold_block"
+      }
+    }
+  }
+]

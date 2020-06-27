@@ -6,4 +6,4 @@ scoreboard players reset * SCORE
 scoreboard players reset * _
 
 ## ゲームモード設定
-data merge storage main {game:"",join:0,team:false}
+data merge storage main {game:"",join:0,team:false,score:point}

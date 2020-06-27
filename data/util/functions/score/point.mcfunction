@@ -2,6 +2,9 @@
 ## 初期化
 scoreboard players set $base SCORE 10000
 
+## スコアが時間計算の場合はスコアの内容を逆転させる
+execute if data storage main {score:time} run function util:score/priv/turn-score
+
 ## 最低限参加者には1をプレゼント
 scoreboard players add @a[predicate=util:join] SCORE 1
 

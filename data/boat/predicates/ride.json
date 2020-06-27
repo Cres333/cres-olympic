@@ -1,0 +1,15 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "util:play"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "vehicle": {
+        "type": "boat"
+      }
+    }
+  }
+]

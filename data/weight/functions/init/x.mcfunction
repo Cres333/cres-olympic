@@ -1,5 +1,5 @@
 # ゲームモード設定
-data merge storage main {game:weight,join:2,team:false}
+data merge storage main {game:weight,join:2,team:false,score:point}
 
 # scoreboard 作成
 scoreboard objectives add _CLICK minecraft.used:minecraft.carrot_on_a_stick "クリック数"

@@ -3,7 +3,7 @@
 function util:term/reset-common
 
 ## ゲームモード設定
-data merge storage main {game:battle,join:0,team:true}
+data merge storage main {game:battle,join:0,team:true,score:point}
 
 ## scoreboard 作成
 scoreboard objectives add _R dummy "赤チームの背番号"

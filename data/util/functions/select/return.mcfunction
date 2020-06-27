@@ -18,3 +18,4 @@ execute if data storage main {game:relay} run function relay:game/start
 execute if data storage main {game:dodge} run function dodge:game/start
 execute if data storage main {game:battle} run function battle:game/start
 execute if data storage main {game:fenc} run function fenc:game/start
+execute if data storage main {game:boat} run function boat:game/start
