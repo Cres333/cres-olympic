@@ -11,5 +11,10 @@ scoreboard objectives add _GP dummy "グループ"
 scoreboard objectives add _ATTACK custom:damage_dealt "ダメージを与えた"
 scoreboard objectives add _DAMAGE custom:damage_taken "ダメージを受けた"
 
-## Next: フィールド生成
-function fenc:init/field
+## フィールド生成
+## TODO: フィールド座標
+clone 0 0 0 0 0 0 0 0 0
+
+## 説明の呼び出し
+data modify storage lang temp merge from storage lange fenc
+function util:lang/description

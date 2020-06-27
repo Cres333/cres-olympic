@@ -13,5 +13,10 @@ scoreboard objectives add _G dummy "緑チームの背番号"
 scoreboard objectives add _DEATH deathCount "死亡判定"
 scoreboard objectives add _LOG custom:leave_game "ログアウト判定"
 
-## Next: フィールド生成
-function battle:init/field
+## フィールド生成
+# TODO: フィールド関係座標
+clone 0 0 0 0 0 0 0 0 0
+
+## 説明の呼び出し
+data modify storage lang temp merge from storage lange battle
+function util:lang/description
