@@ -8,8 +8,8 @@ scoreboard players set $now _B 0
 scoreboard players set $now _Y 0
 scoreboard players set $now _G 0
 
-## TODO: 観覧プレイヤーを配置
-gamemode spectator @a
+## プレイヤーTP
+function util:spectator/tp
 
 ## ゲーム開始
 function battle:sys/main
