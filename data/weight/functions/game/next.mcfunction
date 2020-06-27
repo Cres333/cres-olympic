@@ -13,4 +13,4 @@ execute if score $round _ matches 6.. run scoreboard players set $end _ 1
 execute if score $end _ matches 0 run function weight:sys/main
 
 ## ゲーム終了の場合
-execute if score $end _ matches 1 run function weight:term/score
+execute if score $end _ matches 1 run function weight:term/term

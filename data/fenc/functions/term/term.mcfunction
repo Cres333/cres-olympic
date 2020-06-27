@@ -1,6 +1,8 @@
+# スコア/メダル計算
+function util:score/point
+
 # フィールド削除
 # TODO: フィールド座標
-## 競技場を削除
 fill 0 0 0 0 0 0 air
 
 ## スコアボード破棄

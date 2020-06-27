@@ -1,10 +1,9 @@
+# スコア/メダル計算
+function util:score/point
+
 # フィールド削除
 # TODO: フィールド座標
-
-## 白側を削除
 fill 0 0 0 0 0 0 air
-
-## 黒側を削除
 fill 0 0 0 0 0 0 air
 
 # ゲーム設定を削除
