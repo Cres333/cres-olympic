@@ -12,4 +12,4 @@ scoreboard players reset * PLAY
 function relay:game/priv/calc-score
 
 ## 終了処理
-function relay:term/term
+function relay:term

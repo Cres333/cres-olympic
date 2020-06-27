@@ -12,4 +12,4 @@ scoreboard players reset * PLAY
 function swim:game/priv/calc-score
 
 ## 終了処理
-function swim:term/term
+function swim:term

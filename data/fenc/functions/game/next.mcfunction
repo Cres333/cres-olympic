@@ -19,4 +19,4 @@ execute if score $next _ matches 1 if score $retry _ matches 0 run function fenc
 execute if score $next _ matches 1 if score $retry _ matches 1 run schedule function fenc:game/next 1t
 
 ## ゲーム終了の場合
-execute if score $next _ matches 0 run function fenc:term/term
+execute if score $next _ matches 0 run function fenc:term

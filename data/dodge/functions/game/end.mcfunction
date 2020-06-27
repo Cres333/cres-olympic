@@ -15,4 +15,4 @@ scoreboard players operation @a[predicate=util:play] SCORE = $time _
 scoreboard players reset * PLAY
 
 ## 終了処理
-function dodge:term/term
+function dodge:term
