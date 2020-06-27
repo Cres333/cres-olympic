@@ -1,5 +1,6 @@
 # ループ処理
-## TODO: 特定のポイントを通ると特殊な矢をゲット(持ってなかったら)
+## 矢を渡す
+function boat:sys/wait/arrows
 
 ## ボートから降りたら脱落
 execute as @a[predicate=boat:ride] run function boat:sys/priv/out

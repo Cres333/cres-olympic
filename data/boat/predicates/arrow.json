@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "util:play"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{id:\"minecraft:tipped_arrow\"}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "block": "minecraft:gray_banner"
+      }
+    }
+  }
+]

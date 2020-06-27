@@ -7,7 +7,6 @@ effect clear @a
 kill @e[type=item]
 kill @e[type=boat]
 kill @e[type=arrow]
-kill @e[type=spectral_arrow]
 
 ## 次のゲーム
 function boat:game/next
