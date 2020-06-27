@@ -18,4 +18,4 @@ execute if entity @p[scores={_ID=7}] run summon boat 0 0 0
 execute if entity @p[scores={_ID=8}] run summon boat 0 0 0
 
 ## カウントダウン開始
-function boat:sys/priv/count
+function util:count/start

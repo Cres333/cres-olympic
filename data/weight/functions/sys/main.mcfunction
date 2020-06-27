@@ -12,4 +12,4 @@ give @a[predicate=util:play] minecraft:carrot_on_a_stick
 title @a title [{"text":"第"},{"score":{"name":"$round","objective":"_"}},{"text":"試合"}]
 
 ## カウントダウン開始
-schedule function weight:sys/priv/count 5s
+function util:count/start

@@ -13,4 +13,4 @@ give @a[predicate=util:play] iron_sword{Enchantments:[{id:"minecraft:knockback",
 effect give @a[predicate=util:play] speed 100000 1 true
 
 ## カウントダウン開始
-function fenc:sys/priv/count
+function util:count/start

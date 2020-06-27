@@ -15,5 +15,4 @@ bossbar set time players @a
 bossbar set time visible true
 
 ## カウントダウン開始
-scoreboard players set $count _ 5
-function relay:sys/priv/count
+function util:count/start
