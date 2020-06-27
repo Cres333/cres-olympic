@@ -106,12 +106,13 @@ data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式ですので、勝った方だけが次のラウンドに進めます。"]}'
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
-## TODO: ボートの説明
-data modify storage lang boat.descNum set value 7
+## ボートの説明
+data modify storage lang boat.descNum set value 8
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボート ="]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":[""]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":[""]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く１周する競技です。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートにすぐさま乗ってください。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["カウントダウンが後はボートから降りていると脱落になります。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともに弓が渡されます。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技場に盲目の矢が落ちているため、ボートを漕ぎつつ、"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["他のプレイヤーの妨害をしていきましょう。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
