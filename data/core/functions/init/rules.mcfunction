@@ -1,4 +1,4 @@
-# Minecraft の Gamerule 設定一覧 (v1.15)
+# Minecraft の Gamerule 設定一覧 (v1.16)
 
 # チェインコマンドが何個まで一度に実行されるか (functionファイル内のコマンド数含む)
 ## 場合によっては、小さな値に設定されている可能性があるため、最初に実行
@@ -86,6 +86,10 @@ gamerule fallDamage false
 ## 初期値：true
 gamerule fireDamage false
 
+# 中立モブが怒っている状態で対象のプレイヤーが倒れると怒らなくなるかどうか
+## 初期値：true
+gamerule forgiveDeadPlayers true
+
 # プレイヤーが死んでもインベントリのアイテムや経験値を残すかどうか
 ## 体力と空腹値は回復する
 ## 初期値：false
@@ -138,6 +142,10 @@ gamerule spawnRadius 0
 # スペクテイターモードのプレイヤーがチャンクを生成できるかどうか
 ## 初期値：true
 gamerule spectatorsGenerateChunks true
+
+# 怒っている中立モブが、怒っている対象付近のプレイヤーにも攻撃するかどうか
+## 初期値：false
+gamerule universalAnger false
 
 # 難易度を何にするか
 # 値：peaceful | easy | normal | hard
