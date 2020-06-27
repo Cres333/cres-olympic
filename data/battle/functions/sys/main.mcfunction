@@ -14,5 +14,4 @@ function battle:sys/priv/select-player
 function battle:sys/priv/setting-position
 
 ## カウントダウン開始
-scoreboard players set $count _ 5
-function battle:sys/priv/count
+function util:count/start

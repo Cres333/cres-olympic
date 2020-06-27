@@ -12,5 +12,4 @@ scoreboard players set $g SCORE 0
 summon armor_stand 0 0 0 {Small:true,Marker:true,NoGravity:true,Invisible:true,Tags:["ball"]}
 
 ## カウントダウン開始
-scoreboard players set $count _ 5
-function dodge:sys/priv/count
+function util:count/start

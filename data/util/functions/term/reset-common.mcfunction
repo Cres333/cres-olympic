@@ -1,4 +1,9 @@
 # 共通処理のリセット
+## プレイヤー設定
+gamemode spectator @a
+clear @a
+effect clear @a
+
 ## スコアボード削除
 scoreboard players reset * PLAY
 scoreboard players reset * JOIN

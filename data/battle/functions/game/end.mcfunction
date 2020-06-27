@@ -6,4 +6,4 @@ clear @a
 scoreboard players reset * PLAY
 
 ## 終了処理
-function battle:term/score
+function battle:term

@@ -9,4 +9,4 @@ execute unless entity @p[predicate=util:play] run scoreboard players set $end _ 
 execute if score $end _ matches 0 run function boat:sys/main
 
 ## ゲーム終了の場合
-execute if score $end _ matches 1 run function boat:term/score
+execute if score $end _ matches 1 run function boat:term

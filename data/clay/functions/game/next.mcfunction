@@ -15,4 +15,4 @@ execute if score $next _ matches 0 if score $round _ matches 1 run function clay
 execute if score $next _ matches 1 run function clay:sys/main
 
 ## 次の選手がいない場合
-execute if score $next _ matches 0 run function clay:term/score
+execute if score $next _ matches 0 run function clay:term

@@ -14,5 +14,4 @@ give @p[predicate=util:play] crossbow{Enchantments:[{id:"minecraft:multishot",lv
 give @p[predicate=util:play] arrow 15
 
 ## カウントダウン
-scoreboard players set $count _ 5
-function clay:sys/priv/count
+function util:count/start
