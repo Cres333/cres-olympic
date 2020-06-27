@@ -11,8 +11,5 @@ scoreboard players set @a[predicate=util:join] PLAY 1
 # 参加者全員をLIFE=50にする
 scoreboard players set @a[predicate=util:play] _LIFE 50
 
-## プレイヤーTP
-function util:spectator/tp
-
 ## 選手を選ぶ
 function weight:game/next

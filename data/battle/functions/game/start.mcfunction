@@ -8,8 +8,5 @@ scoreboard players set $now _B 0
 scoreboard players set $now _Y 0
 scoreboard players set $now _G 0
 
-## プレイヤーTP
-function util:spectator/tp
-
 ## ゲーム開始
 function battle:sys/main

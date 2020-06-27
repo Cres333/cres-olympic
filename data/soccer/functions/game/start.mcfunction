@@ -5,9 +5,6 @@ function soccer:game/priv/generate-team
 ## チームを選択
 function soccer:game/priv/select-team
 
-## プレイヤーTP
-function util:spectator/tp
-
 ## 各場所に配置
 function soccer:game/priv/setting-position
 

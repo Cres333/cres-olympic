@@ -6,8 +6,5 @@ scoreboard players set $round _ 1
 ## 背番号を設定
 function fenc:game/priv/setting-number
 
-## プレイヤーTP
-function util:spectator/tp
-
 ## 選手を2人選び出す
 function fenc:game/next
