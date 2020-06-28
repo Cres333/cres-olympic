@@ -1,7 +1,4 @@
 # Main Storage
-## デバッグログ: true/false
-data merge storage main {debug:false}
-
 ## プレイモード: only/single/multi
 data merge storage main {mode:only,teamNum:0}
 
