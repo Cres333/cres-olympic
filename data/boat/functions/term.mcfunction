@@ -9,8 +9,6 @@ fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
-fill 0 0 0 0 0 0 air
-fill 0 0 0 0 0 0 air
 
 ## スコアボード破棄
 scoreboard objectives remove _ID
