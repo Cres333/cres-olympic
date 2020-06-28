@@ -14,6 +14,8 @@ clone 0 0 0 0 0 0 0 0 0
 clone 0 0 0 0 0 0 0 0 0
 clone 0 0 0 0 0 0 0 0 0
 clone 0 0 0 0 0 0 0 0 0
+clone 0 0 0 0 0 0 0 0 0
+clone 0 0 0 0 0 0 0 0 0
 
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lange relay
