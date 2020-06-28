@@ -11,5 +11,5 @@ scoreboard objectives remove _GP
 scoreboard objectives remove _ATTACK
 scoreboard objectives remove _DAMAGE
 
-## 共通処理をリセット
-function util:term/reset-common
+## 次のゲーム
+function core:game/next

@@ -19,4 +19,4 @@ function core:play/priv/param/mode
 function core:play/priv/param/game
 
 ## 競技選択処理
-function core:game/start
+function core:game/next

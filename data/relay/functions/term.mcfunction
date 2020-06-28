@@ -17,5 +17,5 @@ scoreboard objectives remove _B
 scoreboard objectives remove _Y
 scoreboard objectives remove _G
 
-## 共通処理をリセット
-function util:term/reset-common
+## 次のゲーム
+function core:game/next
