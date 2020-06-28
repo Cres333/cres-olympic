@@ -7,6 +7,8 @@ fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
 fill 0 0 0 0 0 0 air
+fill 0 0 0 0 0 0 air
+fill 0 0 0 0 0 0 air
 
 ## スケジュールを削除
 schedule clear relay:sys/wait/loop
