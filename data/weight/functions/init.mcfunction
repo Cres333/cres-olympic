@@ -1,7 +1,4 @@
 # 初期化
-## 共通処理の初期化
-function util:term/reset-common
-
 ## ゲームモード設定
 data merge storage main {game:weight,join:2,team:false,score:point}
 

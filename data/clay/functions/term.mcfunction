@@ -9,5 +9,5 @@ fill 0 0 0 0 0 0 air
 scoreboard objectives remove _ID
 scoreboard objectives remove _KILL
 
-## 共通処理をリセット
-function util:term/reset-common
+## 次のゲーム
+function core:game/next

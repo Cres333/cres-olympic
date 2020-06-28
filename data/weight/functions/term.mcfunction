@@ -10,5 +10,5 @@ scoreboard objectives remove _LIFE
 scoreboard objectives remove _SHOW
 scoreboard objectives remove _ID
 
-## 共通処理をリセット
-function util:term/reset-common
+## 次のゲーム
+function core:game/next

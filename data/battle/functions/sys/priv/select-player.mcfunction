@@ -4,6 +4,9 @@ execute unless entity @p[team=b,predicate=util:play] run scoreboard players add 
 execute unless entity @p[team=y,predicate=util:play] run scoreboard players add $now _Y 1
 execute unless entity @p[team=g,predicate=util:play] run scoreboard players add $now _G 1
 
+## ログアウト対策
+scoreboard players reset * PLAY
+
 execute if score $now _R matches 1 run scoreboard players set @p[team=r,scores={_R=1}] PLAY 1
 execute if score $now _R matches 2 run scoreboard players set @p[team=r,scores={_R=2}] PLAY 1
 execute if score $now _R matches 3 run scoreboard players set @p[team=r,scores={_R=3}] PLAY 1

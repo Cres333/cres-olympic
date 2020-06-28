@@ -1,4 +1,14 @@
-# 全体
+# コア
+data remove storage lang core
+## ゲーム開始時
+data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
+data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'
+data modify storage lang core.play.error.team set value '{"text":"[システム] 赤＞青＞黄＞緑の順にチームを構成してください","color":"red"}'
+## ゲーム終了時
+data modify storage lang core.term.message set value '{"text":"[システム] 全競技が終了しました。主催者はこのメッセージをクリックしてください。"}'
+data modify storage lang core.term.finish set value '{"text":"[システム] プレイしていただきありがとうございました。"}'
+
+# 共有
 data remove storage lang util
 ## メンバー選択
 data modify storage lang util.select.ng set value '{"text":"[システム] 参加人数が足りていません","color":"red"}'
