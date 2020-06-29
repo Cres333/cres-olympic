@@ -11,9 +11,8 @@ scoreboard objectives add _USE used:trident "トライデントの利用フラ�
 scoreboard objectives add _COOL dummy "クールダウンの時間"
 
 ## フィールド生成
-## TODO: フィールド座標
-clone 0 0 0 0 0 0 0 0 0
-clone 0 0 0 0 0 0 0 0 0
+clone 0 153 0 30 162 41 1044 32 -1386
+clone 0 165 0 30 174 40 1044 32 -1346
 
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lange swim

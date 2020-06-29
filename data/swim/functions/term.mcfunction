@@ -2,9 +2,8 @@
 function util:score/point
 
 # フィールド削除
-# TODO: フィールド座標
-fill 0 0 0 0 0 0 air
-fill 0 0 0 0 0 0 air
+fill 1044 32 -1386 1074 41 -1346 air
+fill 1044 32 -1346 1074 41 -1306 air
 
 ## スケジュールを削除
 schedule clear swim:sys/wait/loop
