@@ -7,9 +7,8 @@ scoreboard objectives add _ID dummy "背番号"
 scoreboard objectives add _KILL killed:pig "キルカウント"
 
 ## フィールド生成
-## TODO: フィールド座標
-clone 0 0 0 0 0 0 0 0 0
-clone 0 0 0 0 0 0 0 0 0
+clone 0 127 0 16 130 9 1051 32 -1399
+clone 0 127 14 16 128 30 1051 32 -1354
 
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lange clay

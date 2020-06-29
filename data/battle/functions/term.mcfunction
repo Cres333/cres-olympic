@@ -2,8 +2,7 @@
 function util:score/point
 
 # フィールド削除
-# TODO: フィールド座標
-fill 0 0 0 0 0 0 air
+fill 1040 32 -1365 1078 50 -1327 air
 
 ## スケジュールを削除
 schedule clear battle:sys/wait/loop

@@ -9,11 +9,7 @@ scoreboard objectives add _Y dummy "黄チームの背番号"
 scoreboard objectives add _G dummy "緑チームの背番号"
 
 ## フィールド生成
-## TODO: フィールド座標
-clone 0 0 0 0 0 0 0 0 0
-clone 0 0 0 0 0 0 0 0 0
-clone 0 0 0 0 0 0 0 0 0
-clone 0 0 0 0 0 0 0 0 0
+clone 0 134 0 46 142 46 1036 32 -1369
 
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lange dodge

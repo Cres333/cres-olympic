@@ -19,9 +19,8 @@ bossbar set time visible false
 data merge storage soccer {battle:[]}
 
 ## フィールド生成
-## TODO: フィールド座標
-clone 0 0 0 0 0 0 0 0 0
-clone 0 0 0 0 0 0 0 0 0
+clone 0 16 0 69 22 57 1025 32 -1403
+clone 0 29 0 68 35 56 1025 32 -1345
 
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lange soccer
