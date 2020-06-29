@@ -3,6 +3,7 @@ clone 7 1 37 29 5 59 1048 32 -1357
 
 ## それぞれの人数表示用のスコアボードを用意する
 scoreboard objectives add _TEAM dummy ":: チーム参加人数 ::"
+scoreboard objectives setdisplay sidebar _TEAM
 
 ## チーム分け完了用の看板を用意する
 setblock 1048 32 -1348 birch_sign[rotation=4]{Color:"black",Text2:'{"text":"チーム分け完了","bold":true,"clickEvent":{"action": "run_command","value": "/function core:play/finish"}}'}

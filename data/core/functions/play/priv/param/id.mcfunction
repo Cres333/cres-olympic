@@ -50,6 +50,6 @@ team empty y
 team empty g
 
 team join r @a[scores={ID=100..199}]
-team join r @a[scores={ID=200..299}]
-team join r @a[scores={ID=300..399}]
-team join r @a[scores={ID=400..499}]
+team join b @a[scores={ID=200..299}]
+team join y @a[scores={ID=300..399}]
+team join g @a[scores={ID=400..499}]
