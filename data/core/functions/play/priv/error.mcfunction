@@ -20,6 +20,6 @@ execute if score 4:緑チーム _TEAM matches 2.. if score 3:黄チーム _TEAM 
 execute if score 1:赤チーム _TEAM matches 1 if score 2:青チーム _TEAM matches 0 if score 3:黄チーム _TEAM matches 0 if score 4:緑チーム _TEAM matches 0 run scoreboard players set $core:error _ 0
 
 ## エラーメッセージ
-execute if score $core:error _ matches 1 run tellraw @a {"interpret":true,"storage":"lange","nbt":"core.play.error.over"}
-execute if score $core:error _ matches 2 run tellraw @a {"interpret":true,"storage":"lange","nbt":"core.play.error.less"}
-execute if score $core:error _ matches 3 run tellraw @a {"interpret":true,"storage":"lange","nbt":"core.play.error.team"}
+execute if score $core:error _ matches 1 run tellraw @a {"interpret":true,"storage":"lang","nbt":"core.play.error.over"}
+execute if score $core:error _ matches 2 run tellraw @a {"interpret":true,"storage":"lang","nbt":"core.play.error.less"}
+execute if score $core:error _ matches 3 run tellraw @a {"interpret":true,"storage":"lang","nbt":"core.play.error.team"}

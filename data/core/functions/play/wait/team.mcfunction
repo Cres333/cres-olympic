@@ -18,4 +18,4 @@ execute as @a[team=y] run scoreboard players add 3:黄チーム _TEAM 1
 execute as @a[team=g] run scoreboard players add 4:緑チーム _TEAM 1
 
 ## ループ処理
-schedule function core:play/wait/team 10t
+schedule function core:play/wait/team 5t
