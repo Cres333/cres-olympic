@@ -1,4 +1,5 @@
 # 選手をTPする
+## TODO: TP座標
 ## ゲームモード変更
 gamemode adventure @a[predicate=util:play]
 
