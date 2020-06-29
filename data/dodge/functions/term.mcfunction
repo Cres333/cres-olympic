@@ -2,11 +2,7 @@
 function util:score/point
 
 # フィールド削除
-# TODO: フィールド座標
-fill 0 0 0 0 0 0 air
-fill 0 0 0 0 0 0 air
-fill 0 0 0 0 0 0 air
-fill 0 0 0 0 0 0 air
+fill 1036 32 -1369 1082 40 -1323 air
 
 ## スケジュールを削除
 schedule clear dodge:sys/wait/loop
