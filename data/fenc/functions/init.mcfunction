@@ -9,8 +9,7 @@ scoreboard objectives add _ATTACK custom:damage_dealt "ダメージを与えた"
 scoreboard objectives add _DAMAGE custom:damage_taken "ダメージを受けた"
 
 ## フィールド生成
-## TODO: フィールド座標
-clone 0 0 0 0 0 0 0 0 0
+clone 0 146 0 6 149 44 1056 32 -1368
 
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lange fenc

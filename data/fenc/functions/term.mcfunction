@@ -2,8 +2,7 @@
 function util:score/point
 
 # フィールド削除
-# TODO: フィールド座標
-fill 0 0 0 0 0 0 air
+fill 1056 32 -1368 1062 35 -1324 air
 
 ## スコアボード破棄
 scoreboard objectives remove _ID
