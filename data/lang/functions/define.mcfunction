@@ -13,7 +13,7 @@ data modify storage lang core.term.finish set value '{"text":"[システム] プ
 data remove storage lang util
 ## メンバー選択
 data modify storage lang util.select.ng set value '{"text":"[システム] 参加人数が足りていません","color":"red"}'
-data modify storage lang util.select.ok set value '{"text":"[システム] 参加者を確定しました","color":"yellow"}'
+data modify storage lang util.select.ok set value '{"translate":"[システム] この競技の選手は %s で確定しました","with":[{"selector":"@a[predicate=util:join,scores={_TICKET=1}]"}]}'
 ## カウントダウン
 data modify storage lang util.count.num set value '{"translate":"= %s =","with":[{"score": {"name": "$util:count","objective": "_"},"color":"yellow"}]}'
 data modify storage lang util.count.start set value '{"text":"!! START !!","color":"green"}'
