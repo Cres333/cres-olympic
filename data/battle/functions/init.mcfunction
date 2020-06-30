@@ -14,5 +14,5 @@ scoreboard objectives add _LOG custom:leave_game "ログアウト判定"
 clone 0 42 0 38 60 38 1040 32 -1365
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange battle
+data modify storage lang temp merge from storage lang battle
 function util:lang/description

@@ -16,5 +16,5 @@ clone 54 42 0 60 65 44 1056 32 -1368
 time set 22000
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange fenc
+data modify storage lang temp merge from storage lang fenc
 function util:lang/description

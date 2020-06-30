@@ -12,5 +12,5 @@ scoreboard objectives add _G dummy "緑チームの背番号"
 clone 0 134 0 46 142 46 1036 32 -1369
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange dodge
+data modify storage lang temp merge from storage lang dodge
 function util:lang/description

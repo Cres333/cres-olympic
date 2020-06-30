@@ -11,5 +11,5 @@ clone 0 127 0 16 130 9 1051 32 -1399
 clone 0 127 14 16 128 30 1051 32 -1354
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange clay
+data modify storage lang temp merge from storage lang clay
 function util:lang/description
