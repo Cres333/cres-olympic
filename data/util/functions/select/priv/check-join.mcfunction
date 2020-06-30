@@ -16,8 +16,8 @@ execute if score $sum _TICKET < $num _TICKET run function util:select/priv/less
 execute if score $sum _TICKET = $num _TICKET run function util:select/priv/just
 execute if score $sum _TICKET > $num _TICKET run function util:select/priv/over
 
-## 全チームの人数が揃ったら各競技に戻す
-execute if score $teamSum _TICKET >= $teamNum _TICKET run function util:select/return
-
 ## 人数が揃っていなかったらライトを待つ
-execute unless score $teamSum _TICKET >= $teamNum _TICKET run schedule function util:select/wait/light 1t
+scoreboard players set $end _TICKET 0
+
+## 全チームの人数が揃ったら各競技に戻す
+execute if score $teamSum _TICKET >= $teamNum _TICKET run scoreboard players set $end _TICKET 1
