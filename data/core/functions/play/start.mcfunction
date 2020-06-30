@@ -1,6 +1,7 @@
 ## 初期化
 function storage:settings/game
 function storage:settings/score
+function storage:settings/id
 function core:init/score
 function core:init/teams
 
