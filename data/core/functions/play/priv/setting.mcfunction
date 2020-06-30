@@ -2,6 +2,7 @@
 ## 初期化
 function storage:settings/game
 function storage:settings/score
+function storage:settings/id
 scoreboard players set $core:teamNum _ 0
 scoreboard players set $core:rNum _ 0
 scoreboard players set $core:bNum _ 0

@@ -17,5 +17,5 @@ clone 0 210 0 19 216 98 1090 32 -1395
 clone 0 218 0 50 224 49 1059 32 -1296
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange relay
+data modify storage lang temp merge from storage lang relay
 function util:lang/description

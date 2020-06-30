@@ -53,3 +53,6 @@ team join r @a[scores={ID=100..199}]
 team join b @a[scores={ID=200..299}]
 team join y @a[scores={ID=300..399}]
 team join g @a[scores={ID=400..499}]
+
+## 競技参加数を0にする
+scoreboard players set @a[scores={ID=100..499}] COUNT 0

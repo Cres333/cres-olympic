@@ -14,5 +14,5 @@ clone 0 107 0 21 115 100 1089 32 -1396
 clone 0 117 0 51 124 49 1059 32 -1296
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange boat
+data modify storage lang temp merge from storage lang boat
 function util:lang/description

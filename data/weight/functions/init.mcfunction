@@ -12,5 +12,5 @@ scoreboard objectives add _ID dummy "背番号"
 clone 0 1 0 32 8 32 1045 32 -1360
 
 ## 説明の呼び出し
-data modify storage lang temp merge from storage lange weight
+data modify storage lang temp merge from storage lang weight
 function util:lang/description

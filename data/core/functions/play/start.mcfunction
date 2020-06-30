@@ -1,3 +1,10 @@
+## 初期化
+function storage:settings/game
+function storage:settings/score
+function storage:settings/id
+function core:init/score
+function core:init/teams
+
 ## チーム分けの台を用意する
 clone 7 1 37 29 5 59 1048 32 -1357
 

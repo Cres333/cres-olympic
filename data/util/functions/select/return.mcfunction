@@ -10,6 +10,9 @@ scoreboard players add @a[predicate=util:join] COUNT 1
 ## スコアを追加する
 scoreboard players set @a[predicate=util:join] SCORE 0
 
+## プレイヤーをTP
+function util:spectator/tp
+
 ## メンバー選出後の戻り
 execute if data storage main {game:soccer} run function soccer:game/start
 execute if data storage main {game:swim} run function swim:game/start

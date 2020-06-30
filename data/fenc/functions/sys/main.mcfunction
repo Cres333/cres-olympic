@@ -2,6 +2,7 @@
 ## 初期化
 scoreboard players reset * _ATTACK
 scoreboard players reset * _DAMAGE
+scoreboard players set $end _ 0
 
 ## 選手をTPする
 function fenc:sys/priv/setting-position
