@@ -1,7 +1,7 @@
 # ライトが光るまで待つ
 ## ライトの点灯チェック (まだチームメンバーが確定していないライトのみ)
 scoreboard players set $team _TICKET 0
-scoreboard players set $end _TEAM 0
+scoreboard players set $end _TICKET 0
 
 execute if block 1006 31 -1468 redstone_lamp[lit=true] unless entity @p[team=r,predicate=util:join] run scoreboard players set $team _TICKET 1
 execute if block 1112 31 -1224 redstone_lamp[lit=true] unless entity @p[team=b,predicate=util:join] run scoreboard players set $team _TICKET 2
