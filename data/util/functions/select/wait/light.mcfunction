@@ -7,4 +7,4 @@ execute if predicate util:light/yellow unless entity @p[team=y,predicate=util:jo
 execute if predicate util:light/green unless entity @p[team=g,predicate=util:join] run scoreboard players set $team _TICKET 4
 
 execute if score $team _TICKET matches 1.. run function util:select/priv/check-join
-execute if score $team _TICKET matches 0 run function util:select/wait/light
+execute if score $team _TICKET matches 0 run schedule function util:select/wait/light 1s
