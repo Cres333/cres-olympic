@@ -20,4 +20,4 @@ execute if score $sum _TICKET > $num _TICKET run function util:select/priv/over
 execute if score $teamSum _TICKET >= $teamNum _TICKET run function util:select/return
 
 ## 人数が揃っていなかったらライトを待つ
-execute unless score $teamSum _TICKET >= $teamNum _TICKET run function util:select/wait/light
+execute unless score $teamSum _TICKET >= $teamNum _TICKET run schedule function util:select/wait/light 1t
