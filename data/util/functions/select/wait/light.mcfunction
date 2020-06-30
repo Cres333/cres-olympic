@@ -1,4 +1,7 @@
 # ライトが光るまで待つ
+## 捨てた紙を削除
+kill @e[type=item]
+
 ## ライトの点灯チェック (まだチームメンバーが確定していないライトのみ)
 scoreboard players set $team _TICKET 0
 scoreboard players set $end _TICKET 0
@@ -10,5 +13,5 @@ execute if block 987 31 -1243 redstone_lamp[lit=true] unless entity @p[team=g,pr
 
 execute if score $team _TICKET matches 1.. run function util:select/priv/check-join
 
-execute if score $end _TICKET matches 0 run schedule function util:select/wait/light 1s
+execute if score $end _TICKET matches 0 run schedule function util:select/wait/light 5t
 execute if score $end _TICKET matches 1 run schedule function util:select/return 3s
