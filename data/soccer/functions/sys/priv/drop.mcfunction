@@ -9,7 +9,7 @@ kill @e[type=snowball]
 summon snowball 1058 60 -1345
 
 ## ボールを落とす
-execute at @p[scores={_HAS=1}] run spreadplayers ~ ~ 3 3 false @e[type=snowball]
+execute at @p[scores={_HAS=1}] run spreadplayers ~ ~ 1 3 false @e[type=snowball]
 execute as @e[type=snowball] at @s run tp @s ~ 35 ~
 
 ## ボール持っている判定を消す
