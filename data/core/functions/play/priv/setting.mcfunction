@@ -19,5 +19,8 @@ function core:play/priv/param/mode
 ## ストレージに競技を設定
 function core:play/priv/param/game
 
+## 参加数をリストに表示する
+scoreboard objectives setdisplay list COUNT
+
 ## 競技選択処理
 function core:game/next

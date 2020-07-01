@@ -15,3 +15,18 @@ scoreboard players set @e[tag=m] GOLD 0
 scoreboard players set @e[tag=m] SILVER 0
 scoreboard players set @e[tag=m] BRONZE 0
 scoreboard players set @e[tag=m] POINT 0
+
+scoreboard players set $r GOLD 0
+scoreboard players set $b GOLD 0
+scoreboard players set $y GOLD 0
+scoreboard players set $g GOLD 0
+
+scoreboard players set $r SILVER 0
+scoreboard players set $b SILVER 0
+scoreboard players set $y SILVER 0
+scoreboard players set $g SILVER 0
+
+scoreboard players set $r BRONZE 0
+scoreboard players set $b BRONZE 0
+scoreboard players set $y BRONZE 0
+scoreboard players set $g BRONZE 0

@@ -10,6 +10,9 @@ scoreboard players add @a[predicate=util:join] COUNT 1
 ## スコアを追加する
 scoreboard players set @a[predicate=util:join] SCORE 0
 
+## スコアをリストに表示する
+scoreboard objectives setdisplay list SCORE
+
 ## プレイヤーをTP
 function util:spectator/tp
 
