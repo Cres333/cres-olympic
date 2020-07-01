@@ -130,6 +130,10 @@ data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式ですので、勝った方だけが次のラウンドに進めます。"]}'
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
+data modify storage lang fenc.round append value '{"translate":"一回戦 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
+data modify storage lang fenc.round append value '{"translate":"二回戦 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
+data modify storage lang fenc.round append value '{"translate":"決勝戦 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
+
 data modify storage lang fenc.count.attack set value '{"translate":"[実況] %s 選手がフライングで失格！！","with":[{"selector":"@a[predicate=util:play,scores={_ATTACK=1..}]"}]}'
 data modify storage lang fenc.win set value '{"translate":"[実況] %s 選手が吹き飛ばした！勝利です！","with":[{"selector":"@a[predicate=util:play,scores={_DAMAGE=0}]"}]}'
 
