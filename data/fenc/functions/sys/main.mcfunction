@@ -15,3 +15,6 @@ effect give @a[predicate=util:play] speed 100000 1 true
 
 ## カウントダウン開始
 function util:count/start
+
+## カウントダウン中の攻撃判定
+function fenc:sys/wait/count
