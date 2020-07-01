@@ -9,7 +9,7 @@ function fenc:sys/priv/setting-position
 give @a[predicate=util:play] iron_sword{Enchantments:[{id:"minecraft:knockback",lvl:100}]}
 
 ## スピード上昇エフェクトをかける
-effect give @e[predicate=util:play] speed 100000 5 true
+effect give @a[predicate=util:play] speed 100000 5 true
 
 ## 何回戦かの表示
 title @a times 10 80 10
