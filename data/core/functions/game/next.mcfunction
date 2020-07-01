@@ -4,6 +4,9 @@ function util:term/reset-common
 scoreboard objectives add _NEXT dummy
 scoreboard players set $game _NEXT 0
 
+## 満腹度回復
+effect give @a saturation 1 255 true
+
 ## 先頭の競技を取得する
 function core:game/priv/get
 
