@@ -1,7 +1,7 @@
 # カウントダウン
 ## カウントを減らす
 scoreboard players remove $util:count _ 1
-title @a times 0 2 0
+title @a times 0 40 0
 
 ## カウントを表示する
 execute if score $util:count _ matches 1.. run title @a title {"interpret":true,"storage":"lang","nbt":"util.count.num"}
