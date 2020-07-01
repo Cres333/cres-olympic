@@ -3,7 +3,7 @@
 scoreboard players set $most SCORE -1
 
 ## 金メダルを配分
-execute as @a[predicate=util:join] run scoreboard players operation $most SCORE < @s SCORE
+execute as @a[predicate=util:join] run scoreboard players operation $most SCORE > @s SCORE
 ### 個人に金メダル配分
 execute if score $most SCORE = @p[team=r,predicate=util:join] SCORE run scoreboard players set @a[team=r,predicate=util:join] _MEDAL 1
 execute if score $most SCORE = @p[team=b,predicate=util:join] SCORE run scoreboard players set @a[team=b,predicate=util:join] _MEDAL 1
@@ -24,7 +24,7 @@ scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
 scoreboard players set $most SCORE -1
 
 ## 銀メダルを配分 (1人以上残っていれば)
-execute if score $remainMedal _MEDAL matches 1.. as @a[predicate=util:join] run scoreboard players operation $most SCORE < @s SCORE
+execute if score $remainMedal _MEDAL matches 1.. as @a[predicate=util:join] run scoreboard players operation $most SCORE > @s SCORE
 ### 個人に金メダル配分
 execute if score $most SCORE = @p[team=r,predicate=util:join] SCORE run scoreboard players set @a[team=r,predicate=util:join] _MEDAL 2
 execute if score $most SCORE = @p[team=b,predicate=util:join] SCORE run scoreboard players set @a[team=b,predicate=util:join] _MEDAL 2
@@ -45,7 +45,7 @@ scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
 scoreboard players set $most SCORE -1
 
 ## 銅メダルを配分 (1人以上残っていれば)
-execute if score $remainMedal _MEDAL matches 1.. as @a[predicate=util:join] run scoreboard players operation $most SCORE < @s SCORE
+execute if score $remainMedal _MEDAL matches 1.. as @a[predicate=util:join] run scoreboard players operation $most SCORE > @s SCORE
 ### 個人に金メダル配分
 execute if score $most SCORE = @p[team=r,predicate=util:join] SCORE run scoreboard players set @a[team=r,predicate=util:join] _MEDAL 3
 execute if score $most SCORE = @p[team=b,predicate=util:join] SCORE run scoreboard players set @a[team=b,predicate=util:join] _MEDAL 3
