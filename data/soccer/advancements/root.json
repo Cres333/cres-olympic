@@ -1,0 +1,14 @@
+{
+  "display": {
+      "title": "soccer",
+      "description": "",
+      "icon": {
+          "item": "air"
+      }
+  },
+  "criteria": {
+      "": {
+          "trigger": "minecraft:impossible"
+      }
+  }
+}

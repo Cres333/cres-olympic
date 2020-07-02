@@ -2,6 +2,11 @@
 ## ゲームモードを変更
 gamemode spectator @a
 kill @e[tag=ball]
+kill @e[type=snowball]
+clear @a
+
+## エフェクト削除
+effect clear @a
 
 ## タイマーの表示を消す
 bossbar set time visible false

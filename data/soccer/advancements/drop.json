@@ -1,0 +1,39 @@
+{
+  "parent": "soccer:root",
+  "display": {
+      "title": "drop",
+      "description": "",
+      "icon": {
+          "item": "air"
+      },
+      "show_toast": false,
+      "announce_to_chat": false
+  },
+  "criteria": {
+    "damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "direct_entity": {
+            "equipment": {
+              "mainhand": "minecraft:lead"
+            }
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "_HAS": 0,
+              "PLAY": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+      "function": "soccer:sys/event/drop"
+  }
+}

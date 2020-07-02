@@ -1,5 +1,5 @@
 # ボールを持っていた人のエフェクトを消す
-effect clear @p[scores={_HAS=1}] slowness
+effect clear @p[scores={_HAS=1}]
 
 # ボールを持っていた人にクールダウン発生
 scoreboard players set @a[scores={_HAS=1}] _COOL 40
