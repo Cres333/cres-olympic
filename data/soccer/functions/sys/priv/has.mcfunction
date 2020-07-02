@@ -18,7 +18,7 @@ execute if score $ret _ matches 1.. as @a[scores={_HAS=0}] run give @s lead
 execute if score $ret _ matches 1.. as @p[scores={_HAS=1}] run effect give @s slowness 1000000 0 true
 
 ## ボールを持っていないプレイヤーにエフェクトを掛ける
-execute if score $ret _ matches 1.. as @a[scores={_HAS=0}] run effect give @s speed 1000000 0 true
+execute if score $ret _ matches 1.. as @a[scores={_HAS=0}] run effect give @s speed 1000000 2 true
 
 ## 結果を破棄
 scoreboard players reset $ret _
