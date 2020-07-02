@@ -2,7 +2,7 @@
 function util:score/point
 
 # フィールド削除
-fill 1045 32 -1332 1073 40 -1360 air
+fill 1043 32 -1362 1075 36 -1330 air
 
 ## スコアボード破棄
 scoreboard objectives remove _CLICK

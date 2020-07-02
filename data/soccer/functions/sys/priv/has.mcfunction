@@ -1,4 +1,7 @@
 # ボールを拾う
+## ボールに追加のエフェクトを掛ける
+particle minecraft:dragon_breath ~ ~ ~ 0 2 0 0 10
+
 ## ボールを持っているプレイヤーを検知
 execute store success score $ret _ run scoreboard players set @p[distance=..1,scores={_COOL=0}] _HAS 1
 
