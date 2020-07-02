@@ -23,9 +23,9 @@ execute if data storage soccer {now:{b:green}} run scoreboard players set @a[tea
 scoreboard players set @a[scores={_B=1}] PLAY 1
 
 ## 背番号を設定
-scoreboard players add @a[scores={_W=1},limit=3] _W 1
-scoreboard players add @a[scores={_W=1},limit=2] _W 1
 scoreboard players add @a[scores={_W=1},limit=1] _W 1
-scoreboard players add @a[scores={_B=1},limit=3] _B 1
-scoreboard players add @a[scores={_B=1},limit=2] _B 1
+scoreboard players add @a[scores={_W=1},limit=1] _W 2
+scoreboard players add @a[scores={_W=1},limit=1] _W 3
 scoreboard players add @a[scores={_B=1},limit=1] _B 1
+scoreboard players add @a[scores={_B=1},limit=1] _B 2
+scoreboard players add @a[scores={_B=1},limit=1] _B 3
