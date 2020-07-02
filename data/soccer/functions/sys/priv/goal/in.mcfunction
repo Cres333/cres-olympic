@@ -18,7 +18,7 @@ execute if score $isW _ matches 1 run scoreboard players set @a[scores={_B=1..}]
 execute if score $isB _ matches 1 run scoreboard players set @a[scores={_W=1..}] _COOL 60
 
 # ポジションリセット
-function soccer:game/priv/setting-position
+function soccer:sys/priv/setting-position
 
 # ボールを中央に戻す
 scoreboard players set $cornor _ 1
