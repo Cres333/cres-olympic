@@ -11,5 +11,5 @@ function soccer:sys/wait/player
 function soccer:sys/wait/time
 
 ## ゲーム終了
-execute if score $time _ matches ..0 run function soccer:game/next
+execute if score $time _ matches ..0 run function soccer:sys/priv/end
 execute unless score $time _ matches ..0 run schedule function soccer:sys/wait/loop 1t

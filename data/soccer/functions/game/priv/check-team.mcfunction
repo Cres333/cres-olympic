@@ -12,4 +12,4 @@ execute if score $team _ matches 5 run data modify storage soccer now set from s
 execute if score $team _ matches 6 run data modify storage soccer now set from storage soccer battle[6]
 
 ## 次のチームがいるかチェック
-execute unless data storage soccer {now:{w:empty}} run scoreboard players set $nextTeam _ 1
+execute unless data storage soccer {now:{w:empty}} run scoreboard players set $end _ 1
