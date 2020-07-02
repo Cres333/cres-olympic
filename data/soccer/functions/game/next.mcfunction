@@ -1,6 +1,7 @@
 # 次の処理
 ## ゲームモードを変更
 gamemode spectator @a
+kill @e[tag=ball]
 
 ## タイマーの表示を消す
 bossbar set time visible false

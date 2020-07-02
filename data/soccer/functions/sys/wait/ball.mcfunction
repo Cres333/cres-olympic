@@ -13,3 +13,4 @@ execute as @e[tag=ball] at @s run tp @s ~ ~ ~ ~10 ~
 
 ## ボールにエフェクトを付ける
 execute at @e[tag=ball] run particle happy_villager ~ ~1.5 ~ 0 0 0 0 1 force
+effect give @e[tag=ball] minecraft:invisibility 1000000 1 true
