@@ -1,6 +1,5 @@
 # ゲームの機構
 ## 初期化
-scoreboard players reset * _
 scoreboard players reset * _HAS
 scoreboard players reset * _COOL
 scoreboard players set $w _ 0
