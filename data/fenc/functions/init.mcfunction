@@ -10,7 +10,6 @@ scoreboard objectives add _DAMAGE custom:damage_taken "ダメージを受けた"
 
 ## フィールド生成
 clone 54 42 0 60 65 44 1056 32 -1368
-## return: clone 1056 32 -1368 1062 55 -1324 54 42 0
 
 ## 時間変更
 time set 22000
