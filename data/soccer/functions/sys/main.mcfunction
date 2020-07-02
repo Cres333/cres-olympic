@@ -14,5 +14,8 @@ execute store result bossbar time value run scoreboard players get $time _
 bossbar set time players @a
 bossbar set time visible true
 
+## ポジションTP
+function soccer:game/priv/setting-position
+
 ## カウントダウン開始
 function util:count/start
