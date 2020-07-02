@@ -1,4 +1,4 @@
-# ボールを落とした時の処理
+# イベント検知
 ## クールダウン発生
 scoreboard players set @a[predicate=util:play] _COOL 0
 scoreboard players set @a[scores={_HAS=1}] _COOL 60
@@ -14,3 +14,6 @@ execute as @e[type=snowball] at @s run tp @s ~ 35 ~
 
 ## ボール持っている判定を消す
 scoreboard players set @a[predicate=util:play] _HAS 0
+
+## イベント削除
+advancement revoke @a only soccer:drop
