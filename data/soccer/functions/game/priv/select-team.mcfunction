@@ -26,6 +26,6 @@ scoreboard players set @a[scores={_B=1}] PLAY 1
 scoreboard players add @a[scores={_W=1},limit=3] _W 1
 scoreboard players add @a[scores={_W=1},limit=2] _W 1
 scoreboard players add @a[scores={_W=1},limit=1] _W 1
-scoreboard players add @a[scores={_B=1},limit=3] _W 1
-scoreboard players add @a[scores={_B=1},limit=2] _W 1
-scoreboard players add @a[scores={_B=1},limit=1] _W 1
+scoreboard players add @a[scores={_B=1},limit=3] _B 1
+scoreboard players add @a[scores={_B=1},limit=2] _B 1
+scoreboard players add @a[scores={_B=1},limit=1] _B 1
