@@ -9,4 +9,4 @@ title @a[predicate=swim:3] title {"interpret":true,"nbt":"swim.player[3]","stora
 title @a[predicate=swim:4] title {"interpret":true,"nbt":"swim.player[4]","storage":"lang"}
 
 ## カウントダウン開始
-function util:count/start
+schedule function util:count/start 3s
