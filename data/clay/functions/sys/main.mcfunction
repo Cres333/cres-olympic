@@ -6,8 +6,7 @@ scoreboard players set $summon _ 0
 scoreboard players reset * _KILL
 
 ## 選手を配置
-## TODO: TP座標
-tp @p[predicate=util:play] 0 0 0 0 0
+tp @p[predicate=util:play] 1059 33 -1346 180 0
 
 ## クロスボウと矢を渡す
 give @p[predicate=util:play] crossbow{Enchantments:[{id:"minecraft:multishot",lvl:1},{id:"minecraft:quick_charge",lvl:5}]}

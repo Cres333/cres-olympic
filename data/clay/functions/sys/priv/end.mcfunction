@@ -8,5 +8,8 @@ kill @e[type=item]
 kill @e[type=pig]
 kill @e[type=arrow]
 
+## PLAYから除外
+scoreboard players reset * PLAY
+
 ## 次の選手へ
 function clay:game/next
