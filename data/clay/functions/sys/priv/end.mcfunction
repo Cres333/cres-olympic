@@ -3,7 +3,7 @@
 gamemode spectator @p[predicate=util:play]
 
 ## キルカウントをスコアへ置き換え
-execute as @p[predicate=util:play] run scoreboard players operation @s SCORE < @s _KILL
+execute as @p[predicate=util:play] run scoreboard players operation @s SCORE > @s _KILL
 
 ## 会場を掃除
 clear @a
