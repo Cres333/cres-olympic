@@ -3,7 +3,7 @@
 scoreboard players set $end _ 0
 
 ## エフェクト追加
-effect give @a[predicate=util:play] water_breathing 1000000 0 true
+effect give @a[predicate=util:join] water_breathing 1000000 0 true
 
 ## 各プレイヤーの順番を表示
 title @a[predicate=swim:1] title {"interpret":true,"nbt":"swim.player[1]","storage":"lang"}
