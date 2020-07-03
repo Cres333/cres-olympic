@@ -1,9 +1,6 @@
 # 次の選手の準備
-## アイテム削除
-clear @a
-
-## PLAYから除外
-scoreboard players reset * PLAY
+## 初期化
+scoreboard players set $next _ 0
 
 ## 次の選手の選択
 function clay:game/priv/next-player
