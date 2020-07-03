@@ -14,3 +14,6 @@ schedule clear battle:sys/wait/effect
 
 ## PLAYとなっているプレイヤーにスコア追加
 scoreboard players add @a[predicate=util:play] SCORE 10
+
+## 次の試合
+function battle:game/next
