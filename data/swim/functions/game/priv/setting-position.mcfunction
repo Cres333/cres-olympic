@@ -1,6 +1,6 @@
 # 各場所に配置
 ## ゲームモード変更
-gamemode adventure @a[predicate=util:play]
+gamemode adventure @a[predicate=util:join]
 
 ## 第１レーン
 tp @p[scores={_R=1}] 1063.0 36 -1308 180 0
