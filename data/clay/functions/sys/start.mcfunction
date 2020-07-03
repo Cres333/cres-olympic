@@ -1,3 +1,3 @@
 # 開始処理
-function clay:sys/wait/loop
+schedule function clay:sys/wait/loop 3s
 function clay:sys/wait/error
