@@ -8,6 +8,7 @@ execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ red_wool 
 execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ blue_wool run summon fireball 1064 35 -1341 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:2}
 execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ yellow_wool run summon fireball 1054 35 -1341 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:2}
 execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ green_wool run summon fireball 1064 35 -1351 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:2}
+execute if score $notfound _ matches 1 as @e[type=fireball] run data modify entity @s power set value [0.0,0.0,0.0]
 
 scoreboard players set $notfound _ 0
 
