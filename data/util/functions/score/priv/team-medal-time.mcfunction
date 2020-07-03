@@ -1,12 +1,12 @@
 # チーム戦のメダル
 ## 初期化
-scoreboard players set $most SCORE -1
+scoreboard players set $most SCORE 10000000
 
 ## 金メダルを配分
-execute if score $r SCORE matches 1.. run scoreboard players operation $most SCORE > $r SCORE
-execute if score $b SCORE matches 1.. run scoreboard players operation $most SCORE > $b SCORE
-execute if score $y SCORE matches 1.. run scoreboard players operation $most SCORE > $y SCORE
-execute if score $g SCORE matches 1.. run scoreboard players operation $most SCORE > $g SCORE
+execute if score $r SCORE matches 1.. run scoreboard players operation $most SCORE < $r SCORE
+execute if score $b SCORE matches 1.. run scoreboard players operation $most SCORE < $b SCORE
+execute if score $y SCORE matches 1.. run scoreboard players operation $most SCORE < $y SCORE
+execute if score $g SCORE matches 1.. run scoreboard players operation $most SCORE < $g SCORE
 ### 金メダルを得る対象チーム選別
 execute if score $most SCORE = $r SCORE run scoreboard players set @a[team=r,predicate=util:join] _MEDAL 1
 execute if score $most SCORE = $b SCORE run scoreboard players set @a[team=b,predicate=util:join] _MEDAL 1
@@ -28,13 +28,13 @@ execute if entity @p[team=b,scores={_MEDAL=1}] run scoreboard players reset $b S
 execute if entity @p[team=y,scores={_MEDAL=1}] run scoreboard players reset $y SCORE
 execute if entity @p[team=g,scores={_MEDAL=1}] run scoreboard players reset $g SCORE
 scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
-scoreboard players set $most SCORE -1
+scoreboard players set $most SCORE 10000000
 
 ## 銀メダルを配分
-execute if score $remainMedal _MEDAL matches 1.. if score $r SCORE matches 1.. run scoreboard players operation $most SCORE > $r SCORE
-execute if score $remainMedal _MEDAL matches 1.. if score $b SCORE matches 1.. run scoreboard players operation $most SCORE > $b SCORE
-execute if score $remainMedal _MEDAL matches 1.. if score $y SCORE matches 1.. run scoreboard players operation $most SCORE > $y SCORE
-execute if score $remainMedal _MEDAL matches 1.. if score $g SCORE matches 1.. run scoreboard players operation $most SCORE > $g SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $r SCORE matches 1.. run scoreboard players operation $most SCORE < $r SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $b SCORE matches 1.. run scoreboard players operation $most SCORE < $b SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $y SCORE matches 1.. run scoreboard players operation $most SCORE < $y SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $g SCORE matches 1.. run scoreboard players operation $most SCORE < $g SCORE
 ### 銀メダルを得る対象チーム選別
 execute if score $most SCORE = $r SCORE run scoreboard players set @a[team=r,predicate=util:join] _MEDAL 2
 execute if score $most SCORE = $b SCORE run scoreboard players set @a[team=b,predicate=util:join] _MEDAL 2
@@ -56,13 +56,13 @@ execute if entity @p[team=b,scores={_MEDAL=2}] run scoreboard players reset $b S
 execute if entity @p[team=y,scores={_MEDAL=2}] run scoreboard players reset $y SCORE
 execute if entity @p[team=g,scores={_MEDAL=2}] run scoreboard players reset $g SCORE
 scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
-scoreboard players set $most SCORE -1
+scoreboard players set $most SCORE 10000000
 
 ## 銅メダルを配分
-execute if score $remainMedal _MEDAL matches 1.. if score $r SCORE matches 1.. run scoreboard players operation $most SCORE > $r SCORE
-execute if score $remainMedal _MEDAL matches 1.. if score $b SCORE matches 1.. run scoreboard players operation $most SCORE > $b SCORE
-execute if score $remainMedal _MEDAL matches 1.. if score $y SCORE matches 1.. run scoreboard players operation $most SCORE > $y SCORE
-execute if score $remainMedal _MEDAL matches 1.. if score $g SCORE matches 1.. run scoreboard players operation $most SCORE > $g SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $r SCORE matches 1.. run scoreboard players operation $most SCORE < $r SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $b SCORE matches 1.. run scoreboard players operation $most SCORE < $b SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $y SCORE matches 1.. run scoreboard players operation $most SCORE < $y SCORE
+execute if score $remainMedal _MEDAL matches 1.. if score $g SCORE matches 1.. run scoreboard players operation $most SCORE < $g SCORE
 ### 銅メダルを得る対象チーム選別
 execute if score $most SCORE = $r SCORE run scoreboard players set @a[team=r,predicate=util:join] _MEDAL 3
 execute if score $most SCORE = $b SCORE run scoreboard players set @a[team=b,predicate=util:join] _MEDAL 3
@@ -84,7 +84,7 @@ execute if entity @p[team=b,scores={_MEDAL=3}] run scoreboard players reset $b S
 execute if entity @p[team=y,scores={_MEDAL=3}] run scoreboard players reset $y SCORE
 execute if entity @p[team=g,scores={_MEDAL=3}] run scoreboard players reset $g SCORE
 scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
-scoreboard players set $most SCORE -1
+scoreboard players set $most SCORE 10000000
 
 ## 個人メダルをアーマースタンドに保存
 function util:score/priv/setting-medal
