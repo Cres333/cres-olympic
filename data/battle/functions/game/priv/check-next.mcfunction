@@ -1,4 +1,10 @@
 # 次の試合を開始できるかチェック
+## 初期化
+scoreboard players set $remain _R 0
+scoreboard players set $remain _B 0
+scoreboard players set $remain _Y 0
+scoreboard players set $remain _G 0
+
 ## 現在の値をコピー
 scoreboard players operation $next _R = $now _R
 scoreboard players operation $next _B = $now _B
