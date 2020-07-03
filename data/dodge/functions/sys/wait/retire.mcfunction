@@ -13,4 +13,4 @@ execute store success score $out _ if score $none _ matches 1 as @a[predicate=ut
 execute if score $none _ matches 1 run function dodge:sys/priv/contract
 
 ## 誰かアウトになっていたらガラスリセット
-execute if score $out _ matches 1.. run fill 0 0 0 0 0 0 air
+execute if score $out _ matches 1.. run fill 1037 39 -1368 1081 34 -1324 air

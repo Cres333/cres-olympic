@@ -8,8 +8,8 @@ scoreboard players set $b SCORE 0
 scoreboard players set $y SCORE 0
 scoreboard players set $g SCORE 0
 
-## TODO: 召喚位置座標
-summon armor_stand 0 0 0 {Small:true,Marker:true,NoGravity:true,Invisible:true,Tags:["ball"]}
+## 召喚位置座標
+summon armor_stand 1059 35 -1346 {Small:true,Marker:true,NoGravity:true,Invisible:true,Tags:["ball"]}
 
 ## カウントダウン開始
 function util:count/start
