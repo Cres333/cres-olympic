@@ -1,6 +1,6 @@
 # 初期化
 ## ゲームモード設定
-data merge storage main {game:dodge,join:3,team:true,score:time}
+data merge storage main {game:dodge,join:3,team:true,score:point}
 
 ## scoreboard 作成
 scoreboard objectives add _R dummy "赤チームの背番号"
