@@ -10,6 +10,7 @@ kill @e[tag=ball]
 
 ## 最後まで残っていたプレイヤーにスコア加算
 scoreboard players operation @a[predicate=util:play] SCORE = $time _
+scoreboard players add @a[predicate=util:play] SCORE 200
 
 ## PLAYから除外
 scoreboard players reset * PLAY
