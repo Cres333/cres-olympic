@@ -11,5 +11,5 @@ clear @s
 ## エフェクトを消す
 effect clear @s water_breathing
 
-## タイマー(ポイント)を入れる
-scoreboard players operation @s SCORE = $time _
+## タイマー(ポイント)を追加で入れる
+scoreboard players operation @s SCORE += $time _

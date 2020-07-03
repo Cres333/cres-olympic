@@ -13,3 +13,6 @@ give @s trident{HideFlags:1,Enchantments:[{id:"riptide",lvl:1}]}
 
 ## START表示
 title @s title {"text":"!! START !!","color":"green"}
+
+## スコアに現在時間をマイナスで入れる
+scoreboard players operation @s SCORE -= $time _
