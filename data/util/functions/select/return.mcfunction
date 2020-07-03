@@ -25,3 +25,4 @@ execute if data storage main {game:dodge} run function dodge:game/start
 execute if data storage main {game:battle} run function battle:game/start
 execute if data storage main {game:fenc} run function fenc:game/start
 execute if data storage main {game:boat} run function boat:game/start
+execute if data storage main {game:weight} run function weight:game/start
