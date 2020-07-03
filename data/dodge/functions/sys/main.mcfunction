@@ -8,6 +8,9 @@ scoreboard players set $b SCORE 0
 scoreboard players set $y SCORE 0
 scoreboard players set $g SCORE 0
 
+## 耐性付与
+effect give @a resistance 1000000 99 true
+
 ## 召喚位置座標
 summon armor_stand 1059 35 -1346 {Small:true,Marker:true,NoGravity:true,Invisible:true,Tags:["ball"]}
 

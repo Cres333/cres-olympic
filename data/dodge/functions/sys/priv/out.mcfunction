@@ -7,3 +7,6 @@ scoreboard players reset @s PLAY
 
 ## スコアに時間を入れる
 scoreboard players operation @s SCORE = $time _
+
+## エフェクト削除
+effect clear @s
