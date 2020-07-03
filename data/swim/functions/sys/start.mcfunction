@@ -1,10 +1,9 @@
 # 第一泳者スタート
 ## フィールド開放 (各チーム)
-## TODO: フィールド座標
-fill 0 0 0 0 0 0 water
-fill 0 0 0 0 0 0 water
-fill 0 0 0 0 0 0 water
-fill 0 0 0 0 0 0 water
+fill 1063 37 -1311 1062 35 -1311 water
+fill 1066 37 -1311 1065 35 -1311 water
+fill 1069 37 -1311 1068 35 -1311 water
+fill 1072 37 -1311 1071 35 -1311 water
 
 ## トライデントの利用回数をリセット
 scoreboard players reset * _USE
