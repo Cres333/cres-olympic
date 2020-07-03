@@ -1,3 +1,6 @@
+## スコア計算の前にライフを加算
+execute as @a[predicate=util:join] run scoreboard players operation @s SCORE += @s _LIFE
+
 # スコア/メダル計算
 function util:score/point
 

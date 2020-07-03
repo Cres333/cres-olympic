@@ -30,3 +30,6 @@ scoreboard players reset @a[scores={_LIFE=0}] PLAY
 
 # ライフのスコアボードから削除
 scoreboard players reset @a[scores={_LIFE=0}] _LIFE
+
+# クリアしたプレイヤーのスコアを上げる
+scoreboard players add @a[predicate=util:play] SCORE 20
