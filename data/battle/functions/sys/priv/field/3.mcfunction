@@ -1,3 +1,2 @@
 # フィールドを削除
-## TODO: フィールド座標
-fill 0 0 0 0 0 0 air replace glass
+fill 1044 40 -1361 1074 40 -1331 air replace glass
