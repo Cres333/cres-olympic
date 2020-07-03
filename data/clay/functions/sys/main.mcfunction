@@ -4,6 +4,10 @@ scoreboard players set $summon _ 0
 
 ## キルカウントリセット
 scoreboard players reset * _KILL
+scoreboard players set @p[predicate=util:play] _KILL 0
+
+## キルカウント表示
+scoreboard objectives setdisplay sidebar _KILL
 
 ## 選手を配置
 gamemode adventure @p[predicate=util:play]
