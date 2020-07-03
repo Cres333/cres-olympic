@@ -12,7 +12,7 @@ function clay:sys/priv/play/summon
 execute as @p[predicate=util:play] at @s if block ~ ~-1 ~ red_concrete run function clay:sys/priv/play/error
 
 ## 5秒ごとに繰り返す
-execute if score $summon _ matches ..9 run schedule function clay:sys/wait/start 5s
+execute if score $summon _ matches ..9 run schedule function clay:sys/wait/loop 5s
 
 ## 10回やったら終わる
 execute unless score $summon _ matches ..9 run schedule function clay:sys/priv/end 5s
