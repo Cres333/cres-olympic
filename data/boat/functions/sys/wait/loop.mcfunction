@@ -6,7 +6,7 @@ function boat:sys/wait/arrows
 execute as @a[predicate=boat:ride] run function boat:sys/priv/out
 
 ## 先にゴールした人からポイント
-execute as @a[predicate=boat:goal] run function boat:sys/priv/goal
+execute as @a[predicate=util:play] at @s if block ~ 35 ~ gold_block run function boat:sys/priv/goal
 
 ## 時間経過
 scoreboard players add $time _ 1
