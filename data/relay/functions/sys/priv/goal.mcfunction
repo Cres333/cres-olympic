@@ -6,4 +6,4 @@ gamemode spectator @s
 scoreboard players reset @s PLAY
 
 ## タイマー(ポイント)を入れる
-scoreboard players operation @s SCORE = $time _
+scoreboard players operation @s SCORE += $time _

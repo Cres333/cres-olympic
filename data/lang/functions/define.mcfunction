@@ -87,11 +87,11 @@ data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["それぞれのブロックの上を通過するとスピードが上昇します。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
-data modify storage lang relay.player prepend value '{"translate":""}'
-data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"１","color":"red"}]}'
-data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"２","color":"red"}]}'
-data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"３","color":"red"}]}'
-data modify storage lang relay.player prepend value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"４","color":"red"}]}'
+data modify storage lang relay.player append value '{"translate":""}'
+data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"１","color":"red"}]}'
+data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"２","color":"red"}]}'
+data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"３","color":"red"}]}'
+data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"４","color":"red"}]}'
 
 # ドッヂの説明
 data remove storage lang dodge
