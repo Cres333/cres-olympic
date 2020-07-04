@@ -4,11 +4,14 @@
     "name": "util:play"
   },
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "vehicle": {
-        "type": "boat"
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "vehicle": {
+          "type": "boat"
+        }
       }
     }
   }
