@@ -19,6 +19,10 @@ execute if score $2 _ matches 3 as @p[scores={_Y=3}] run function relay:sys/priv
 execute if score $2 _ matches 4 as @p[scores={_G=3}] run function relay:sys/priv/change
 
 ## 第３走者を配置
+execute if score $2 _ matches 1 run gamemode adventure @p[scores={_R=4}]
+execute if score $2 _ matches 2 run gamemode adventure @p[scores={_B=4}]
+execute if score $2 _ matches 3 run gamemode adventure @p[scores={_Y=4}]
+execute if score $2 _ matches 4 run gamemode adventure @p[scores={_G=4}]
 execute if score $2 _ matches 1 run tp @p[scores={_R=4}] 1014.0 33 -1344.0 0 0
 execute if score $2 _ matches 2 run tp @p[scores={_B=4}] 1017.0 33 -1344.0 0 0
 execute if score $2 _ matches 3 run tp @p[scores={_Y=4}] 1020.0 33 -1344.0 0 0
