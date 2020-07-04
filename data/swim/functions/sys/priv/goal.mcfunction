@@ -8,5 +8,8 @@ scoreboard players reset @s PLAY
 ## アイテムを消す
 clear @s
 
-## タイマー(ポイント)を入れる
-scoreboard players operation @s SCORE = $time _
+## エフェクトを消す
+effect clear @s water_breathing
+
+## タイマー(ポイント)を追加で入れる
+scoreboard players operation @s SCORE += $time _

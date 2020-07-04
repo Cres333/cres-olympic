@@ -8,8 +8,5 @@ clear @a
 ## PLAYから除外
 scoreboard players reset * PLAY
 
-## 各プレイヤーのポイントを再計算
-function swim:game/priv/calc-score
-
 ## 終了処理
 function swim:term

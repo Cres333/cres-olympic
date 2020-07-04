@@ -1,6 +1,6 @@
 # ポイント計算
 ## 初期化
-scoreboard players set $base SCORE 10000
+scoreboard players set $base SCORE 5000000
 
 ## スコアが時間計算の場合はスコアの内容を逆転させる
 execute if data storage main {score:time} run function util:score/priv/turn-score
