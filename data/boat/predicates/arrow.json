@@ -12,13 +12,5 @@
         "nbt": "{Inventory:[{id:\"minecraft:tipped_arrow\"}]}"
       }
     }
-  },
-  {
-    "condition": "minecraft:location_check",
-    "predicate": {
-      "block": {
-        "block": "gray_banner"
-      }
-    }
   }
 ]
