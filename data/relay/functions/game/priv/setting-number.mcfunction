@@ -29,8 +29,8 @@ scoreboard players set @r[limit=1,scores={_G=0}] _G 2
 scoreboard players set @r[limit=1,scores={_G=0}] _G 3
 scoreboard players set @r[limit=1,scores={_G=0}] _G 4
 
-## 最初の二人をPLAYにする
-scoreboard players set @a[scores={_R=1..2}] PLAY 1
-scoreboard players set @a[scores={_B=1..2}] PLAY 1
-scoreboard players set @a[scores={_Y=1..2}] PLAY 1
-scoreboard players set @a[scores={_G=1..2}] PLAY 1
+## 最初の１人をPLAYにする
+scoreboard players set @a[scores={_R=1}] PLAY 1
+scoreboard players set @a[scores={_B=1}] PLAY 1
+scoreboard players set @a[scores={_Y=1}] PLAY 1
+scoreboard players set @a[scores={_G=1}] PLAY 1
