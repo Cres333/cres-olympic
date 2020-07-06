@@ -12,4 +12,4 @@ data modify storage play games append from block 1269 45 -1346 Items[{Slot:16b}]
 data modify storage play games append from block 1269 45 -1346 Items[{Slot:17b}].tag.game
 
 ## 手持ちを削除する
-clear @a #core:setting-item{tag:{settingItem:true}}
+clear @a #core:setting-item{settingItem:true}
