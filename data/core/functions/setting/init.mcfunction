@@ -13,3 +13,9 @@ data modify storage play games append from block 1269 45 -1346 Items[{Slot:14b}]
 data modify storage play games append from block 1269 45 -1346 Items[{Slot:15b}].tag.game
 data modify storage play games append from block 1269 45 -1346 Items[{Slot:16b}].tag.game
 data modify storage play games append from block 1269 45 -1346 Items[{Slot:17b}].tag.game
+
+## 初期化メッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"core.select.reset"}
+
+## チェックループ
+function core:setting/wait/check

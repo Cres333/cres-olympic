@@ -5,6 +5,7 @@
     "core:init/score",
     "#storage:setup",
     "#lang:setup",
-    "core:init/teams"
+    "core:init/teams",
+    "core:setting/init"
   ]
 }

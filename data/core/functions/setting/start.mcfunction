@@ -13,3 +13,6 @@ data modify storage play games append from block 1269 45 -1346 Items[{Slot:17b}]
 
 ## 手持ちを削除する
 clear @a #core:setting-item{settingItem:true}
+
+## 確定メッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"core.select.complete"}
