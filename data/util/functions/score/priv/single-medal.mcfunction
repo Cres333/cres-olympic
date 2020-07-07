@@ -42,4 +42,4 @@ execute as @a[team=y,scores={_MEDAL=3}] run scoreboard players add $y BRONZE 1
 execute as @a[team=g,scores={_MEDAL=3}] run scoreboard players add $g BRONZE 1
 
 ## アーマースタンドに保存
-function util:score/priv/setting-medal
+execute as @a[predicate=util:join] run function storage:register/medal

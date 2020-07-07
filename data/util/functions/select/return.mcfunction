@@ -7,6 +7,9 @@ kill @e[type=item]
 ## カウントを増やす
 scoreboard players add @a[predicate=util:join] COUNT 1
 
+## メモリの方も増やす
+execute as @a[predicate=util:join] run function storage:register/count
+
 ## スコアを追加する
 scoreboard players set @a[predicate=util:join] SCORE 0
 
