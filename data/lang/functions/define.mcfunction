@@ -1,5 +1,8 @@
 # コア
 data remove storage lang core
+## 競技選択
+data modify storage lang core.select.complete set value '{"text":"[システム] プレイする競技を登録しました"}'
+data modify storage lang core.select.reset set value '{"text":"[システム] プレイする競技を初期化しました"}'
 ## ゲーム開始時
 data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
 data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'
