@@ -87,4 +87,4 @@ scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
 scoreboard players set $most SCORE 10000000
 
 ## 個人メダルをアーマースタンドに保存
-function util:score/priv/setting-medal
+execute as @a[predicate=util:join] run function storage:register/medal

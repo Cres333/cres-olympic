@@ -17,7 +17,7 @@ scoreboard players operation $base SCORE /= $sum SCORE
 scoreboard players operation @a[predicate=util:join] SCORE *= $base SCORE
 
 ## 配分したスコアをアマスタにコピー
-function util:score/priv/setting-point
+execute as @a[predicate=util:join] run function storage:register/point
 
 ## メダル計算
 function util:score/medal

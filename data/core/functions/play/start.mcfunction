@@ -5,6 +5,12 @@ function storage:settings/id
 function core:init/score
 function core:init/teams
 
+## 念の為、破棄
+schedule clear core:term/wait/gamemode
+scoreboard objectives remove _MEDAL
+scoreboard objectives remove _GOLD
+scoreboard objectives remove _MOST
+
 ## チーム分けの台を用意する
 clone 7 1 37 29 5 59 1048 32 -1357
 

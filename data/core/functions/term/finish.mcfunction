@@ -1,4 +1,10 @@
 # ゲーム終了処理
+## 破棄
+schedule clear core:term/wait/gamemode
+scoreboard objectives remove _MEDAL
+scoreboard objectives remove _GOLD
+scoreboard objectives remove _MOST
+
 ## 必要な分を初期化
 function storage:settings/game
 function storage:settings/score
