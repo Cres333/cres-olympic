@@ -40,10 +40,10 @@ execute as @e[tag=m] run function storage:player/gold
 
 ## MVPを算出
 ### 金メダルMVP
-scoreboard players set $most _MOST 0
-scoreboard players operation $most _MOST > @a _GOLD
-execute as @a if score $most _MOST = @s _GOLD run scoreboard players set @s _MOST 1
+scoreboard players set $gold _MOST 0
+scoreboard players operation $gold _MOST > @a _GOLD
+execute as @a if score $gold _MOST = @s _GOLD run scoreboard players set @s _MOST 1
 ### スコアMVP
-scoreboard players set $most _MOST 0
-scoreboard players operation $most _MOST > @a SCORE
-execute as @a if score $most _MOST = @s SCORE run scoreboard players set @s _MOST 2
+scoreboard players set $score _MOST 0
+scoreboard players operation $score _MOST > @a SCORE
+execute as @a if score $score _MOST = @s SCORE run scoreboard players set @s _MOST 2
