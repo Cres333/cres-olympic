@@ -9,7 +9,7 @@ data modify storage lang core.play.error.less set value '{"text":"[システム]
 data modify storage lang core.play.error.team set value '{"text":"[システム] 赤＞青＞黄＞緑の順にチームを構成してください","color":"red"}'
 data modify storage lang core.play.cancel set value '{"text":"[システム] ゲームをキャンセルしました"}'
 ## ゲーム終了時
-data modify storage lang core.term.message set value '{"text":"[システム] 全競技が終了しました。主催者はこのメッセージをクリックしてください。"}'
+data modify storage lang core.term.message set value '{"text":"[システム] 全競技が終了しました。主催者はクリエイティブモードにしてください。"}'
 data modify storage lang core.term.finish set value '{"text":"[システム] プレイしていただきありがとうございました。"}'
 ## 成績本
 data modify storage lang core.book.jump.exit set value '{"text":"● ゲームを終了する","clickEvent":{"action":"run_command","value":"/function core:term/finish"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで終了"}}}'
