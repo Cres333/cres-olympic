@@ -1,6 +1,9 @@
-# ゲームモードやスコアによって本の内容を生成する
+# TODO: ゲームモードやスコアによって本の内容を生成する
+
+## 本のフォーマット
+give @p written_book{title:"結果",author:"",pages:['{"interpret":true,"storage":"lang","nbt":"core.term.page1"}','{"interpret":true,"storage":"lang","nbt":"core.term.page2"}']}
+
 ## チーム戦の場合
-### ページに表示
 ### 各ページに飛ぶ
 ### 赤チームのメダル総数と内訳 / 赤チームの得点
 #### $r:_MEDAL,$r:GOLD,$r:SILVER,$r:BRONZE,$r:POINT

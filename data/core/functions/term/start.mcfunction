@@ -7,4 +7,7 @@ spreadplayers 1059 -1346 8 32 false @a
 function core:term/priv/setting
 
 ## ゲーム終了テキスト
-tellraw @a {"interpret":true,"storage":"lang","nbt":"core.term.message","clickEvent":{"action":"run_command","value":"/function core:term/priv/book"}}
+tellraw @a {"interpret":true,"storage":"lang","nbt":"core.term.message"}
+
+## ループ
+function core:term/wait/gamemode
