@@ -8,7 +8,7 @@ execute if score $teamNum _ matches 2 run data modify storage soccer battle appe
 ## 3チームのケース
 execute if score $teamNum _ matches 3 run data modify storage soccer battle append value {w:red,b:blue}
 execute if score $teamNum _ matches 3 run data modify storage soccer battle append value {w:red,b:yellow}
-execute if score $teamNum _ matches 3 run data modify storage soccer battle append value {w:yellow,b:blue}
+execute if score $teamNum _ matches 3 run data modify storage soccer battle append value {w:blue,b:yellow}
 
 ## 4チームのケース
 execute if score $teamNum _ matches 4 run data modify storage soccer battle append value {w:red,b:blue}

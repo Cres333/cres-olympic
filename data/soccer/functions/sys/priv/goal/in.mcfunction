@@ -10,7 +10,12 @@ clear @a
 
 # ゴールした時のタイトル表示
 title @a subtitle {"color":"yellow","text":"GOAL!!!"}
-title @a title {"color":"red","translate":"%s - %s","with":[{"score":{"name":"$w","objective":"_"}},{"score":{"name":"$b","objective":"_"}}]}
+execute if data storage soccer {now:{w:red,b:blue}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.rb"}
+execute if data storage soccer {now:{w:red,b:yellow}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.ry"}
+execute if data storage soccer {now:{w:red,b:green}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.rg"}
+execute if data storage soccer {now:{w:blue,b:yellow}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.by"}
+execute if data storage soccer {now:{w:blue,b:green}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.bg"}
+execute if data storage soccer {now:{w:yellow,b:green}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.yg"}
 
 # クールダウンを設定
 scoreboard players set @a[predicate=util:play] _COOL 0
