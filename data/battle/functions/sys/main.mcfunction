@@ -13,5 +13,8 @@ function battle:sys/priv/select-player
 ## プレイヤーを配置
 function battle:sys/priv/setting-position
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## カウントダウン開始
 function util:count/start

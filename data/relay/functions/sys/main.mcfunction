@@ -8,5 +8,8 @@ title @a[predicate=relay:2] title {"interpret":true,"nbt":"relay.player[2]","sto
 title @a[predicate=relay:3] title {"interpret":true,"nbt":"relay.player[3]","storage":"lang"}
 title @a[predicate=relay:4] title {"interpret":true,"nbt":"relay.player[4]","storage":"lang"}
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## カウントダウン開始
 function util:count/start

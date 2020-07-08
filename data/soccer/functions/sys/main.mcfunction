@@ -14,6 +14,9 @@ execute store result bossbar time value run scoreboard players get $time _
 bossbar set time players @a
 bossbar set time visible true
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## ポジションTP
 function soccer:sys/priv/setting-position
 

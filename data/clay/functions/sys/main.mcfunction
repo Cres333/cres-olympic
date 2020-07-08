@@ -9,6 +9,9 @@ scoreboard players set @p[predicate=util:play] _KILL 0
 ## キルカウント表示
 scoreboard objectives setdisplay sidebar _KILL
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## 選手を配置
 gamemode adventure @p[predicate=util:play]
 tp @p[predicate=util:play] 1059 33 -1346 180 0
