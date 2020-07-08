@@ -1,5 +1,5 @@
 {
-  "parent": "soccer:root",
+  "parent": "event:root",
   "display": {
       "title": "drop",
       "description": "",

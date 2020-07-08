@@ -8,6 +8,9 @@ scoreboard players set $b SCORE 0
 scoreboard players set $y SCORE 0
 scoreboard players set $g SCORE 0
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## 耐性付与
 effect give @a resistance 1000000 99 true
 

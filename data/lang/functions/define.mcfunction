@@ -9,7 +9,7 @@ data modify storage lang core.play.error.less set value '{"text":"[システム]
 data modify storage lang core.play.error.team set value '{"text":"[システム] 赤＞青＞黄＞緑の順にチームを構成してください","color":"red"}'
 data modify storage lang core.play.cancel set value '{"text":"[システム] ゲームをキャンセルしました"}'
 ## ゲーム終了時
-data modify storage lang core.term.message set value '{"text":"[システム] 全競技が終了しました。主催者はこのメッセージをクリックしてください。"}'
+data modify storage lang core.term.message set value '{"text":"[システム] 全競技が終了しました。主催者はクリエイティブモードにしてください。"}'
 data modify storage lang core.term.finish set value '{"text":"[システム] プレイしていただきありがとうございました。"}'
 ## 成績本
 data modify storage lang core.book.jump.exit set value '{"text":"● ゲームを終了する","clickEvent":{"action":"run_command","value":"/function core:term/finish"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで終了"}}}'
@@ -71,6 +71,13 @@ data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを持てません ::","color":"red"}'
+
+data modify storage lang soccer.goal.rb set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"blue","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.ry set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.rg set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.by set value '{"translate":"%s - %s","with":[{"color":"blue","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.bg set value '{"translate":"%s - %s","with":[{"color":"blue","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with":[{"color":"yellow","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
 
 # 水泳の説明
 data remove storage lang swim

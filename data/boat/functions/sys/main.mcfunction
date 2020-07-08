@@ -3,6 +3,9 @@
 scoreboard players set $time _ 0
 scoreboard players set $end _ 0
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## 選手をTPする
 function boat:sys/priv/setting-position
 

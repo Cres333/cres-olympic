@@ -2,6 +2,9 @@
 ## 初期化
 scoreboard players set $end _ 0
 
+## 選手にユニフォームを着せる
+function util:wear/equip
+
 ## 選手をTPする
 function fenc:sys/priv/setting-position
 
