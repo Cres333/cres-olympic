@@ -14,6 +14,7 @@ scoreboard objectives remove _Y
 scoreboard objectives remove _G
 scoreboard objectives remove _DEATH
 scoreboard objectives remove _LOG
+scoreboard objectives remove _WIN
 
 ## 次のゲーム
 function core:game/next
