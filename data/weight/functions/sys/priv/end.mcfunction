@@ -6,6 +6,7 @@ scoreboard objectives setdisplay sidebar _LIFE
 execute if entity @p[scores={_LIFE=0}] run function weight:sys/priv/out
 
 ## ライフがある
+title @a times 10 80 10
 title @a[scores={_LIFE=1..}] title {"color":"red","text":"成功！"}
 
 # クリアしたプレイヤーのスコアを上げる

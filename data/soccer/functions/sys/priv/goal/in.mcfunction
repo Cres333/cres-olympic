@@ -9,6 +9,7 @@ kill @e[type=snowball]
 clear @a
 
 # ゴールした時のタイトル表示
+title @a times 10 40 10
 title @a subtitle {"color":"yellow","text":"GOAL!!!"}
 execute if data storage soccer {now:{w:red,b:blue}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.rb"}
 execute if data storage soccer {now:{w:red,b:yellow}} run title @a title {"interpret":true,"storage":"lang","nbt":"soccer.goal.ry"}

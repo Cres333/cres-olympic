@@ -12,7 +12,8 @@ function weight:sys/priv/setting-position
 give @a[predicate=util:play] minecraft:carrot_on_a_stick
 
 ## ラウンド表示
+title @a times 10 80 10
 title @a title [{"text":"第"},{"score":{"name":"$round","objective":"_"}},{"text":"試合"}]
 
 ## カウントダウン開始
-function util:count/start
+schedule function util:count/start 5s
