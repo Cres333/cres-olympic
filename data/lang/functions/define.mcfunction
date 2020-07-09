@@ -43,6 +43,11 @@ data modify storage lang util.select.ok set value '{"translate":"[システム] 
 ## カウントダウン
 data modify storage lang util.count.num set value '{"translate":"= %s =","with":[{"score": {"name": "$util:count","objective": "_"},"color":"yellow"}]}'
 data modify storage lang util.count.start set value '{"text":"!! START !!","color":"green"}'
+## メダル獲得数を表示
+data modify storage lang util.score.gold set value '{"translate":"[システム] 金メダルを獲得しました"}'
+data modify storage lang util.score.silver set value '{"translate":"[システム] 銀メダルを獲得しました"}'
+data modify storage lang util.score.bronze set value '{"translate":"[システム] 銅メダルを獲得しました"}'
+data modify storage lang util.score.medal set value '{"translate":"[システム] あなたのチームは金%s個、銀%s個、銅%s個のメダルを獲得しました","with":[{"score":{"name":"$1","objective":"_MEDAL"}},{"score":{"name":"$2","objective":"_MEDAL"}},{"score":{"name":"$3","objective":"_MEDAL"}}}]}'
 
 # ウェイトリフティングの説明
 data remove storage lang weight
