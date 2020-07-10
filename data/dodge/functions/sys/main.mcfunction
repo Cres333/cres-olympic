@@ -12,7 +12,7 @@ scoreboard players set $g SCORE 0
 function util:wear/equip
 
 ## 耐性付与
-effect give @a resistance 1000000 99 true
+effect give @a resistance 1000000 255 true
 
 ## 召喚位置座標
 summon armor_stand 1059 35 -1346 {Small:true,Marker:true,NoGravity:true,Invisible:true,Tags:["ball"]}
