@@ -9,6 +9,8 @@ execute if score $util:count _ matches 0.. run tellraw @a {"interpret":true,"sto
 ## 勝者を表示
 execute unless score $util:count _ matches 0.. run tellraw @a {"interpret":true,"storage":"lang","nbt":"fenc.win"}
 
+## TODO: 敗者を爆発
+
 ## とりあえずクリア
 clear @a
 effect clear @a

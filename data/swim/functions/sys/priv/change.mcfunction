@@ -9,7 +9,7 @@ scoreboard players set @s PLAY 1
 scoreboard players set @s _COOL 0
 
 ## 槍をセット
-give @s trident{HideFlags:63,Enchantments:[{id:"riptide",lvl:1}],AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:-1,Operation:1,UUID:[I;1340787862,378685630,-2065001653,-2069322458]}]}
+give @s trident{HideFlags:63,Enchantments:[{id:"riptide",lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attackDamage",Amount:-1,Operation:1,UUID:[I;0,0,0,1]}]}
 
 ## START表示
 title @s title {"text":"!! START !!","color":"green"}
