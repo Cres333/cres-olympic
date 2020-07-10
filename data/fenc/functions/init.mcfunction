@@ -5,6 +5,7 @@ data merge storage main {game:fenc,join:2,team:false,score:point}
 ## スコア設定
 scoreboard objectives add _ID dummy "背番号"
 scoreboard objectives add _GP dummy "グループ"
+scoreboard objectives add _LOSER dummy "敗者"
 scoreboard objectives add _ATTACK custom:damage_dealt "ダメージを与えた"
 scoreboard objectives add _DAMAGE custom:damage_taken "ダメージを受けた"
 

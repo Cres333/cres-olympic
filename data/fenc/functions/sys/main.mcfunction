@@ -1,5 +1,6 @@
 # ゲームの機構
 ## 初期化
+scoreboard players reset * _LOSER
 scoreboard players set $end _ 0
 
 ## 選手にユニフォームを着せる
