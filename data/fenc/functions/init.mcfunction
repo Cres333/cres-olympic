@@ -14,6 +14,12 @@ clone 54 42 0 60 65 44 1056 32 -1368 masked normal
 ## 時間変更
 time set 22000
 
+## 一時的にfriendly fireを有効化
+team modify r friendlyFire true
+team modify b friendlyFire true
+team modify y friendlyFire true
+team modify g friendlyFire true
+
 ## 説明の呼び出し
 data modify storage lang temp merge from storage lang fenc
 function util:lang/description

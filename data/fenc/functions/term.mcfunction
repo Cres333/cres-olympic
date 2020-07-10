@@ -13,5 +13,11 @@ scoreboard objectives remove _DAMAGE
 ## 時間変更
 time set 6000
 
+# もとに戻す
+team modify r friendlyFire false
+team modify b friendlyFire false
+team modify y friendlyFire false
+team modify g friendlyFire false
+
 ## 次のゲーム
 function core:game/next
