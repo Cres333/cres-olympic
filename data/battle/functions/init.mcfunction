@@ -10,6 +10,7 @@ scoreboard objectives add _G dummy "緑チームの背番号"
 scoreboard objectives add _DEATH deathCount "死亡判定"
 scoreboard objectives add _LOG custom:leave_game "ログアウト判定"
 scoreboard objectives add _WIN dummy "連勝数"
+
 scoreboard objectives setdisplay sidebar _WIN
 
 ## フィールド生成
