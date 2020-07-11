@@ -170,6 +170,7 @@ data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","wi
 
 data modify storage lang fenc.round append value '{"translate":"一回戦 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
 data modify storage lang fenc.round append value '{"translate":"準決勝 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
+data modify storage lang fenc.round append value '{"text":"３位決定戦"}'
 data modify storage lang fenc.round append value '{"text":"決勝戦"}'
 
 data modify storage lang fenc.count.attack set value '{"translate":"[実況] %s 選手がフライングで失格！！","with":[{"selector":"@a[predicate=util:play,scores={_ATTACK=1..}]"}]}'
