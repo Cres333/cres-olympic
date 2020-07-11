@@ -1,16 +1,19 @@
 {
   "parent": "event:root",
   "display": {
-      "title": "drop",
-      "description": "",
-      "icon": {
-          "item": "air"
-      },
-      "show_toast": false,
-      "announce_to_chat": false
+    "title": "soccer-drop",
+    "description": "",
+    "icon": {
+      "item": "air"
+    },
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "rewards": {
+    "function": "soccer:sys/event/drop"
   },
   "criteria": {
-    "damage": {
+    "": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
@@ -32,8 +35,5 @@
         ]
       }
     }
-  },
-  "rewards": {
-      "function": "soccer:sys/event/drop"
   }
 }

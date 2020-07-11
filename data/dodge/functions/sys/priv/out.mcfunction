@@ -10,3 +10,6 @@ scoreboard players operation @s SCORE = $time _
 
 ## エフェクト削除
 effect clear @s
+
+## ガラスリセット
+fill 1037 39 -1368 1081 34 -1324 air
