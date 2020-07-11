@@ -9,6 +9,8 @@ scoreboard objectives add _LOSER dummy "敗者"
 scoreboard objectives add _ATTACK custom:damage_dealt "ダメージを与えた"
 scoreboard objectives add _DAMAGE custom:damage_taken "ダメージを受けた"
 
+scoreboard objectives setdisplay sidebar _GP
+
 ## フィールド生成
 clone 54 42 0 60 65 44 1056 32 -1368 masked normal
 

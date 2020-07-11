@@ -1,5 +1,11 @@
 # コア
 data remove storage lang core
+## 設定本
+data modify storage lang core.setting.start set value '{"text":"● ゲームを開始する","clickEvent":{"action":"run_command","value":"/function core:play/start"}}'
+data modify storage lang core.setting.skip.on set value '{"text":"● ゲーム説明を省略する","clickEvent":{"action":"run_command","value":"/function core:setting/skip-on"}}'
+data modify storage lang core.setting.skip.off set value '{"text":"● ゲーム説明を省略しない","clickEvent":{"action":"run_command","value":"/function core:setting/skip-off"}}'
+data modify storage lang core.setting.reset set value '{"text":"● 競技を初期化する","clickEvent":{"action":"run_command","value":"/function core:setting/init"}}'
+data modify storage lang core.setting.book set value '{"translate":"● ゲーム設定\\n-----\\n\\n%s\\n\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.setting.start"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.on"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.off"},{"interpret":true,"storage":"lang","nbt":"core.setting.reset"}]}'
 ## 競技選択
 data modify storage lang core.select.complete set value '{"text":"[システム] プレイする競技を登録しました"}'
 data modify storage lang core.select.reset set value '{"text":"[システム] プレイする競技を初期化しました"}'
@@ -29,11 +35,11 @@ data modify storage lang core.book.pages append value '{"translate":"● 緑チ�
 data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- 最多金メダル獲得プレイヤー : \\n%s\\n（%s 個）\\n\\n- 最高得点獲得プレイヤー : \\n%s\\n（%s pt）","with":[{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$gold"},{"selector":"@a[scores={_MOST=2}]"},{"score":{"objective":"MOST","name":"$score"}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 成績まとめ\\n\\n- メダル総数 :\\n%s\\n\\n- チーム得点 :\\n%s\\n\\n- %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.summary.medal"},{"interpret":true,"storage":"lang","nbt":"core.book.summary.score"},{"interpret":true,"storage":"lang","nbt":"core.book.show.score"}]}'
 ## チーム戦成績本
-data modify storage lang core.book.team set value '{"translate":"● 目次\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
+data modify storage lang core.book.team set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 ## 個人戦成績本
-data modify storage lang core.book.single set value '{"translate":"● 目次\\n\\n%s\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
+data modify storage lang core.book.single set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 ## 練習成績本
-data modify storage lang core.book.only set value '{"translate":"● 目次\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
+data modify storage lang core.book.only set value '{"translate":"● 目次\\n-----\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 
 # 共有
 data remove storage lang util

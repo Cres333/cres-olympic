@@ -24,5 +24,5 @@ give @p red_banner{settingItem:true,display:{Name:'{"text":"第7競技"}'},HideF
 give @p red_banner{settingItem:true,display:{Name:'{"text":"第8競技"}'},HideFlags:63,BlockEntityTag:{Patterns:[{Pattern:ts,Color:0},{Pattern:ls,Color:0},{Pattern:ms,Color:0},{Pattern:bs,Color:0},{Pattern:rs,Color:0},{Pattern:bo,Color:14}]}}
 give @p red_banner{settingItem:true,display:{Name:'{"text":"第9競技"}'},HideFlags:63,BlockEntityTag:{Patterns:[{Pattern:ls,Color:0},{Pattern:hhb,Color:14},{Pattern:ms,Color:0},{Pattern:ts,Color:0},{Pattern:rs,Color:0},{Pattern:bs,Color:0},{Pattern:bo,Color:14}]}}
 
-## reset sign
-give @p birch_sign{BlockEntityTag:{Text2:'{"text":"競技を初期化する"}',Text3:'{"text":"右クリックで実行","clickEvent":{"action":"run_command","value":"/function core:setting/init"}}'}}
+## setting book
+give @p written_book{title:"ゲーム設定",author:"",pages:['{"interpret":true,"storage":"lang","nbt":"core.setting.book"}']}
