@@ -1,7 +1,4 @@
 # ループ処理
-## 矢を渡す
-function boat:sys/wait/arrows
-
 ## ボートから降りたら近くのボートをTP
 execute as @a[predicate=boat:ride] at @s run function boat:sys/priv/out
 
