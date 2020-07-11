@@ -17,8 +17,11 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
+          "type": {
+            "is_explosion": true
+          },
           "direct_entity": {
-            "type": "minecraft:fireball"
+            "type": "fireball"
           }
         }
       }
