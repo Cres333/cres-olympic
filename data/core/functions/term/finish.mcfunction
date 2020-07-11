@@ -12,5 +12,7 @@ function storage:settings/id
 function core:init/score
 function core:init/teams
 
+data modify storage play now set value ""
+
 ## メッセージ
 tellraw @a {"interpret":true,"storage":"lang","nbt":"core.term.finish"}

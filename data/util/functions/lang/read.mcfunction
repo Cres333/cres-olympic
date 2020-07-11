@@ -18,6 +18,9 @@ execute if score $desc _ matches 3 run tellraw @a {"interpret":true,"nbt":"temp.
 execute if score $desc _ matches 2 run tellraw @a {"interpret":true,"nbt":"temp.desc[1]","storage":"lang","clickEvent":{"action":"run_command","value":"/schedule function util:lang/read 1t"}}
 execute if score $desc _ matches 1 run tellraw @a {"interpret":true,"nbt":"temp.desc[0]","storage":"lang","clickEvent":{"action":"run_command","value":"/schedule function util:lang/read 1t"}}
 
+# 説明省略
+execute if score $desc _ matches 2.. if data storage play {description:false} run scoreboard players set $desc _ 2
+
 # ループ
 scoreboard players remove $desc _ 1
 execute if score $desc _ matches 0.. run schedule function util:lang/read 4s
