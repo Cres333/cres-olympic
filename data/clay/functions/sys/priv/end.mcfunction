@@ -2,6 +2,9 @@
 ## ゲームモードを変更
 gamemode spectator @p[predicate=util:play]
 
+## 記録メッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"clay.record"}
+
 ## キルカウントをスコアへ置き換え
 execute as @p[predicate=util:play] run scoreboard players operation @s SCORE > @s _KILL
 

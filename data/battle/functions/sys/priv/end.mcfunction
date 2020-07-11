@@ -16,5 +16,9 @@ schedule clear battle:sys/wait/effect
 scoreboard players add @a[predicate=util:play] SCORE 10
 scoreboard players add @a[predicate=util:play] _WIN 1
 
+## 勝ち抜きメッセージ
+execute if entity @p[predicate=util:play] run tellraw @a {"interpret":true,"storage":"lang","nbt":"battle.win"}
+execute unless entity @p[predicate=util:play] run tellraw @a {"interpret":true,"storage":"lang","nbt":"battle.even"}
+
 ## 次の試合
 function battle:game/next
