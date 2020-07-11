@@ -19,6 +19,9 @@ execute if score $round _ matches 2 if score $gp _ matches 3 run scoreboard play
 execute if score $round _ matches 2 unless score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 20
 execute if score $round _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 30
 
+## ゲームモード変更エフェクト
+execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ ~1 ~ 0.2 2 0.2 0.3 100
+
 ## スペクテイターモードに変更
 gamemode spectator @a
 
