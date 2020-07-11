@@ -22,6 +22,9 @@ execute if entity @p[scores={_ID=8,_LIFE=0}] run kill @e[tag=id.7]
 execute as @a[scores={_LIFE=0}] if score @s _CLICK < $value _CLICK run title @s title {"color":"red","text":"失敗！"}
 execute as @a[scores={_LIFE=0}] unless score @s _CLICK < $value _CLICK run title @s title {"color":"red","text":"ライフが無くなった！"}
 
+# 脱落メッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"weight.retire"}
+
 # スペクテイターにする
 gamemode spectator @a[scores={_LIFE=0}]
 

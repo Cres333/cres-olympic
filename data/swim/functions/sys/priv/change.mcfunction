@@ -14,5 +14,8 @@ give @s trident{HideFlags:63,Enchantments:[{id:"riptide",lvl:1}],AttributeModifi
 ## START表示
 title @s title {"text":"!! START !!","color":"green"}
 
+## スタートのメッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"swim.start.change"}
+
 ## スコアに現在時間をマイナスで入れる
 scoreboard players operation @s SCORE -= $time _

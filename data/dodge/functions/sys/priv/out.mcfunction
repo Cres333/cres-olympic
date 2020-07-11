@@ -2,6 +2,9 @@
 ## ゲームモードを変更する
 gamemode spectator @s
 
+## アウトのメッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"dodge.retire"}
+
 ## PLAYを削除する
 scoreboard players reset @s PLAY
 

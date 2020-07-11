@@ -62,6 +62,8 @@ data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
+data modify storage lang weight.retire set value '{"translate":"[実況] $s 選手が脱落しました！","with":[{"selector":"@a[predicate=util:play,scores={_LIFE=0}]"}]}'
+
 # サッカーの説明
 data remove storage lang soccer
 data modify storage lang soccer.descNum set value 9
@@ -103,17 +105,30 @@ data modify storage lang swim.player append value '{"translate":":: あなたは
 
 data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red"}'
 
+## 各選手一斉にスタート
+data modify storage lang swim.start.all set value '{"text":"[実況] 各選手、一斉にスタートしました！"}'
+## スタート
+data modify storage lang swim.start.change set value '{"translate":"[実況] %s 選手、スタートします！","with":[{"selector":"@s"}]}'
+## 全員ゴール
+data modify storage lang swim.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
+data modify storage lang swim.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
+data modify storage lang swim.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
+data modify storage lang swim.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'
+
 # クレー射撃の説明
 data remove storage lang clay
 data modify storage lang clay.descNum set value 8
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["奥から飛んでくるブタを撃ち抜く競技です。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["選手にはクロスボウと、１５本の矢が渡されます。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["選手にはクロスボウと、２０本の矢が渡されます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["その後にカウントダウンが始まり、"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["５秒ごとに連続で１０匹のブタが飛んできます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["より多くのブタをクロスボウで撃ち抜いてください。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
+
+## 記録
+data modify storage lang clay.record set value '{"translate":"[実況] %s 選手、記録 %s 匹です！","with":[{"selector":"@p[predicate=util:play]"},{"score":{"objective":"_KILL","name":"@p[predicate=util:play]"}}]}'
 
 # リレーの説明
 data remove storage lang relay
@@ -131,6 +146,16 @@ data modify storage lang relay.player append value '{"translate":":: あなた�
 data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"３","color":"red"}]}'
 data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"４","color":"red"}]}'
 
+## 各選手一斉にスタート
+data modify storage lang relay.start.all set value '{"text":"[実況] 各選手、一斉にスタートしました！"}'
+## スタート
+data modify storage lang relay.start.change set value '{"translate":"[実況] %s 選手、スタートします！","with":[{"selector":"@s"}]}'
+## 全員ゴール
+data modify storage lang relay.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
+data modify storage lang relay.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
+data modify storage lang relay.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
+data modify storage lang relay.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'
+
 # ドッヂの説明
 data remove storage lang dodge
 data modify storage lang dodge.descNum set value 9
@@ -144,6 +169,9 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["狭くなった壁の中に埋まってしまった場合は、中央にテレポートします。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
 
+## アウト
+data modify storage lang dodge.retire set value '{"translate":"[実況] $s 選手、アウト！","with":[{"selector":"@s"}]}'
+
 # 勝ち抜き戦の説明
 data remove storage lang battle
 data modify storage lang battle.descNum set value 9
@@ -156,6 +184,10 @@ data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["有利になるエフェクトと不利になるエフェクトがあります。"]}'
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["他のチームの競技参加者を全員倒せば、次のラウンドが始まります。"]}'
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
+
+## 勝利
+data modify storage lang battle.win set value '{"translate":"[実況] $s 選手が勝ち抜きました！","with":[{"selector":"@p[predicate=util:play]"}]}'
+data modify storage lang battle.even set value '{"text":"[実況] 今の試合、引き分けです！"}'
 
 # フェンシングの説明
 data remove storage lang fenc
@@ -178,12 +210,25 @@ data modify storage lang fenc.win set value '{"translate":"[実況] %s 選手が
 
 ## ボートの説明
 data remove storage lang boat
-data modify storage lang boat.descNum set value 8
+data modify storage lang boat.descNum set value 7
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボート ="]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く１周する競技です。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートにすぐさま乗ってください。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["カウントダウンが後はボートから降りていると脱落になります。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともに弓が渡されます。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技場に盲目の矢が落ちているため、ボートを漕ぎつつ、"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["半周ごとに手に入る矢を使って、ボートを漕ぎつつ、"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["他のプレイヤーの妨害をしていきましょう。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
+
+## 個人戦
+data modify storage lang boat.full.single set value '{"translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
+data modify storage lang boat.goal.single set value '{"translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
+## 一周
+data modify storage lang boat.full.r set value '{"text":"[実況] 赤チーム、残り１周です！"}'
+data modify storage lang boat.full.b set value '{"text":"[実況] 青チーム、残り１周です！"}'
+data modify storage lang boat.full.y set value '{"text":"[実況] 黄チーム、残り１周です！"}'
+data modify storage lang boat.full.g set value '{"text":"[実況] 緑チーム、残り１周です！"}'
+## 全員ゴール
+data modify storage lang boat.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
+data modify storage lang boat.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
+data modify storage lang boat.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
+data modify storage lang boat.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'

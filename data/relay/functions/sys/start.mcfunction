@@ -2,6 +2,9 @@
 ## フィールド開放 (各チーム)
 fill 1095 33 -1349 1105 35 -1349 air replace minecraft:white_stained_glass
 
+## スタートのメッセージ
+tellraw @a {"interpret":true,"storage":"lang","nbt":"relay.start.all"}
+
 ## PLAYに追加
 scoreboard players set @a[predicate=relay:1] PLAY 1
 
