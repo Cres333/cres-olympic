@@ -2,8 +2,8 @@
 ## 矢を渡す
 function boat:sys/wait/arrows
 
-## ボートから降りたら脱落
-execute as @a[predicate=boat:ride] run function boat:sys/priv/out
+## ボートから降りたら近くのボートをTP
+execute as @a[predicate=boat:ride] at @s run function boat:sys/priv/out
 
 ## 先にゴールした人からポイント
 execute as @a[predicate=util:play] at @s if block ~ 35 ~ gold_block run function boat:sys/priv/goal
