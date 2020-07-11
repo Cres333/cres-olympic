@@ -1,4 +1,7 @@
 # 終了処理
+## ゲームモード変更エフェクト
+execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ ~1 ~ 0.2 2 0.2 0.3 100
+
 ## ゲームモード変更
 gamemode spectator @a
 

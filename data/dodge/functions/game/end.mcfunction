@@ -15,6 +15,12 @@ kill @e[type=fireball]
 scoreboard players operation @a[predicate=util:play] SCORE = $time _
 scoreboard players add @a[predicate=util:play] SCORE 200
 
+## ゲームモード変更エフェクト
+execute as @a[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ ~1 ~ 0.2 2 0.2 0.3 100
+
+## ゲームモード変更
+gamemode spectator @a
+
 ## PLAYから除外
 scoreboard players reset * PLAY
 
