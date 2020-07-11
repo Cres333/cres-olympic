@@ -9,6 +9,7 @@ data modify storage lang core.setting.book set value '{"translate":"● ゲー�
 ## 競技選択
 data modify storage lang core.select.complete set value '{"text":"[システム] プレイする競技を登録しました"}'
 data modify storage lang core.select.reset set value '{"text":"[システム] プレイする競技を初期化しました"}'
+data modify storage lang core.setting.update set value '{"text":"[システム] ゲーム説明の有無を更新しました"}'
 ## ゲーム開始時
 data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
 data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'
