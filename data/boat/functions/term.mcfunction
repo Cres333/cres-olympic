@@ -10,6 +10,7 @@ fill 1089 32 -1396 1110 40 -1296 air
 fill 1059 32 -1296 1110 39 -1247 air
 
 ## スコアボード破棄
+scoreboard objectives remove _ROUND
 scoreboard objectives remove _ID
 
 ## 次のゲーム

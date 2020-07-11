@@ -4,6 +4,7 @@ data merge storage main {game:boat,join:2,team:false,score:time}
 
 ## スコア設定
 scoreboard objectives add _ID dummy "背番号"
+scoreboard objectives add _ROUND dummy "周回チェック"
 
 ## フィールド生成
 clone 0 63 0 51 70 49 1008 32 -1445 masked normal

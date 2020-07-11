@@ -9,6 +9,9 @@ function util:wear/equip
 ## 選手をTPする
 function boat:sys/priv/setting-position
 
+## 全員に周回数をセットする
+scoreboard players set @a[predicate=util:play] _ROUND 1
+
 ## ボートを用意する
 execute if entity @p[scores={_ID=1}] run summon boat 1094 38 -1350 {Invulnerable:true,Rotation:[-180F,0F]}
 execute if entity @p[scores={_ID=2}] run summon boat 1098 38 -1350 {Invulnerable:true,Rotation:[-180F,0F]}
