@@ -5,8 +5,9 @@ function boat:sys/wait/arrows
 ## ボートから降りたら近くのボートをTP
 execute as @a[predicate=boat:ride] at @s run function boat:sys/priv/out
 
-## 先にゴールした人からポイント
-execute as @a[predicate=util:play] at @s if block ~ 35 ~ gold_block run function boat:sys/priv/goal
+## 周回判定
+execute as @a[predicate=util:play] at @s if block ~ 32 ~ emerald_block run function boat:sys/priv/half
+execute as @a[predicate=util:play] at @s if block ~ 35 ~ gold_block run function boat:sys/priv/full
 
 ## 時間経過
 scoreboard players add $time _ 1
