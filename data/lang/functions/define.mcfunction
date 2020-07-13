@@ -27,13 +27,13 @@ data modify storage lang core.book.jump.blue set value '{"text":"● 青チー�
 data modify storage lang core.book.jump.yellow set value '{"text":"● 黄チームの成績","clickEvent":{"action":"change_page","value":"6"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
 data modify storage lang core.book.jump.green set value '{"text":"● 緑チームの成績","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
 data modify storage lang core.book.show.score set value '{"text":"各プレイヤーのスコア表示","clickEvent":{"action":"run_command","value":"/function core:term/priv/show"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで表示"}}}'
-data modify storage lang core.book.summary.medal set value '{"translate":"赤 : %s, 青 : %s, 黄 : %s, 緑 : %s","with":[{"score":{"objective":"_MEDAL","name":"$r"},{"score":{"objective":"_MEDAL","name":"$b"},{"score":{"objective":"_MEDAL","name":"$y"},{"score":{"objective":"_MEDAL","name":"$g"}]}'
-data modify storage lang core.book.summary.score set value '{"translate":"赤 : $s pt\\n青 : %s pt\\n黄 : %s pt\\n緑 : %s pt","with":[{"score":{"objective":"POINT","name":"$r"},{"score":{"objective":"POINT","name":"$b"},{"score":{"objective":"POINT","name":"$y"},{"score":{"objective":"POINT","name":"$g"}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 赤チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$r"},{"score":{"objective":"GOLD","name":"$r"},{"score":{"objective":"SILVER","name":"$r"},{"score":{"objective":"BRONZE","name":"$r"}},{"score":{"objective":"POINT","name":"$r"}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 青チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$b"},{"score":{"objective":"GOLD","name":"$b"},{"score":{"objective":"SILVER","name":"$b"},{"score":{"objective":"BRONZE","name":"$b"}},{"score":{"objective":"POINT","name":"$b"}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 黄チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$y"},{"score":{"objective":"GOLD","name":"$y"},{"score":{"objective":"SILVER","name":"$y"},{"score":{"objective":"BRONZE","name":"$y"}},{"score":{"objective":"POINT","name":"$y"}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 緑チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$g"},{"score":{"objective":"GOLD","name":"$g"},{"score":{"objective":"SILVER","name":"$g"},{"score":{"objective":"BRONZE","name":"$g"}},{"score":{"objective":"POINT","name":"$g"}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- 最多金メダル獲得プレイヤー : \\n%s\\n（%s 個）\\n\\n- 最高得点獲得プレイヤー : \\n%s\\n（%s pt）","with":[{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$gold"},{"selector":"@a[scores={_MOST=2}]"},{"score":{"objective":"MOST","name":"$score"}]}'
+data modify storage lang core.book.summary.medal set value '{"translate":"赤 : %s, 青 : %s, 黄 : %s, 緑 : %s","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"_MEDAL","name":"$g"}}]}'
+data modify storage lang core.book.summary.score set value '{"translate":"赤 : %s pt\\n青 : %s pt\\n黄 : %s pt\\n緑 : %s pt","with":[{"score":{"objective":"POINT","name":"$r"}},{"score":{"objective":"POINT","name":"$b"}},{"score":{"objective":"POINT","name":"$y"}},{"score":{"objective":"POINT","name":"$g"}}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 赤チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"GOLD","name":"$r"}},{"score":{"objective":"SILVER","name":"$r"}},{"score":{"objective":"BRONZE","name":"$r"}},{"score":{"objective":"POINT","name":"$r"}}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 青チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"GOLD","name":"$b"}},{"score":{"objective":"SILVER","name":"$b"}},{"score":{"objective":"BRONZE","name":"$b"}},{"score":{"objective":"POINT","name":"$b"}}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 黄チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"GOLD","name":"$y"}},{"score":{"objective":"SILVER","name":"$y"}},{"score":{"objective":"BRONZE","name":"$y"}},{"score":{"objective":"POINT","name":"$y"}}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 緑チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$g"}},{"score":{"objective":"GOLD","name":"$g"}},{"score":{"objective":"SILVER","name":"$g"}},{"score":{"objective":"BRONZE","name":"$g"}},{"score":{"objective":"POINT","name":"$g"}}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- 最多金メダル獲得プレイヤー : \\n%s\\n（%s 個）\\n\\n- 最高得点獲得プレイヤー : \\n%s\\n（%s pt）","with":[{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$gold"}},{"selector":"@a[scores={_MOST=2}]"},{"score":{"objective":"MOST","name":"$score"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 成績まとめ\\n\\n- メダル総数 :\\n%s\\n\\n- チーム得点 :\\n%s\\n\\n- %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.summary.medal"},{"interpret":true,"storage":"lang","nbt":"core.book.summary.score"},{"interpret":true,"storage":"lang","nbt":"core.book.show.score"}]}'
 ## チーム戦成績本
 data modify storage lang core.book.team set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
@@ -69,7 +69,7 @@ data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
-data modify storage lang weight.retire set value '{"translate":"[実況] $s 選手が脱落しました！","with":[{"selector":"@a[predicate=util:play,scores={_LIFE=0}]"}]}'
+data modify storage lang weight.retire set value '{"translate":"[実況] %s 選手が脱落しました！","with":[{"selector":"@a[predicate=util:play,scores={_LIFE=0}]"}]}'
 
 # サッカーの説明
 data remove storage lang soccer
@@ -177,7 +177,7 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
 
 ## アウト
-data modify storage lang dodge.retire set value '{"translate":"[実況] $s 選手、アウト！","with":[{"selector":"@s"}]}'
+data modify storage lang dodge.retire set value '{"translate":"[実況] %s 選手、アウト！","with":[{"selector":"@s"}]}'
 
 # 勝ち抜き戦の説明
 data remove storage lang battle
@@ -193,7 +193,7 @@ data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
 
 ## 勝利
-data modify storage lang battle.win set value '{"translate":"[実況] $s 選手が勝ち抜きました！","with":[{"selector":"@p[predicate=util:play]"}]}'
+data modify storage lang battle.win set value '{"translate":"[実況] %s 選手が勝ち抜きました！","with":[{"selector":"@p[predicate=util:play]"}]}'
 data modify storage lang battle.even set value '{"text":"[実況] 今の試合、引き分けです！"}'
 
 # フェンシングの説明
@@ -212,7 +212,7 @@ data modify storage lang fenc.round append value '{"translate":"準決勝 第%s�
 data modify storage lang fenc.round append value '{"text":"３位決定戦"}'
 data modify storage lang fenc.round append value '{"text":"決勝戦"}'
 
-data modify storage lang fenc.count.attack set value '{"translate":"[実況] %s 選手がフライングで失格！！","with":[{"selector":"@a[predicate=util:play,scores={_ATTACK=1..}]"}]}'
+data modify storage lang fenc.count.attack set value '{"translate":"[実況] %s 選手がフライングで失格！！","with":[{"selector":"@a[scores={_LOSER=1}]"}]}'
 data modify storage lang fenc.win set value '{"translate":"[実況] %s 選手が吹き飛ばした！勝利です！","with":[{"selector":"@a[predicate=util:play,scores={_DAMAGE=0}]"}]}'
 
 ## ボートの説明
