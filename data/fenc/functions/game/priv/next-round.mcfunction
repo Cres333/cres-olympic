@@ -1,6 +1,7 @@
 # 次のラウンド
 ## 初期化
 scoreboard players set $gp _ 0
+scoreboard players set $phase _ 0
 scoreboard players add $round _ 1
 
 ## グループを統合

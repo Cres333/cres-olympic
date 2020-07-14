@@ -207,8 +207,8 @@ data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式ですので、勝った方だけが次のラウンドに進めます。"]}'
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
-data modify storage lang fenc.round append value '{"translate":"一回戦 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
-data modify storage lang fenc.round append value '{"translate":"準決勝 第%s試合","with":[{"score":{"name":"$gp","objective":"_"}}]}'
+data modify storage lang fenc.round append value '{"translate":"一回戦 第%s試合","with":[{"score":{"name":"$phase","objective":"_"}}]}'
+data modify storage lang fenc.round append value '{"translate":"準決勝 第%s試合","with":[{"score":{"name":"$phase","objective":"_"}}]}'
 data modify storage lang fenc.round append value '{"text":"３位決定戦"}'
 data modify storage lang fenc.round append value '{"text":"決勝戦"}'
 

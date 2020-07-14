@@ -2,6 +2,7 @@
 ## 初期化
 scoreboard players reset * _LOSER
 scoreboard players set $end _ 0
+scoreboard players add $phase _ 1
 
 ## 選手にユニフォームを着せる
 function util:wear/equip
