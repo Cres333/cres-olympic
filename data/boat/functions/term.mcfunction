@@ -13,5 +13,8 @@ fill 1059 32 -1296 1110 39 -1247 air
 scoreboard objectives remove _ROUND
 scoreboard objectives remove _ID
 
+## FriendlyFire無効化
+execute if data storage main {mode:single} run team modify r friendlyFire false
+
 ## 次のゲーム
 function core:game/next

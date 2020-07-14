@@ -1,5 +1,6 @@
 # 目標回数をランダムに決定
 ## プレイヤー込みで右クリック数をリセット
+scoreboard players reset * _CLICK
 scoreboard players set @a[predicate=util:play] _CLICK 0
 
 ## 各ラウンドの最小右クリック数

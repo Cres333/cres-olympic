@@ -13,7 +13,7 @@ scoreboard players reset * _USE
 scoreboard players set @a[predicate=swim:1] _COOL 0
 
 ## 槍をセット
-give @a[predicate=swim:1] trident{HideFlags:63,Enchantments:[{id:"riptide",lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:-1,Operation:1,UUID:[I;0,0,0,1]}]}
+give @a[predicate=swim:1] trident{HideFlags:63,Enchantments:[{id:"riptide",lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:-1,Operation:1,UUID:[I;0,1,0,1]}]}
 
 ## PLAYに追加
 scoreboard players set @a[predicate=swim:1] PLAY 1

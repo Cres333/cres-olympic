@@ -1,6 +1,6 @@
 # システム開始処理
 ## 全員に弓を渡す
-give @a bow{Unbreakable:true,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:-1,Operation:1,UUID:[I;0,0,0,1]}]}
+give @a bow{Unbreakable:true,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:-1,Operation:1,UUID:[I;0,1,0,1]}]}
 give @a tipped_arrow{CustomPotionEffects:[{Id:15b,Amplifier:1b,Duration:200,ShowParticles:1b}],Potion:"minecraft:empty"} 3
 
 ## 壁を消す

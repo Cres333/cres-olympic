@@ -1,4 +1,7 @@
 # ゲーム終了処理
+## 破棄
+scoreboard objectives remove _NEXT
+
 ## 全員をTP
 gamemode adventure @a
 spreadplayers 1059 -1346 8 32 false @a

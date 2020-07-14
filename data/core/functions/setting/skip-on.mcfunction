@@ -2,4 +2,4 @@
 data modify storage play description set value false
 
 ## メッセージ
-tellraw @a {"interpret":true,"storage":"lang","nbt":"core.setting.skip.update"}
+tellraw @a {"interpret":true,"storage":"lang","nbt":"core.setting.update"}
