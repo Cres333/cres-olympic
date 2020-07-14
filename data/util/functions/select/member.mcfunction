@@ -6,6 +6,10 @@ scoreboard players set $team _TICKET 0
 scoreboard players set $teamSum _TICKET 0
 execute store result score $teamNum _TICKET run data get storage main teamNum
 execute store result score $num _TICKET run data get storage main join
+scoreboard players set $r _TICKET 0
+scoreboard players set $b _TICKET 0
+scoreboard players set $y _TICKET 0
+scoreboard players set $g _TICKET 0
 
 ## 全員をTPさせる
 gamemode adventure @a[team=!]
