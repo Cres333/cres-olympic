@@ -15,6 +15,3 @@ schedule function core:game/priv/call 5s
 
 ## 競技がなかったら終了
 execute if score $game _NEXT matches 0 run schedule function core:term/start 5s
-
-## 破棄
-scoreboard objectives remove _NEXT
