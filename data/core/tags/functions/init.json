@@ -1,10 +1,10 @@
 {
   "values": [
+    "lang:define",
     "core:init/rules",
     "core:init/forceload",
     "core:init/score",
     "#storage:setup",
-    "#lang:setup",
     "core:init/teams",
     "core:setting/init"
   ]

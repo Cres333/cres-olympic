@@ -4,7 +4,6 @@ function storage:settings/score
 function storage:settings/id
 function core:init/score
 function core:init/teams
-data modify storage play now set value ""
 
 ## 念の為、破棄
 schedule clear core:term/wait/gamemode
