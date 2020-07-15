@@ -16,6 +16,7 @@ effect clear @a
 ## 勝者にはスコア追加
 execute if score $round _ matches 1 run scoreboard players add @p[predicate=util:play] SCORE 10
 execute if score $round _ matches 2 if score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 10
+execute if score $round _ matches 2 if score $gp _ matches 3 run scoreboard players reset @p[predicate=util:play] _GP
 execute if score $round _ matches 2 unless score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 20
 execute if score $round _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 30
 

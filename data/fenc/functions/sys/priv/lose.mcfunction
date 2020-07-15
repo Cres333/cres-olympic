@@ -3,12 +3,13 @@ clear @a
 
 scoreboard players reset @s PLAY
 
-## 1ラウンド目の敗者は脱落
-execute if score $round _ matches 1 run scoreboard players reset @s _GP
-
 ## 2ラウンド目の敗者は敗者復活(2ラウンド/3グループ目)に進ませる
-execute if score $round _ matches 2 run scoreboard players set @s[scores={_GP=10..11}] _GP 30
-execute if score $round _ matches 2 run scoreboard players set @s[scores={_GP=20..21}] _GP 31
+execute if score $round _ matches 2 if score $gp _ matches 1 run scoreboard players set @s _GP 30
+execute if score $round _ matches 2 if score $gp _ matches 2 run scoreboard players set @s _GP 31
+
+## それ以外の敗者は脱落
+execute unless score $round _ matches 2 run scoreboard players reset @s _GP
+execute if score $round _ matches 2 unless score $gp _ matches 1..2 run scoreboard players reset @s _GP
 
 scoreboard players set $end _ 1
 
