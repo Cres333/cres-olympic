@@ -1,6 +1,6 @@
 # ゲーム終了
 ## アイテム削除
-clear @a
+clear @a diamond_sword
 
 ## PLAYから除外
 scoreboard players reset * PLAY

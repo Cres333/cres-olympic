@@ -2,9 +2,6 @@
 ## スケジュールを停止
 schedule clear dodge:sys/wait/loop
 
-## アイテム削除
-clear @a
-
 ## アマスタ削除
 kill @e[tag=ball]
 

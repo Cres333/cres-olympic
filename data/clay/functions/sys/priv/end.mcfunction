@@ -12,7 +12,8 @@ tellraw @a {"interpret":true,"storage":"lang","nbt":"clay.record"}
 execute as @p[predicate=util:play] run scoreboard players operation @s SCORE > @s _KILL
 
 ## 会場を掃除
-clear @a
+clear @a crossbow
+clear @a arrow
 kill @e[type=item]
 kill @e[type=pig]
 kill @e[type=arrow]

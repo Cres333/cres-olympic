@@ -6,7 +6,7 @@ gamemode spectator @s
 scoreboard players reset @s PLAY
 
 ## アイテムを消す
-clear @s
+clear @s trident
 
 ## エフェクトを消す
 effect clear @s water_breathing

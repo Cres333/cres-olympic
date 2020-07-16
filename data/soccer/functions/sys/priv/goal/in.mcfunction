@@ -6,7 +6,8 @@ effect clear @a
 
 # ボールを削除
 kill @e[type=snowball]
-clear @a
+clear @a snowball
+clear @a lead
 
 # ゴールした時のタイトル表示
 title @a times 10 40 10

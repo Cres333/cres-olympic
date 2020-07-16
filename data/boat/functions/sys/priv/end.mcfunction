@@ -1,6 +1,7 @@
 # システム終了処理
 ## クリア
-clear @a
+clear @a arrow
+clear @a bow
 effect clear @a
 
 ## ボートと矢を削除

@@ -1,6 +1,6 @@
 # 敗北処理
 schedule clear util:count/loop
-clear @a
+clear @a iron_sword
 
 scoreboard players reset @s PLAY
 

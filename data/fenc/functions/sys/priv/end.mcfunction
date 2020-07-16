@@ -9,7 +9,7 @@ execute unless score $util:count _ matches 0.. run tellraw @a {"interpret":true,
 scoreboard players reset * _LOSER
 
 ## とりあえずクリア
-clear @a
+clear @a iron_sword
 effect clear @a
 
 ## 勝者にはスコア追加

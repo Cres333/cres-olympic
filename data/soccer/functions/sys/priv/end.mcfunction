@@ -6,7 +6,8 @@ execute as @a[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 gamemode spectator @a
 kill @e[tag=ball]
 kill @e[type=snowball]
-clear @a
+clear @a snowball
+clear @a lead
 
 ## エフェクト削除
 effect clear @a

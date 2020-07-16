@@ -6,7 +6,7 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 gamemode spectator @a
 
 ## 装備削除
-clear @a
+clear @a diamond_sword
 kill @e[type=item]
 
 ## スケジュール削除
