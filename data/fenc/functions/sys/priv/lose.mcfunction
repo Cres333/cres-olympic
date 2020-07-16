@@ -1,4 +1,5 @@
 # 敗北処理
+schedule clear util:count/loop
 clear @a
 
 scoreboard players reset @s PLAY
