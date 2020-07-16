@@ -27,7 +27,7 @@ execute if entity @p[team=r,scores={_MEDAL=1}] run scoreboard players reset $r S
 execute if entity @p[team=b,scores={_MEDAL=1}] run scoreboard players reset $b SCORE
 execute if entity @p[team=y,scores={_MEDAL=1}] run scoreboard players reset $y SCORE
 execute if entity @p[team=g,scores={_MEDAL=1}] run scoreboard players reset $g SCORE
-scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
+scoreboard players set @a[scores={_MEDAL=1..}] SCORE 10000001
 scoreboard players set $most SCORE 10000000
 
 ## 銀メダルを配分
@@ -55,7 +55,7 @@ execute if entity @p[team=r,scores={_MEDAL=2}] run scoreboard players reset $r S
 execute if entity @p[team=b,scores={_MEDAL=2}] run scoreboard players reset $b SCORE
 execute if entity @p[team=y,scores={_MEDAL=2}] run scoreboard players reset $y SCORE
 execute if entity @p[team=g,scores={_MEDAL=2}] run scoreboard players reset $g SCORE
-scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
+scoreboard players set @a[scores={_MEDAL=1..}] SCORE 10000001
 scoreboard players set $most SCORE 10000000
 
 ## 銅メダルを配分
@@ -83,7 +83,7 @@ execute if entity @p[team=r,scores={_MEDAL=3}] run scoreboard players reset $r S
 execute if entity @p[team=b,scores={_MEDAL=3}] run scoreboard players reset $b SCORE
 execute if entity @p[team=y,scores={_MEDAL=3}] run scoreboard players reset $y SCORE
 execute if entity @p[team=g,scores={_MEDAL=3}] run scoreboard players reset $g SCORE
-scoreboard players reset @a[scores={_MEDAL=1..}] SCORE
+scoreboard players set @a[scores={_MEDAL=1..}] SCORE 10000001
 scoreboard players set $most SCORE 10000000
 
 ## 個人メダルをアーマースタンドに保存
