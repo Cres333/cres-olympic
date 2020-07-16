@@ -7,12 +7,13 @@ execute if entity @s[team=b] run scoreboard players operation $b SCORE = $time _
 execute if entity @s[team=y] run scoreboard players operation $y SCORE = $time _
 execute if entity @s[team=g] run scoreboard players operation $g SCORE = $time _
 
-# 同一ID (同じチーム)のメンバーも一緒に対応する
-execute as @a[predicate=util:join] if score @s _ID = $temp _ run gamemode spectator @s
-execute as @a[predicate=util:join] if score @s _ID = $temp _ run clear @s arrow
-execute as @a[predicate=util:join] if score @s _ID = $temp _ run clear @s bow
-execute as @a[predicate=util:join] if score @s _ID = $temp _ run scoreboard players operation @s SCORE = $time _
-execute as @a[predicate=util:join] if score @s _ID = $temp _ run scoreboard players reset @s PLAY
+kill @e[type=boat,distance=..1]
+kill @e[tag=rider,distance=..1]
+gamemode spectator @s
+clear @s arrow
+clear @s bow
+scoreboard players operation @s SCORE = $time _
+scoreboard players reset @s PLAY
 
 ## 最後の選手がゴールしたらメッセージ
 tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.single"}

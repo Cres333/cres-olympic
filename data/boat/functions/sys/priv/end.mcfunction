@@ -7,6 +7,7 @@ effect clear @a
 ## ボートと矢を削除
 kill @e[type=item]
 kill @e[type=boat]
+kill @e[tag=rider]
 kill @e[type=arrow]
 
 ## PLAYから外す
