@@ -1,5 +1,6 @@
 # ゲームの機構
 ## 初期化
+advancement revoke @a only event:soccer/drop
 scoreboard players reset * _HAS
 scoreboard players reset * _COOL
 scoreboard players set $w _ 0
