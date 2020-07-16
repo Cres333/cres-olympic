@@ -170,7 +170,7 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チーム３人で炎の玉を相手チームに当てる競技です。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各選手は各チームの色と同じ場所から競技が始まります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると中央に炎の玉が出現するため、"]}'
-data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["他のチームに当てるたり、飛んできた炎の玉を避けてください。"]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["他のチームに当てたり、飛んできた炎の玉を避けてください。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["他のチームのエリアに入ると鈍足のエフェクトがかかります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["また、各チームのエリアでボールが爆発すると、そのエリアは狭くなります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["狭くなった壁の中に埋まってしまった場合は、中央にテレポートします。"]}'
@@ -229,13 +229,13 @@ data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","wi
 ## 個人戦
 data modify storage lang boat.full.single set value '{"translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
 data modify storage lang boat.goal.single set value '{"translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
-## 一周
-data modify storage lang boat.full.r set value '{"text":"[実況] 赤チーム、残り１周です！"}'
-data modify storage lang boat.full.b set value '{"text":"[実況] 青チーム、残り１周です！"}'
-data modify storage lang boat.full.y set value '{"text":"[実況] 黄チーム、残り１周です！"}'
-data modify storage lang boat.full.g set value '{"text":"[実況] 緑チーム、残り１周です！"}'
-## 全員ゴール
-data modify storage lang boat.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
-data modify storage lang boat.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
-data modify storage lang boat.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
-data modify storage lang boat.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'
+## OBSOLETE: 一周
+# data modify storage lang boat.full.r set value '{"text":"[実況] 赤チーム、残り１周です！"}'
+# data modify storage lang boat.full.b set value '{"text":"[実況] 青チーム、残り１周です！"}'
+# data modify storage lang boat.full.y set value '{"text":"[実況] 黄チーム、残り１周です！"}'
+# data modify storage lang boat.full.g set value '{"text":"[実況] 緑チーム、残り１周です！"}'
+## OBSOLETE: 全員ゴール
+# data modify storage lang boat.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
+# data modify storage lang boat.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
+# data modify storage lang boat.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
+# data modify storage lang boat.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'
