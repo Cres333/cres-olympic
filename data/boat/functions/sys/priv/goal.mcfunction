@@ -15,11 +15,7 @@ execute as @a[predicate=util:join] if score @s _ID = $temp _ run scoreboard play
 execute as @a[predicate=util:join] if score @s _ID = $temp _ run scoreboard players reset @s PLAY
 
 ## 最後の選手がゴールしたらメッセージ
-execute if data storage main {mode:single} run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.single"}
-execute if data storage main {mode:multi} if entity @s[team=r] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.r"}
-execute if data storage main {mode:multi} if entity @s[team=b] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.b"}
-execute if data storage main {mode:multi} if entity @s[team=y] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.y"}
-execute if data storage main {mode:multi} if entity @s[team=g] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.g"}
+tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.goal.single"}
 
 ## ゴールエフェクト(シングルも同じ)
 execute at @s run particle minecraft:enchanted_hit ~ ~1 ~ 0.2 2 0.2 0.3 100
