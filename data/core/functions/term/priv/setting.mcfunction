@@ -42,8 +42,8 @@ execute as @e[tag=m] run function storage:player/gold
 ### 金メダルMVP
 scoreboard players set $gold _MOST 0
 scoreboard players operation $gold _MOST > @a _GOLD
-execute as @a if score $gold _MOST = @s _GOLD run scoreboard players set @s _MOST 1
+execute as @a if score $gold _MOST = @s _GOLD run scoreboard players set @s _GOLD 1
 ### スコアMVP
 scoreboard players set $score _MOST 0
 scoreboard players operation $score _MOST > @a SCORE
-execute as @a if score $score _MOST = @s SCORE run scoreboard players set @s _MOST 2
+execute as @a if score $score _MOST = @s SCORE run scoreboard players set @s _MOST 1

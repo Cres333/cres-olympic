@@ -9,8 +9,5 @@ execute as @a[scores={_LOSER=1}] at @s run summon firework_rocket ~ ~ ~ {LifeTim
 ## ゲームモード変更
 gamemode spectator @a[scores={_LOSER=1}]
 
-## リセット
-scoreboard players reset * _LOSER
-
 ## 終了処理
 schedule function fenc:sys/priv/end 3s

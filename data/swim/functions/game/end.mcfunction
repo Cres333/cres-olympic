@@ -3,7 +3,7 @@
 schedule clear swim:sys/wait/loop
 
 ## アイテム削除
-clear @a
+clear @a trident
 
 ## PLAYから除外
 scoreboard players reset * PLAY

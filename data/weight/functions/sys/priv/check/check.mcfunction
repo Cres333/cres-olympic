@@ -1,6 +1,6 @@
 # チェック処理
 ## クリア
-clear @a
+clear @a carrot_on_a_stick
 
 ## 表示用に右クリック連打数をコピー
 scoreboard players reset * _SHOW

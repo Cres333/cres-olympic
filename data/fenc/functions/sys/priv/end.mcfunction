@@ -1,16 +1,15 @@
 # システム終了処理
-## ループ処理をクリア
-schedule clear util:count/loop
-schedule clear fenc:sys/wait/count
-
 ## カウントダウン中だったら失敗表示
 execute if score $util:count _ matches 0.. run tellraw @a {"interpret":true,"storage":"lang","nbt":"fenc.count.attack"}
 
 ## 勝者を表示
 execute unless score $util:count _ matches 0.. run tellraw @a {"interpret":true,"storage":"lang","nbt":"fenc.win"}
 
+## リセット
+scoreboard players reset * _LOSER
+
 ## とりあえずクリア
-clear @a
+clear @a iron_sword
 effect clear @a
 
 ## 勝者にはスコア追加

@@ -4,7 +4,8 @@ scoreboard players set @a[predicate=util:play] _COOL 0
 scoreboard players set @a[scores={_HAS=1}] _COOL 60
 
 ## ボール召喚
-clear @a
+clear @a snowball
+clear @a lead
 kill @e[type=snowball]
 summon snowball 1058 60 -1345
 

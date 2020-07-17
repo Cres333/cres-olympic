@@ -3,7 +3,7 @@
 gamemode spectator @s
 
 ## アイテム削除
-clear @s
+clear @s diamond_sword
 
 ## PLAYから抜ける
 scoreboard players reset @s PLAY
