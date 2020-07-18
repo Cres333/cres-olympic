@@ -11,7 +11,7 @@ function util:wear/equip
 function fenc:sys/priv/setting-position
 
 ## 選手に剣を持たせる
-give @a[predicate=util:play] iron_sword{HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_speed",Amount:-0.9,Operation:1,UUID:[I;0,1,0,1]}]}
+give @a[predicate=util:play] iron_sword
 
 ## スピード上昇エフェクトをかける
 effect give @a[predicate=util:play] speed 100000 5 true
