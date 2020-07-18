@@ -1,5 +1,7 @@
 # 豚を召喚
 ## X:-0.5~0.5, Y:1.4~1.8, Z: 4.0~4.2
+particle minecraft:explosion 1059 33 -1396 0 0 0 1 3 force
+playsound minecraft:entity.generic.explode master @a 1059 33 -1396 10
 execute if score $random _ matches 1 run summon pig 1059 32 -1396 {Health:0.01f,ActiveEffects:[{Id:25b,Amplifier:255,Duration:30,ShowParticles:false}],Motion:[-0.5,1.4,4.5]}
 execute if score $random _ matches 2 run summon pig 1059 32 -1396 {Health:0.01f,ActiveEffects:[{Id:25b,Amplifier:255,Duration:30,ShowParticles:false}],Motion:[-0.5,1.4,4.8]}
 execute if score $random _ matches 3 run summon pig 1059 32 -1396 {Health:0.01f,ActiveEffects:[{Id:25b,Amplifier:255,Duration:30,ShowParticles:false}],Motion:[-0.5,1.4,4.7]}
