@@ -26,6 +26,7 @@ execute as @a[scores={_LIFE=0}] unless score @s _CLICK < $value _CLICK run title
 tellraw @a {"interpret":true,"storage":"lang","nbt":"weight.retire"}
 
 ## 脱落エフェクト
+execute as @a[scores={_LIFE=0}] at @s run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 10
 execute as @a[scores={_LIFE=0}] at @s run particle minecraft:explosion ~ ~1 ~ 0.2 1 0.2 0.3 5
 
 # スペクテイターにする

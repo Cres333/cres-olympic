@@ -1,6 +1,6 @@
 #周回チェック(一周)
 ## 半周ごとにプレゼント
-give @s[scores={_ROUND=2}] tipped_arrow{CustomPotionEffects:[{Id:15b,Amplifier:1b,Duration:200,ShowParticles:1b}],Potion:"minecraft:empty"} 2
+give @s[scores={_ROUND=2}] tipped_arrow{CustomPotionEffects:[{Id:15b,Amplifier:1b,Duration:200,ShowParticles:1b}],Potion:"minecraft:empty"} 4
 
 ## 一周目のメッセージ
 execute if entity @s[scores={_ROUND=2}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.full.single"}

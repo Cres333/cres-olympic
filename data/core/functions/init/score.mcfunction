@@ -10,7 +10,7 @@ scoreboard objectives remove _
 scoreboard objectives add ID dummy "ID"
 scoreboard objectives add JOIN dummy "参加中プレイヤー(0 or 1)"
 scoreboard objectives add PLAY dummy "競技中プレイヤー(0 or 1)"
-scoreboard objectives add SCORE dummy "各競技のポイント保存用"
+scoreboard objectives add SCORE dummy "平均ポイント"
 scoreboard objectives add COUNT dummy "参加回数"
 scoreboard objectives add _ dummy "各ゲームの管理用"
 

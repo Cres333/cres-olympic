@@ -4,6 +4,9 @@ scoreboard players set $stop _ 1
 # エフェクトを削除
 effect clear @a
 
+# ボールを爆発
+execute as @e[tag=ball] at @s run summon firework_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:1,Trail:1,Flicker:1,Colors:[I;11743532],FadeColors:[I;14602026]}],Flight:1}}}}
+
 # ボールを削除
 kill @e[type=snowball]
 clear @a snowball

@@ -9,3 +9,7 @@ title @a title {"text":"始め！","color":"red"}
 
 ## 10秒後にチェック
 schedule function weight:sys/priv/check/check 10s
+
+## エフェクト
+scoreboard players reset * _EFFECT
+schedule function weight:sys/wait/loop 1t
