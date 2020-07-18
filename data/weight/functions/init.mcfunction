@@ -3,6 +3,7 @@
 data merge storage main {game:weight,join:2,team:false,score:point}
 
 ## スコア設定
+scoreboard objectives add _EFFECT minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add _CLICK minecraft.used:minecraft.carrot_on_a_stick "クリック数"
 scoreboard objectives add _LIFE dummy "ライフ"
 scoreboard objectives add _SHOW dummy "右クリック連打数"
