@@ -58,6 +58,7 @@ data modify storage lang util.score.medal set value '{"translate":"[システム
 
 # ウェイトリフティングの説明
 data remove storage lang weight
+data modify storage lang weight.title set value "= ウェイトリフティング ="
 data modify storage lang weight.descNum set value 9
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["= ウェイトリフティング ="]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上、右クリックを連打する競技です。"]}'
@@ -73,6 +74,7 @@ data modify storage lang weight.retire set value '{"translate":"[実況] %s 選�
 
 # サッカーの説明
 data remove storage lang soccer
+data modify storage lang soccer.title set value "= サッカー ="
 data modify storage lang soccer.descNum set value 9
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["= サッカー ="]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
@@ -95,6 +97,7 @@ data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with"
 
 # 水泳の説明
 data remove storage lang swim
+data modify storage lang swim.title set value "= 水泳 ="
 data modify storage lang swim.descNum set value 7
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
@@ -124,6 +127,7 @@ data modify storage lang swim.goal.g set value '{"text":"[実況] 緑チーム�
 
 # クレー射撃の説明
 data remove storage lang clay
+data modify storage lang clay.title set value "= クレー射撃 ="
 data modify storage lang clay.descNum set value 8
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["奥から飛んでくるブタを撃ち抜く競技です。"]}'
@@ -139,6 +143,7 @@ data modify storage lang clay.record set value '{"translate":"[実況] %s 選手
 
 # リレーの説明
 data remove storage lang relay
+data modify storage lang relay.title set value "= リレー ="
 data modify storage lang relay.descNum set value 6
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で様々な障害物を乗り越えて２周走る競技です。"]}'
@@ -165,6 +170,7 @@ data modify storage lang relay.goal.g set value '{"text":"[実況] 緑チーム�
 
 # ドッヂの説明
 data remove storage lang dodge
+data modify storage lang dodge.title set value "= ドッヂボール ="
 data modify storage lang dodge.descNum set value 9
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["= ドッヂボール ="]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チーム３人で炎の玉を相手チームに当てる競技です。"]}'
@@ -181,6 +187,7 @@ data modify storage lang dodge.retire set value '{"translate":"[実況] %s 選�
 
 # 勝ち抜き戦の説明
 data remove storage lang battle
+data modify storage lang battle.title set value "= 勝ち抜き戦 ="
 data modify storage lang battle.descNum set value 9
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加のバトルロワイアル競技です。"]}'
@@ -198,6 +205,7 @@ data modify storage lang battle.even set value '{"text":"[実況] 今の試合�
 
 # フェンシングの説明
 data remove storage lang fenc
+data modify storage lang fenc.title set value "= フェンシング ="
 data modify storage lang fenc.descNum set value 7
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["= フェンシング ="]}'
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式で２人ずつ戦う競技です。"]}'
@@ -217,8 +225,9 @@ data modify storage lang fenc.win set value '{"translate":"[実況] %s 選手が
 
 ## ボートの説明
 data remove storage lang boat
+data modify storage lang boat.title set value "= ボートレース ="
 data modify storage lang boat.descNum set value 7
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボート ="]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く１周する競技です。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートにすぐさま乗ってください。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともに弓が渡されます。"]}'
