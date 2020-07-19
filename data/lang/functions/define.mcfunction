@@ -236,9 +236,9 @@ data modify storage lang boat.descNum set value 7
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く２周する競技です。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートが用意されているため、乗ってください。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともにクロスボウが渡されます。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["半周ごとに手に入る矢を使って、ボートを漕ぎつつ、"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["他のプレイヤーの妨害をしていきましょう。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めます。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技場にはさまざまな障害物が用意されているため、"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ショートカットを活用して誰よりも速く２周してください。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 個人戦
