@@ -24,8 +24,8 @@ execute if data storage soccer {now:{w:yellow,b:green}} run title @a title {"int
 
 # クールダウンを設定
 scoreboard players set @a[predicate=util:play] _COOL 0
-execute if score $isW _ matches 1 run scoreboard players set @a[scores={_B=1..}] _COOL 60
-execute if score $isB _ matches 1 run scoreboard players set @a[scores={_W=1..}] _COOL 60
+execute if score $isW _ matches 1 run scoreboard players set @a[scores={_B=1..}] _COOL 100
+execute if score $isB _ matches 1 run scoreboard players set @a[scores={_W=1..}] _COOL 100
 
 # ポジションリセット
 function soccer:sys/priv/setting-position

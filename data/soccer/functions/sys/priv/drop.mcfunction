@@ -1,7 +1,7 @@
 # イベント検知
 ## クールダウン発生
 scoreboard players set @a[predicate=util:play] _COOL 0
-scoreboard players set @a[scores={_HAS=1}] _COOL 60
+scoreboard players set @a[scores={_HAS=1}] _COOL 100
 
 ## ボール召喚
 clear @a snowball
