@@ -2,6 +2,9 @@
 ## スコアボード切り替え
 scoreboard objectives setdisplay sidebar _LIFE
 
+## ボスバーを設定
+function weight:sys/priv/bar
+
 ## ライフが無いプレイヤーがいる
 execute if entity @p[scores={_LIFE=0}] run function weight:sys/priv/out
 
