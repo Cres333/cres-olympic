@@ -2,35 +2,35 @@
 bossbar set life1 max 50
 bossbar set life1 style notched_10
 bossbar set life1 color yellow
-bossbar set life1 visible false
+bossbar set life1 visible true
 bossbar set life2 max 50
 bossbar set life2 style notched_10
 bossbar set life2 color yellow
-bossbar set life2 visible false
+bossbar set life2 visible true
 bossbar set life3 max 50
 bossbar set life3 style notched_10
 bossbar set life3 color yellow
-bossbar set life3 visible false
+bossbar set life3 visible true
 bossbar set life4 max 50
 bossbar set life4 style notched_10
 bossbar set life4 color yellow
-bossbar set life4 visible false
+bossbar set life4 visible true
 bossbar set life5 max 50
 bossbar set life5 style notched_10
 bossbar set life5 color yellow
-bossbar set life5 visible false
+bossbar set life5 visible true
 bossbar set life6 max 50
 bossbar set life6 style notched_10
 bossbar set life6 color yellow
-bossbar set life6 visible false
+bossbar set life6 visible true
 bossbar set life7 max 50
 bossbar set life7 style notched_10
 bossbar set life7 color yellow
-bossbar set life7 visible false
+bossbar set life7 visible true
 bossbar set life8 max 50
 bossbar set life8 style notched_10
 bossbar set life8 color yellow
-bossbar set life8 visible false
+bossbar set life8 visible true
 
 execute store result bossbar life1 value run scoreboard players get @p[scores={_ID=1}] _LIFE
 execute store result bossbar life2 value run scoreboard players get @p[scores={_ID=2}] _LIFE
