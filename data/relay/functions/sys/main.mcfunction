@@ -2,8 +2,9 @@
 ## 初期化
 scoreboard players set $end _ 0
 
-## 光らせる
+## エフェクト処理
 effect give @a[predicate=util:join] glowing 1000000 0 true
+effect give @a[predicate=util:join] resistance 1000000 100 true
 
 ## 第ｎ走者か表示
 title @a times 10 80 10

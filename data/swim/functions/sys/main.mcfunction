@@ -5,6 +5,7 @@ scoreboard players set $end _ 0
 ## エフェクト追加
 effect give @a[predicate=util:join] water_breathing 1000000 0 true
 effect give @a[predicate=util:join] glowing 1000000 0 true
+effect give @a[predicate=util:join] resistance 1000000 100 true
 
 ## 選手にユニフォームを着せる
 function util:wear/equip
