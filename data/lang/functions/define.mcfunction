@@ -65,7 +65,7 @@ data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["最初に「何回、右クリックしろ」と指示が来るため、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["その回数以上、ニンジン棒を持って右クリックしてください。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数未満だと、失格になります。"]}'
-data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上でも、ライフが無くなると、"]}'
+data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上でも、５０回分のライフが無くなると、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["力尽きて、失格となります。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
@@ -98,9 +98,10 @@ data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with"
 # 水泳の説明
 data remove storage lang swim
 data modify storage lang swim.title set value '{"color":"yellow","text":"= 水泳 ="}'
-data modify storage lang swim.descNum set value 7
+data modify storage lang swim.descNum set value 8
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["水中は柵や鎖の間を抜けたり、壁や水流で行く手を阻むなどの障害物があります。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["選手には泳ぎ始めるときに、トライデントが渡されます。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["トライデントを使うと、スピードが上がりますが、"]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["一定時間、経たないと使うことができません。"]}'
@@ -128,7 +129,7 @@ data modify storage lang swim.goal.g set value '{"text":"[実況] 緑チーム�
 # クレー射撃の説明
 data remove storage lang clay
 data modify storage lang clay.title set value '{"color":"yellow","text":"= クレー射撃 ="}'
-data modify storage lang clay.descNum set value 8
+data modify storage lang clay.descNum set value 9
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["奥から飛んでくるブタを撃ち抜く競技です。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["選手にはクロスボウと、２０本の矢が渡されます。"]}'
@@ -136,6 +137,7 @@ data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["５秒ごとに連続で１０匹のブタが飛んできます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["より多くのブタをクロスボウで撃ち抜いてください。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["２回ずつ競技を行い、より多く撃ち抜いた方が得点となります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 記録
@@ -147,12 +149,13 @@ data modify storage lang clay.retire set value '{"translate":"[実況] %s 選手
 # リレーの説明
 data remove storage lang relay
 data modify storage lang relay.title set value '{"color":"yellow","text":"= リレー ="}'
-data modify storage lang relay.descNum set value 6
+data modify storage lang relay.descNum set value 7
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で様々な障害物を乗り越えて２周走る競技です。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各選手はトラックを半周して、次の選手につなぎます。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["トラック上にはダイヤモンドブロックと金ブロックがあり、"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["それぞれのブロックの上を通過するとスピードが上昇します。"]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["また、石炭ブロックのエリアでは一定時間、盲目がかかります。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang relay.player append value '{"translate":""}'
@@ -231,8 +234,8 @@ data remove storage lang boat
 data modify storage lang boat.title set value '{"color":"yellow","text":"= ボートレース ="}'
 data modify storage lang boat.descNum set value 7
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く１周する競技です。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートにすぐさま乗ってください。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く２周する競技です。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートが用意されているため、乗ってください。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともに弓が渡されます。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["半周ごとに手に入る矢を使って、ボートを漕ぎつつ、"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["他のプレイヤーの妨害をしていきましょう。"]}'
