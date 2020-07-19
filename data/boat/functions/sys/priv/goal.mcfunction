@@ -11,7 +11,7 @@ kill @e[type=boat,distance=..2,limit=1,sort=nearest]
 kill @e[tag=rider,distance=..2,limit=1,sort=nearest]
 gamemode spectator @s
 clear @s arrow
-clear @s bow
+clear @s crossbow
 scoreboard players operation @s SCORE = $time _
 scoreboard players reset @s PLAY
 

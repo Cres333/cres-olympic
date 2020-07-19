@@ -236,7 +236,7 @@ data modify storage lang boat.descNum set value 7
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く２周する競技です。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートが用意されているため、乗ってください。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともに弓が渡されます。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともにクロスボウが渡されます。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["半周ごとに手に入る矢を使って、ボートを漕ぎつつ、"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["他のプレイヤーの妨害をしていきましょう。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
