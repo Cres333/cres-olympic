@@ -5,9 +5,6 @@ execute if score $num _TICKET matches 2.. run function util:select/priv/check-al
 execute if score $num _TICKET matches 3.. run function util:select/priv/check-all
 execute if score $num _TICKET matches 4.. run function util:select/priv/check-all
 
-## チケットリセット
-scoreboard players reset @a[predicate=!util:join] _TICKET
-
 ## メッセージを表示
 execute if score $team _TICKET matches 1 run tellraw @a[team=r] {"interpret":true,"nbt":"util.select.ok","storage":"lang"}
 execute if score $team _TICKET matches 2 run tellraw @a[team=b] {"interpret":true,"nbt":"util.select.ok","storage":"lang"}
