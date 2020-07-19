@@ -6,6 +6,7 @@ scoreboard players add $phase _ 1
 
 ## 選手にユニフォームを着せる
 function util:wear/equip
+function fenc:sys/priv/wear
 
 ## 選手をTPする
 function fenc:sys/priv/setting-position

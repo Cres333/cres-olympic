@@ -9,7 +9,7 @@ execute store success score $ret _ run scoreboard players set @p[distance=..1,sc
 execute if score $ret _ matches 1.. run give @p[scores={_HAS=1}] snowball
 
 ## ボールを持っていないプレイヤーにクールダウン発生
-execute if score $ret _ matches 1.. run scoreboard players add @a[scores={_HAS=0}] _COOL 20
+execute if score $ret _ matches 1.. run scoreboard players add @a[scores={_HAS=0}] _COOL 60
 
 ## ボールを持っていないプレイヤー以外にリードを渡す
 execute if score $ret _ matches 1.. as @a[scores={_HAS=0}] run give @s lead

@@ -7,11 +7,11 @@ execute if entity @s[team=b] run scoreboard players operation $b SCORE = $time _
 execute if entity @s[team=y] run scoreboard players operation $y SCORE = $time _
 execute if entity @s[team=g] run scoreboard players operation $g SCORE = $time _
 
-kill @e[type=boat,distance=..1,limit=1]
-kill @e[tag=rider,distance=..1,limit=1]
+kill @e[type=boat,distance=..2,limit=1,sort=nearest]
+kill @e[tag=rider,distance=..2,limit=1,sort=nearest]
 gamemode spectator @s
 clear @s arrow
-clear @s bow
+clear @s crossbow
 scoreboard players operation @s SCORE = $time _
 scoreboard players reset @s PLAY
 

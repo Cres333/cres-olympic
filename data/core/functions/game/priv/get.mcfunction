@@ -1,8 +1,8 @@
 # 競技を取得する
 ## 取得
 data remove storage play now
-data modify storage play now set from storage play games[0].type
-data remove storage play games[0]
+data modify storage play now set from storage play playing[0].type
+data remove storage play playing[0]
 
 ## 設定
 execute if data storage play {now:battle} run scoreboard players set $game _NEXT 1

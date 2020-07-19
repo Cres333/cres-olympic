@@ -2,6 +2,9 @@
 ## 初期化
 scoreboard players set $end _ 0
 
+## ボスバーを設定
+function weight:sys/priv/bar
+
 ## 選手にユニフォームを着せる
 function util:wear/equip
 

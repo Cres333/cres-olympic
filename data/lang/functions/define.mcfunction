@@ -27,16 +27,16 @@ data modify storage lang core.book.jump.blue set value '{"text":"● 青チー�
 data modify storage lang core.book.jump.yellow set value '{"text":"● 黄チームの成績","clickEvent":{"action":"change_page","value":"6"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
 data modify storage lang core.book.jump.green set value '{"text":"● 緑チームの成績","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
 data modify storage lang core.book.show.score set value '{"text":"スコア表示","clickEvent":{"action":"run_command","value":"/function core:term/priv/show"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで表示"}}}'
-data modify storage lang core.book.summary.medal set value '{"translate":"赤 : %s\\n青 : %s\\n黄 : %s\\b緑 : %s","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"_MEDAL","name":"$g"}}]}'
+data modify storage lang core.book.summary.medal set value '{"translate":"赤 : %s\\n青 : %s\\n黄 : %s\\n緑 : %s","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"_MEDAL","name":"$g"}}]}'
 data modify storage lang core.book.summary.score set value '{"translate":"赤 : %s pt\\n青 : %s pt\\n黄 : %s pt\\n緑 : %s pt","with":[{"score":{"objective":"POINT","name":"$r"}},{"score":{"objective":"POINT","name":"$b"}},{"score":{"objective":"POINT","name":"$y"}},{"score":{"objective":"POINT","name":"$g"}}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- 最多金メダル獲得賞\\n%s\\n（%s 個）\\n\\n- 最高得点獲得賞\\n%s\\n（%s pt）\\n\\n- %s","with":[{"selector":"@a[scores={_GOLD=1}]"},{"score":{"objective":"_MOST","name":"$gold"}},{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$score"}},{"interpret":true,"storage":"lang","nbt":"core.book.show.score"}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- %s\\n\\n- 最多金メダル獲得賞\\n%s\\n（%s 個）\\n\\n- 最高得点獲得賞\\n%s\\n（%s pt）","with":[{"interpret":true,"storage":"lang","nbt":"core.book.show.score"},{"selector":"@a[scores={_GOLD=1}]"},{"score":{"objective":"_MOST","name":"$gold"}},{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$score"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 成績まとめ\\n\\n- メダル総数 :\\n%s\\n\\n- チーム得点 :\\n%s\\n\\n","with":[{"interpret":true,"storage":"lang","nbt":"core.book.summary.medal"},{"interpret":true,"storage":"lang","nbt":"core.book.summary.score"}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 赤チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"GOLD","name":"$r"}},{"score":{"objective":"SILVER","name":"$r"}},{"score":{"objective":"BRONZE","name":"$r"}},{"score":{"objective":"POINT","name":"$r"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 青チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"GOLD","name":"$b"}},{"score":{"objective":"SILVER","name":"$b"}},{"score":{"objective":"BRONZE","name":"$b"}},{"score":{"objective":"POINT","name":"$b"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 黄チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"GOLD","name":"$y"}},{"score":{"objective":"SILVER","name":"$y"}},{"score":{"objective":"BRONZE","name":"$y"}},{"score":{"objective":"POINT","name":"$y"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 緑チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$g"}},{"score":{"objective":"GOLD","name":"$g"}},{"score":{"objective":"SILVER","name":"$g"}},{"score":{"objective":"BRONZE","name":"$g"}},{"score":{"objective":"POINT","name":"$g"}}]}'
 ## チーム戦成績本
-data modify storage lang core.book.team set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
+data modify storage lang core.book.team set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s\\n%s\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 ## 個人戦成績本
 data modify storage lang core.book.single set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 ## 練習成績本
@@ -54,18 +54,18 @@ data modify storage lang util.count.start set value '{"text":"!! START !!","colo
 data modify storage lang util.score.gold set value '{"translate":"[システム] 金メダルを獲得しました"}'
 data modify storage lang util.score.silver set value '{"translate":"[システム] 銀メダルを獲得しました"}'
 data modify storage lang util.score.bronze set value '{"translate":"[システム] 銅メダルを獲得しました"}'
-data modify storage lang util.score.medal set value '{"translate":"[システム] あなたのチームは金%s個、銀%s個、銅%s個のメダルを獲得しました","with":[{"score":{"name":"$1","objective":"_MEDAL"}},{"score":{"name":"$2","objective":"_MEDAL"}},{"score":{"name":"$3","objective":"_MEDAL"}}}]}'
+data modify storage lang util.score.medal set value '{"translate":"[システム] あなたのチームは金%s個、銀%s個、銅%s個のメダルを獲得しました","with":[{"score":{"name":"$a","objective":"_MEDAL"}},{"score":{"name":"$b","objective":"_MEDAL"}},{"score":{"name":"$c","objective":"_MEDAL"}}]}'
 
 # ウェイトリフティングの説明
 data remove storage lang weight
-data modify storage lang weight.title set value "= ウェイトリフティング ="
+data modify storage lang weight.title set value '{"color":"yellow","text":"= ウェイトリフティング ="}'
 data modify storage lang weight.descNum set value 9
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["= ウェイトリフティング ="]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上、右クリックを連打する競技です。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["最初に「何回、右クリックしろ」と指示が来るため、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["その回数以上、ニンジン棒を持って右クリックしてください。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数未満だと、失格になります。"]}'
-data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上でも、ライフが無くなると、"]}'
+data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上でも、５０回分のライフが無くなると、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["力尽きて、失格となります。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
@@ -74,7 +74,7 @@ data modify storage lang weight.retire set value '{"translate":"[実況] %s 選�
 
 # サッカーの説明
 data remove storage lang soccer
-data modify storage lang soccer.title set value "= サッカー ="
+data modify storage lang soccer.title set value '{"color":"yellow","text":"= サッカー ="}'
 data modify storage lang soccer.descNum set value 9
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["= サッカー ="]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
@@ -97,10 +97,11 @@ data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with"
 
 # 水泳の説明
 data remove storage lang swim
-data modify storage lang swim.title set value "= 水泳 ="
-data modify storage lang swim.descNum set value 7
+data modify storage lang swim.title set value '{"color":"yellow","text":"= 水泳 ="}'
+data modify storage lang swim.descNum set value 8
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["水中は柵や鎖の間を抜けたり、壁や水流で行く手を阻むなどの障害物があります。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["選手には泳ぎ始めるときに、トライデントが渡されます。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["トライデントを使うと、スピードが上がりますが、"]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["一定時間、経たないと使うことができません。"]}'
@@ -127,8 +128,8 @@ data modify storage lang swim.goal.g set value '{"text":"[実況] 緑チーム�
 
 # クレー射撃の説明
 data remove storage lang clay
-data modify storage lang clay.title set value "= クレー射撃 ="
-data modify storage lang clay.descNum set value 8
+data modify storage lang clay.title set value '{"color":"yellow","text":"= クレー射撃 ="}'
+data modify storage lang clay.descNum set value 9
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["奥から飛んでくるブタを撃ち抜く競技です。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["選手にはクロスボウと、２０本の矢が渡されます。"]}'
@@ -136,20 +137,25 @@ data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["５秒ごとに連続で１０匹のブタが飛んできます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["より多くのブタをクロスボウで撃ち抜いてください。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["２回ずつ競技を行い、より多く撃ち抜いた方が得点となります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 記録
 data modify storage lang clay.record set value '{"translate":"[実況] %s 選手、記録 %s 匹です！","with":[{"selector":"@p[predicate=util:play]"},{"score":{"objective":"_KILL","name":"@p[predicate=util:play]"}}]}'
 
+## リタイア
+data modify storage lang clay.retire set value '{"translate":"[実況] %s 選手、赤枠を踏んでしまいリタイアです！","with":[{"selector":"@p[predicate=util:play]"}]}'
+
 # リレーの説明
 data remove storage lang relay
-data modify storage lang relay.title set value "= リレー ="
-data modify storage lang relay.descNum set value 6
+data modify storage lang relay.title set value '{"color":"yellow","text":"= リレー ="}'
+data modify storage lang relay.descNum set value 7
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で様々な障害物を乗り越えて２周走る競技です。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各選手はトラックを半周して、次の選手につなぎます。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["トラック上にはダイヤモンドブロックと金ブロックがあり、"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["それぞれのブロックの上を通過するとスピードが上昇します。"]}'
+data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["また、石炭ブロックのエリアでは一定時間、盲目がかかります。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang relay.player append value '{"translate":""}'
@@ -170,14 +176,14 @@ data modify storage lang relay.goal.g set value '{"text":"[実況] 緑チーム�
 
 # ドッヂの説明
 data remove storage lang dodge
-data modify storage lang dodge.title set value "= ドッヂボール ="
+data modify storage lang dodge.title set value '{"color":"yellow","text":"= ドッヂボール ="}'
 data modify storage lang dodge.descNum set value 9
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["= ドッヂボール ="]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チーム３人で炎の玉を相手チームに当てる競技です。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各選手は各チームの色と同じ場所から競技が始まります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると中央に炎の玉が出現するため、"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["他のチームに当てたり、飛んできた炎の玉を避けてください。"]}'
-data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["他のチームのエリアに入ると鈍足のエフェクトがかかります。"]}'
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["他のチームのエリアに入ると盲目と鈍足のエフェクトがかかります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["また、各チームのエリアでボールが爆発すると、そのエリアは狭くなります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["狭くなった壁の中に埋まってしまった場合は、中央にテレポートします。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
@@ -187,7 +193,7 @@ data modify storage lang dodge.retire set value '{"translate":"[実況] %s 選�
 
 # 勝ち抜き戦の説明
 data remove storage lang battle
-data modify storage lang battle.title set value "= 勝ち抜き戦 ="
+data modify storage lang battle.title set value '{"color":"yellow","text":"= 勝ち抜き戦 ="}'
 data modify storage lang battle.descNum set value 9
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加のバトルロワイアル競技です。"]}'
@@ -205,7 +211,7 @@ data modify storage lang battle.even set value '{"text":"[実況] 今の試合�
 
 # フェンシングの説明
 data remove storage lang fenc
-data modify storage lang fenc.title set value "= フェンシング ="
+data modify storage lang fenc.title set value '{"color":"yellow","text":"= フェンシング ="}'
 data modify storage lang fenc.descNum set value 7
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["= フェンシング ="]}'
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式で２人ずつ戦う競技です。"]}'
@@ -225,12 +231,12 @@ data modify storage lang fenc.win set value '{"translate":"[実況] %s 選手が
 
 ## ボートの説明
 data remove storage lang boat
-data modify storage lang boat.title set value "= ボートレース ="
+data modify storage lang boat.title set value '{"color":"yellow","text":"= ボートレース ="}'
 data modify storage lang boat.descNum set value 7
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く１周する競技です。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートにすぐさま乗ってください。"]}'
-data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともに弓が渡されます。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く２周する競技です。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートが用意されているため、乗ってください。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めるとともにクロスボウが渡されます。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["半周ごとに手に入る矢を使って、ボートを漕ぎつつ、"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["他のプレイヤーの妨害をしていきましょう。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'

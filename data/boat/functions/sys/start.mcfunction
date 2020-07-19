@@ -1,7 +1,8 @@
 # システム開始処理
 ## 全員に弓を渡す
-give @a bow{Unbreakable:true,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:-1,Operation:1,UUID:[I;0,1,0,1]}]}
-give @a tipped_arrow{CustomPotionEffects:[{Id:15b,Amplifier:1b,Duration:200,ShowParticles:1b}],Potion:"minecraft:empty"} 8
+scoreboard players set @a[predicate=util:play] _USED 0
+give @a[predicate=util:play] crossbow{Unbreakable:true,Enchantments:[{id:"minecraft:quick_charge",lvl:5s}]}
+give @a[predicate=util:play] arrow 2
 
 ## 壁を消す
 fill 1109 36 -1354 1091 40 -1346 air
