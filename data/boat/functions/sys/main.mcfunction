@@ -3,6 +3,9 @@
 scoreboard players set $time _ 0
 scoreboard players set $end _ 0
 
+## 光らせる
+effect give @a[predicate=util:join] glowing 1000000 0 true
+
 ## 選手にユニフォームを着せる
 function util:wear/equip
 
