@@ -28,7 +28,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "_HAS": 0,
+              "_HAS": 1,
               "PLAY": 1
             }
           }
