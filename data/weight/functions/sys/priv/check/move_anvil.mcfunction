@@ -14,6 +14,7 @@ execute if score @p[predicate=util:play,scores={_ID=8}] _CLICK >= $up _CLICK as 
 
 # パーティクル
 execute as @e[tag=anvil] at @s run particle minecraft:totem_of_undying ~ ~1.5 ~ 0.1 0 0.1 0 2
+execute if score @a[predicate=util:play,limit=1] _CLICK >= $up _CLICK as @e[tag=anvil] at @s run playsound block.chain.break master @a ~ ~ ~ 1 1
 
 # 80までは繰り返し
 execute if score $up _CLICK <= $border _CLICK run schedule function weight:sys/priv/check/move_anvil 3t
