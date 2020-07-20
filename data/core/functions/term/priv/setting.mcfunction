@@ -49,3 +49,6 @@ execute as @a if score $gold _MOST = @s _GOLD run scoreboard players set @s _GOL
 scoreboard players set $score _MOST 0
 scoreboard players operation $score _MOST > @a SCORE
 execute as @a if score $score _MOST = @s SCORE run scoreboard players set @s _MOST 1
+
+## 表示用のスコアボード生成
+function core:term/priv/score
