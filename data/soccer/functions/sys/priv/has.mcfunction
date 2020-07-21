@@ -3,22 +3,17 @@
 particle minecraft:dragon_breath ~ ~ ~ 0 2 0 0 10
 
 ## ボールを持っているプレイヤーを検知
-execute store success score $ret _ run scoreboard players set @p[distance=..1,scores={_COOL=0}] _HAS 1
+scoreboard players set @p[distance=..1,scores={_COOL=0}] _HAS 1
 
 ## ボールを持っているプレイヤーにボールを渡す
-execute if score $ret _ matches 1.. run give @p[scores={_HAS=1}] snowball
-
-## ボールを持っていないプレイヤーにクールダウン発生
-execute if score $ret _ matches 1.. run scoreboard players add @a[scores={_HAS=0}] _COOL 100
-
-## ボールを持っていないプレイヤー以外にリードを渡す
-execute if score $ret _ matches 1.. as @a[scores={_HAS=0}] run give @s lead
+give @p[scores={_HAS=1}] snowball
 
 ## ボールを持っているプレイヤーにエフェクトを掛ける
-execute if score $ret _ matches 1.. as @p[scores={_HAS=1}] run effect give @s slowness 1000000 0 true
+effect clear @p[scores={_HAS=1}] speed
+effect give @p[scores={_HAS=1}] speed 3 5 true
 
-## ボールを持っていないプレイヤーにエフェクトを掛ける
-execute if score $ret _ matches 1.. as @a[scores={_HAS=0}] run effect give @s speed 1000000 2 true
+## ボールを持っていないプレイヤーにクールダウン発生
+execute as @p[scores={_HAS=1}] at @s run scoreboard players set @a[distance=..5,scores={_HAS=0}] _COOL 60
 
-## 結果を破棄
-scoreboard players reset $ret _
+## クールタイム用のエフェクトを消す
+execute if entity @p[scores={_HAS=1}] run effect clear @a[scores={_COOL=1..}] luck

@@ -1,20 +1,18 @@
 # イベント検知
-## クールダウン発生
-scoreboard players set @a[predicate=util:play] _COOL 0
-scoreboard players set @a[scores={_HAS=1}] _COOL 100
-
-## ボール召喚
-clear @a snowball
-clear @a lead
-kill @e[type=snowball]
-summon snowball 1058 60 -1345
-
-## ボールを落とす
-execute at @p[scores={_HAS=1}] run spreadplayers ~ ~ 1 3 false @e[type=snowball]
-execute as @e[type=snowball] at @s run tp @s ~ 35 ~
-
 ## ボール持っている判定を消す
+effect clear @a[predicate=util:play] speed
 scoreboard players set @a[predicate=util:play] _HAS 0
+scoreboard players set @s _HAS 1
 
-## イベント削除
-advancement revoke @a only event:drop
+## エフェクト付与
+effect give @a[scores={_HAS=1}] speed 3 5 true
+effect give @a[scores={_HAS=0}] speed 1000000 3 true
+
+## 雪玉を渡す
+kill @e[type=item]
+clear @a snowball
+give @s snowball
+
+## クールダウン発生
+execute at @s run scoreboard players set @a[distance=..10,scores={_HAS=0}] _COOL 100
+effect clear @a[scores={_COOL=1..}] luck

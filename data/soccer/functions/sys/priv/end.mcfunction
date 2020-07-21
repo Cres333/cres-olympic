@@ -7,7 +7,6 @@ gamemode spectator @a
 kill @e[tag=ball]
 kill @e[type=snowball]
 clear @a snowball
-clear @a lead
 
 ## エフェクト削除
 effect clear @a
