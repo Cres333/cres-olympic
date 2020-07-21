@@ -80,13 +80,13 @@ data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っている選手には雪玉が渡されます。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["雪玉を投げるとボールも飛んでいきます。"]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っていない選手はリードを持っているため、"]}'
-data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["リードでボールを持っている選手を叩くとボールを落とします。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っていない選手は幸運エフェクトがかかっているため、"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っている選手を叩くとボールを落とします。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["制限時間の３分以内に相手のゴールへたくさんボールを入れてください。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
-data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを持てません ::","color":"red"}'
+data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red"}'
 
 data modify storage lang soccer.goal.rb set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"blue","score":{"name":"$b","objective":"_"}}]}'
 data modify storage lang soccer.goal.ry set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'

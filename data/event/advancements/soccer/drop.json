@@ -18,8 +18,10 @@
       "conditions": {
         "damage": {
           "direct_entity": {
-            "equipment": {
-              "mainhand": "minecraft:lead"
+            "effects": {
+              "luck": {
+                "amplifier": 1
+              }
             }
           }
         },
