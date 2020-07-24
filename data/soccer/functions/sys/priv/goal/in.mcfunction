@@ -20,6 +20,7 @@ effect clear @a[predicate=util:play] luck
 scoreboard players set @a[predicate=util:play] _COOL 0
 effect give @a[predicate=util:play] luck 1000000 1 false
 
+effect clear @a[predicate=util:play] glowing
 effect clear @a[predicate=util:play] speed
 scoreboard players set @a[predicate=util:play] _HAS 0
 effect give @a[predicate=util:play] speed 1000000 3 true
@@ -29,7 +30,7 @@ function soccer:sys/priv/setting-position
 
 # ボールを再召喚
 scoreboard players set $cornor _ 1
-execute if score $isB _ matches 1 run scoreboard players set $cornor _ 2
-execute if score $isW _ matches 1 run scoreboard players set $cornor _ 3
+execute if score $isW _ matches 1 run scoreboard players set $cornor _ 2
+execute if score $isB _ matches 1 run scoreboard players set $cornor _ 3
 function soccer:sys/priv/cornor
 scoreboard players reset $cornor _

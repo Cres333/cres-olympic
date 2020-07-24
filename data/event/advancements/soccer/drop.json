@@ -14,14 +14,12 @@
   },
   "criteria": {
     "": {
-      "trigger": "minecraft:entity_hurt_player",
+      "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "damage": {
-          "direct_entity": {
-            "effects": {
-              "luck": {
-                "amplifier": 1
-              }
+        "entity": {
+          "effects": {
+            "glowing": {
+              "amplifier": 1
             }
           }
         },
@@ -30,8 +28,19 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "_HAS": 1,
+              "_HAS": 0,
               "PLAY": 1
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": { 
+              "effects": {
+                "luck": {
+                  "amplifier": 1
+                }
+              }
             }
           }
         ]

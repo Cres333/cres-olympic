@@ -1,10 +1,12 @@
 # イベント検知
 ## ボール持っている判定を消す
+effect clear @a[predicate=util:play] glowing
 effect clear @a[predicate=util:play] speed
 scoreboard players set @a[predicate=util:play] _HAS 0
 scoreboard players set @s _HAS 1
 
 ## エフェクト付与
+effect give @a[scores={_HAS=1}] glowing 1000000 1 true
 effect give @a[scores={_HAS=1}] speed 3 5 true
 effect give @a[scores={_HAS=0}] speed 1000000 3 true
 
