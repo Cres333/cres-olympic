@@ -18,6 +18,10 @@ data modify storage lang core.play.cancel set value '{"color":"#FF5200","text":"
 ## ゲーム終了時
 data modify storage lang core.term.message set value '{"color":"#FF5200","text":"[システム] 全競技が終了しました。主催者はクリエイティブモードにしてください。"}'
 data modify storage lang core.term.finish set value '{"color":"#FF5200","text":"[システム] プレイしていただきありがとうございました。"}'
+## チーム分け本
+data modify storage lang core.book.play.finish set value '{"text":"チーム分け完了","clickEvent":{"action": "run_command","value": "/function core:play/finish"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
+data modify storage lang core.book.play.cancel set value '{"text":"チーム分けキャンセル","clickEvent":{"action": "run_command","value": "/function core:play/cancel"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
+data modify storage lang core.book.play set value '{"translate":"● チーム分け\\n\\n- %s\\n\\n\\n- %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.play.finish"},{"interpret":true,"storage":"lang","nbt":"core.book.play.cancel"}]}'
 ## 成績本
 data modify storage lang core.book.jump.exit set value '{"text":"● ゲームを終了する","clickEvent":{"action":"run_command","value":"/function core:term/finish"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで終了"}}}'
 data modify storage lang core.book.jump.mvp set value '{"text":"● 活躍したプレイヤー","clickEvent":{"action":"change_page","value":"2"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
