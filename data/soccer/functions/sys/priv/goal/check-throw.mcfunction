@@ -13,11 +13,6 @@ execute if score $isGoal _ matches 1.. run scoreboard players set $isW _ 1
 
 execute if score $isGoal _ matches 1.. run function soccer:sys/priv/goal/in
 
-## ゴールポスト(外側判定)
-scoreboard players set $cornor _ 0
-execute if score $cornor _ matches 1.. run function soccer:sys/priv/cornor
-scoreboard players reset $cornor _
-
 scoreboard players reset $isGoal _
 scoreboard players reset $isW _
 scoreboard players reset $isB _

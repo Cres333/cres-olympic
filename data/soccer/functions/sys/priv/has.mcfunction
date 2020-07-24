@@ -9,7 +9,9 @@ scoreboard players set @p[distance=..1,scores={_COOL=0}] _HAS 1
 give @p[scores={_HAS=1}] snowball
 
 ## ボールを持っているプレイヤーにエフェクトを掛ける
+effect clear @a[predicate=util:play] glowing
 effect clear @p[scores={_HAS=1}] speed
+effect give @p[scores={_HAS=1}] glowing 1000000 1 true
 effect give @p[scores={_HAS=1}] speed 3 5 true
 
 ## ボールを持っていないプレイヤーにクールダウン発生
