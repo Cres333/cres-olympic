@@ -2,9 +2,6 @@
 ## 初期化
 scoreboard players set $time _ 0
 scoreboard players set $end _ 0
-scoreboard players set $1 _ 0
-scoreboard players set $2 _ 0
-scoreboard players set $3 _ 0
 
 ## エフェクト追加
 effect give @a[predicate=util:join] glowing 1000000 0 true

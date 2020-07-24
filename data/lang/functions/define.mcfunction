@@ -232,25 +232,16 @@ data modify storage lang fenc.win set value '{"color":"yellow","translate":"[実
 ## ボートの説明
 data remove storage lang boat
 data modify storage lang boat.title set value '{"color":"yellow","text":"= ボートレース ="}'
-data modify storage lang boat.descNum set value 7
+data modify storage lang boat.descNum set value 8
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く２周する競技です。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートが用意されているため、乗ってください。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めます。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技場にはさまざまな障害物が用意されているため、"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ショートカットを活用して誰よりも速く２周してください。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["妨害として半周ごとに先を漕いでいる選手には盲目を一定時間付与します。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 個人戦
 data modify storage lang boat.full.single set value '{"color":"yellow","translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
 data modify storage lang boat.goal.single set value '{"color":"yellow","translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
-## OBSOLETE: 一周
-# data modify storage lang boat.full.r set value '{"text":"[実況] 赤チーム、残り１周です！"}'
-# data modify storage lang boat.full.b set value '{"text":"[実況] 青チーム、残り１周です！"}'
-# data modify storage lang boat.full.y set value '{"text":"[実況] 黄チーム、残り１周です！"}'
-# data modify storage lang boat.full.g set value '{"text":"[実況] 緑チーム、残り１周です！"}'
-## OBSOLETE: 全員ゴール
-# data modify storage lang boat.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
-# data modify storage lang boat.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
-# data modify storage lang boat.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
-# data modify storage lang boat.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'

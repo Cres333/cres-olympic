@@ -1,8 +1,6 @@
 #周回チェック(一周)
 ## 半周ごとにプレゼント
-execute if entity @s[scores={_ROUND=2}] run scoreboard players add $2 _ 1
-scoreboard players operation @s[scores={_ROUND=2}] _ = $2 _
-function boat:sys/priv/give
+execute if entity @s[scores={_ROUND=2}] run effect give @a[predicate=util:play,scores={_ROUND=3..}] blindness 5 0
 
 ## 一周目のメッセージ
 execute if entity @s[scores={_ROUND=2}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.full.single"}

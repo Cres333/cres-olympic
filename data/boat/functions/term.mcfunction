@@ -12,7 +12,6 @@ fill 1059 32 -1296 1110 39 -1247 air
 ## スコアボード破棄
 scoreboard objectives remove _ROUND
 scoreboard objectives remove _ID
-scoreboard objectives remove _USED
 
 ## 次のゲーム
 function core:game/next
