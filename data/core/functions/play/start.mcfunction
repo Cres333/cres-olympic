@@ -24,11 +24,8 @@ clone 7 1 37 29 5 59 1048 32 -1357
 scoreboard objectives add _TEAM dummy ":: チーム参加人数 ::"
 scoreboard objectives setdisplay sidebar _TEAM
 
-## チーム分け完了用の看板を用意する
-setblock 1048 32 -1348 birch_sign[rotation=4]{Color:"black",Text2:'{"text":"チーム分け完了","bold":true,"clickEvent":{"action": "run_command","value": "/function core:play/finish"}}',Text4:'{"text":"右クリックで実行","bold":true}'}
-
-## キャンセル用の看板を用意する
-setblock 1048 32 -1344 birch_sign[rotation=4]{Color:"black",Text2:'{"text":"キャンセル","bold":true,"clickEvent":{"action": "run_command","value": "/function core:play/cancel"}}',Text4:'{"text":"右クリックで実行","bold":true}'}
+## チーム分け完了本を渡す
+give @s written_book{title:"チーム分け",author:"",pages:['{"interpret":true,"storage":"lang","nbt":"core.book.play"}']}
 
 ## チーム人数を変動させる
 function core:play/wait/team

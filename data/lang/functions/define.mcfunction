@@ -7,17 +7,21 @@ data modify storage lang core.setting.skip.off set value '{"text":"● ゲーム
 data modify storage lang core.setting.reset set value '{"text":"● 競技を初期化する","clickEvent":{"action":"run_command","value":"/function core:setting/init"}}'
 data modify storage lang core.setting.book set value '{"translate":"● ゲーム設定\\n-----\\n\\n%s\\n\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.setting.start"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.on"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.off"},{"interpret":true,"storage":"lang","nbt":"core.setting.reset"}]}'
 ## 競技選択
-data modify storage lang core.select.complete set value '{"color":"yellow","text":"[システム] プレイする競技を登録しました"}'
-data modify storage lang core.select.reset set value '{"color":"yellow","text":"[システム] プレイする競技を初期化しました"}'
-data modify storage lang core.setting.update set value '{"color":"yellow","text":"[システム] ゲーム説明の有無を更新しました"}'
+data modify storage lang core.select.complete set value '{"color":"#FF5200","text":"[システム] プレイする競技を登録しました"}'
+data modify storage lang core.select.reset set value '{"color":"#FF5200","text":"[システム] プレイする競技を初期化しました"}'
+data modify storage lang core.setting.update set value '{"color":"#FF5200","text":"[システム] ゲーム説明の有無を更新しました"}'
 ## ゲーム開始時
 data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
 data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'
 data modify storage lang core.play.error.team set value '{"text":"[システム] 赤＞青＞黄＞緑の順にチームを構成してください","color":"red"}'
-data modify storage lang core.play.cancel set value '{"color":"yellow","text":"[システム] ゲームをキャンセルしました"}'
+data modify storage lang core.play.cancel set value '{"color":"#FF5200","text":"[システム] ゲームをキャンセルしました"}'
 ## ゲーム終了時
-data modify storage lang core.term.message set value '{"color":"yellow","text":"[システム] 全競技が終了しました。主催者はクリエイティブモードにしてください。"}'
-data modify storage lang core.term.finish set value '{"color":"yellow","text":"[システム] プレイしていただきありがとうございました。"}'
+data modify storage lang core.term.message set value '{"color":"#FF5200","text":"[システム] 全競技が終了しました。主催者はクリエイティブモードにしてください。"}'
+data modify storage lang core.term.finish set value '{"color":"#FF5200","text":"[システム] プレイしていただきありがとうございました。"}'
+## チーム分け本
+data modify storage lang core.book.play.finish set value '{"text":"チーム分け完了","clickEvent":{"action": "run_command","value": "/function core:play/finish"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
+data modify storage lang core.book.play.cancel set value '{"text":"チーム分けキャンセル","clickEvent":{"action": "run_command","value": "/function core:play/cancel"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
+data modify storage lang core.book.play set value '{"translate":"● チーム分け\\n\\n- %s\\n\\n\\n- %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.play.finish"},{"interpret":true,"storage":"lang","nbt":"core.book.play.cancel"}]}'
 ## 成績本
 data modify storage lang core.book.jump.exit set value '{"text":"● ゲームを終了する","clickEvent":{"action":"run_command","value":"/function core:term/finish"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで終了"}}}'
 data modify storage lang core.book.jump.mvp set value '{"text":"● 活躍したプレイヤー","clickEvent":{"action":"change_page","value":"2"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
@@ -46,19 +50,19 @@ data modify storage lang core.book.only set value '{"translate":"● 目次\\n--
 data remove storage lang util
 ## メンバー選択
 data modify storage lang util.select.ng set value '{"text":"[システム] 参加人数が足りていません","color":"red"}'
-data modify storage lang util.select.ok set value '{"color":"yellow","translate":"[システム] この競技の選手は %s で確定しました","with":[{"selector":"@a[predicate=util:join,scores={_TICKET=1}]"}]}'
+data modify storage lang util.select.ok set value '{"color":"#FF5200","translate":"[システム] この競技の選手は %s で確定しました","with":[{"selector":"@a[predicate=util:join,scores={_TICKET=1}]"}]}'
 ## カウントダウン
-data modify storage lang util.count.num set value '{"translate":"= %s =","with":[{"score": {"name": "$util:count","objective": "_"},"color":"yellow"}]}'
+data modify storage lang util.count.num set value '{"translate":"= %s =","with":[{"score": {"name": "$util:count","objective": "_"},"color":"#FF5200"}]}'
 data modify storage lang util.count.start set value '{"text":"!! START !!","color":"green"}'
 ## メダル獲得数を表示
-data modify storage lang util.score.gold set value '{"color":"yellow","translate":"[システム] 金メダルを獲得しました"}'
-data modify storage lang util.score.silver set value '{"color":"yellow","translate":"[システム] 銀メダルを獲得しました"}'
-data modify storage lang util.score.bronze set value '{"color":"yellow","translate":"[システム] 銅メダルを獲得しました"}'
-data modify storage lang util.score.medal set value '{"color":"yellow","translate":"[システム] あなたのチームは金%s個、銀%s個、銅%s個のメダルを獲得しました","with":[{"score":{"name":"$a","objective":"_MEDAL"}},{"score":{"name":"$b","objective":"_MEDAL"}},{"score":{"name":"$c","objective":"_MEDAL"}}]}'
+data modify storage lang util.score.gold set value '{"color":"#FF5200","translate":"[システム] 金メダルを獲得しました"}'
+data modify storage lang util.score.silver set value '{"color":"#FF5200","translate":"[システム] 銀メダルを獲得しました"}'
+data modify storage lang util.score.bronze set value '{"color":"#FF5200","translate":"[システム] 銅メダルを獲得しました"}'
+data modify storage lang util.score.medal set value '{"color":"#FF5200","translate":"[システム] あなたのチームは金%s個、銀%s個、銅%s個のメダルを獲得しました","with":[{"score":{"name":"$a","objective":"_MEDAL"}},{"score":{"name":"$b","objective":"_MEDAL"}},{"score":{"name":"$c","objective":"_MEDAL"}}]}'
 
 # ウェイトリフティングの説明
 data remove storage lang weight
-data modify storage lang weight.title set value '{"color":"yellow","text":"= ウェイトリフティング ="}'
+data modify storage lang weight.title set value '{"color":"#FF5200","text":"= ウェイトリフティング ="}'
 data modify storage lang weight.descNum set value 9
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["= ウェイトリフティング ="]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["指定された回数以上、右クリックを連打する競技です。"]}'
@@ -70,11 +74,11 @@ data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
-data modify storage lang weight.retire set value '{"color":"yellow","translate":"[実況] %s 選手が脱落しました！","with":[{"selector":"@a[predicate=util:play,scores={_LIFE=0}]"}]}'
+data modify storage lang weight.retire set value '{"color":"#FF5200","translate":"[実況] %s 選手が脱落しました！","with":[{"selector":"@a[predicate=util:play,scores={_LIFE=0}]"}]}'
 
 # サッカーの説明
 data remove storage lang soccer
-data modify storage lang soccer.title set value '{"color":"yellow","text":"= サッカー ="}'
+data modify storage lang soccer.title set value '{"color":"#FF5200","text":"= サッカー ="}'
 data modify storage lang soccer.descNum set value 9
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["= サッカー ="]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
@@ -86,18 +90,18 @@ data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
 
-data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red"}'
+data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red","bold":true}'
 
 data modify storage lang soccer.goal.rb set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"blue","score":{"name":"$b","objective":"_"}}]}'
-data modify storage lang soccer.goal.ry set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.ry set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"#FF5200","score":{"name":"$b","objective":"_"}}]}'
 data modify storage lang soccer.goal.rg set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
-data modify storage lang soccer.goal.by set value '{"translate":"%s - %s","with":[{"color":"blue","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.by set value '{"translate":"%s - %s","with":[{"color":"blue","score":{"name":"$w","objective":"_"}},{"color":"#FF5200","score":{"name":"$b","objective":"_"}}]}'
 data modify storage lang soccer.goal.bg set value '{"translate":"%s - %s","with":[{"color":"blue","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
-data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with":[{"color":"yellow","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
+data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with":[{"color":"#FF5200","score":{"name":"$w","objective":"_"}},{"color":"green","score":{"name":"$b","objective":"_"}}]}'
 
 # 水泳の説明
 data remove storage lang swim
-data modify storage lang swim.title set value '{"color":"yellow","text":"= 水泳 ="}'
+data modify storage lang swim.title set value '{"color":"#FF5200","text":"= 水泳 ="}'
 data modify storage lang swim.descNum set value 8
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
@@ -114,21 +118,21 @@ data modify storage lang swim.player append value '{"translate":":: あなたは
 data modify storage lang swim.player append value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"３","color":"red"}]}'
 data modify storage lang swim.player append value '{"translate":":: あなたは第%s泳者です ::","with":[{"text":"４","color":"red"}]}'
 
-data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red"}'
+data modify storage lang swim.cooldown set value '{"text":":: 現在、トライデントを使えません ::","color":"red","bold":true}'
 
 ## 各選手一斉にスタート
-data modify storage lang swim.start.all set value '{"color":"yellow","text":"[実況] 各選手、一斉にスタートしました！"}'
+data modify storage lang swim.start.all set value '{"color":"#FF5200","text":"[実況] 各選手、一斉にスタートしました！"}'
 ## スタート
-data modify storage lang swim.start.change set value '{"color":"yellow","translate":"[実況] %s 選手、スタートします！","with":[{"selector":"@s"}]}'
+data modify storage lang swim.start.change set value '{"color":"#FF5200","translate":"[実況] %s 選手、スタートします！","with":[{"selector":"@s"}]}'
 ## 全員ゴール
-data modify storage lang swim.goal.r set value '{"color":"yellow","text":"[実況] 赤チーム、ゴール！"}'
-data modify storage lang swim.goal.b set value '{"color":"yellow","text":"[実況] 青チーム、ゴール！"}'
-data modify storage lang swim.goal.y set value '{"color":"yellow","text":"[実況] 黄チーム、ゴール！"}'
-data modify storage lang swim.goal.g set value '{"color":"yellow","text":"[実況] 緑チーム、ゴール！"}'
+data modify storage lang swim.goal.r set value '{"color":"#FF5200","text":"[実況] 赤チーム、ゴール！"}'
+data modify storage lang swim.goal.b set value '{"color":"#FF5200","text":"[実況] 青チーム、ゴール！"}'
+data modify storage lang swim.goal.y set value '{"color":"#FF5200","text":"[実況] 黄チーム、ゴール！"}'
+data modify storage lang swim.goal.g set value '{"color":"#FF5200","text":"[実況] 緑チーム、ゴール！"}'
 
 # クレー射撃の説明
 data remove storage lang clay
-data modify storage lang clay.title set value '{"color":"yellow","text":"= クレー射撃 ="}'
+data modify storage lang clay.title set value '{"color":"#FF5200","text":"= クレー射撃 ="}'
 data modify storage lang clay.descNum set value 9
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["= クレー射撃 ="]}'
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["奥から飛んでくるブタを撃ち抜く競技です。"]}'
@@ -141,14 +145,14 @@ data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 記録
-data modify storage lang clay.record set value '{"color":"yellow","translate":"[実況] %s 選手、記録 %s 匹です！","with":[{"selector":"@p[predicate=util:play]"},{"score":{"objective":"_KILL","name":"@p[predicate=util:play]"}}]}'
+data modify storage lang clay.record set value '{"color":"#FF5200","translate":"[実況] %s 選手、記録 %s 匹です！","with":[{"selector":"@p[predicate=util:play]"},{"score":{"objective":"_KILL","name":"@p[predicate=util:play]"}}]}'
 
 ## リタイア
-data modify storage lang clay.retire set value '{"color":"yellow","translate":"[実況] %s 選手、赤枠を踏んでしまいリタイアです！","with":[{"selector":"@p[predicate=util:play]"}]}'
+data modify storage lang clay.retire set value '{"color":"#FF5200","translate":"[実況] %s 選手、赤枠を踏んでしまいリタイアです！","with":[{"selector":"@p[predicate=util:play]"}]}'
 
 # リレーの説明
 data remove storage lang relay
-data modify storage lang relay.title set value '{"color":"yellow","text":"= リレー ="}'
+data modify storage lang relay.title set value '{"color":"#FF5200","text":"= リレー ="}'
 data modify storage lang relay.descNum set value 7
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で様々な障害物を乗り越えて２周走る競技です。"]}'
@@ -165,18 +169,18 @@ data modify storage lang relay.player append value '{"translate":":: あなた�
 data modify storage lang relay.player append value '{"translate":":: あなたは第%s走者です ::","with":[{"text":"４","color":"red"}]}'
 
 ## 各選手一斉にスタート
-data modify storage lang relay.start.all set value '{"color":"yellow","text":"[実況] 各選手、一斉にスタートしました！"}'
+data modify storage lang relay.start.all set value '{"color":"#FF5200","text":"[実況] 各選手、一斉にスタートしました！"}'
 ## スタート
-data modify storage lang relay.start.change set value '{"color":"yellow","translate":"[実況] %s 選手、スタートします！","with":[{"selector":"@s"}]}'
+data modify storage lang relay.start.change set value '{"color":"#FF5200","translate":"[実況] %s 選手、スタートします！","with":[{"selector":"@s"}]}'
 ## 全員ゴール
-data modify storage lang relay.goal.r set value '{"color":"yellow","text":"[実況] 赤チーム、ゴール！"}'
-data modify storage lang relay.goal.b set value '{"color":"yellow","text":"[実況] 青チーム、ゴール！"}'
-data modify storage lang relay.goal.y set value '{"color":"yellow","text":"[実況] 黄チーム、ゴール！"}'
-data modify storage lang relay.goal.g set value '{"color":"yellow","text":"[実況] 緑チーム、ゴール！"}'
+data modify storage lang relay.goal.r set value '{"color":"#FF5200","text":"[実況] 赤チーム、ゴール！"}'
+data modify storage lang relay.goal.b set value '{"color":"#FF5200","text":"[実況] 青チーム、ゴール！"}'
+data modify storage lang relay.goal.y set value '{"color":"#FF5200","text":"[実況] 黄チーム、ゴール！"}'
+data modify storage lang relay.goal.g set value '{"color":"#FF5200","text":"[実況] 緑チーム、ゴール！"}'
 
 # ドッヂの説明
 data remove storage lang dodge
-data modify storage lang dodge.title set value '{"color":"yellow","text":"= ドッヂボール ="}'
+data modify storage lang dodge.title set value '{"color":"#FF5200","text":"= ドッヂボール ="}'
 data modify storage lang dodge.descNum set value 9
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["= ドッヂボール ="]}'
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チーム３人で炎の玉を相手チームに当てる競技です。"]}'
@@ -189,11 +193,11 @@ data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","w
 data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、３人を選出してください。"]}'
 
 ## アウト
-data modify storage lang dodge.retire set value '{"color":"yellow","translate":"[実況] %s 選手、アウト！","with":[{"selector":"@s"}]}'
+data modify storage lang dodge.retire set value '{"color":"#FF5200","translate":"[実況] %s 選手、アウト！","with":[{"selector":"@s"}]}'
 
 # 勝ち抜き戦の説明
 data remove storage lang battle
-data modify storage lang battle.title set value '{"color":"yellow","text":"= 勝ち抜き戦 ="}'
+data modify storage lang battle.title set value '{"color":"#FF5200","text":"= 勝ち抜き戦 ="}'
 data modify storage lang battle.descNum set value 9
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加のバトルロワイアル競技です。"]}'
@@ -206,12 +210,12 @@ data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["全員参加ですので、すぐに競技が始まります。"]}'
 
 ## 勝利
-data modify storage lang battle.win set value '{"color":"yellow","translate":"[実況] %s 選手が勝ち抜きました！","with":[{"selector":"@p[predicate=util:play]"}]}'
-data modify storage lang battle.even set value '{"color":"yellow","text":"[実況] 今の試合、引き分けです！"}'
+data modify storage lang battle.win set value '{"color":"#FF5200","translate":"[実況] %s 選手が勝ち抜きました！","with":[{"selector":"@p[predicate=util:play]"}]}'
+data modify storage lang battle.even set value '{"color":"#FF5200","text":"[実況] 今の試合、引き分けです！"}'
 
 # フェンシングの説明
 data remove storage lang fenc
-data modify storage lang fenc.title set value '{"color":"yellow","text":"= フェンシング ="}'
+data modify storage lang fenc.title set value '{"color":"#FF5200","text":"= フェンシング ="}'
 data modify storage lang fenc.descNum set value 7
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["= フェンシング ="]}'
 data modify storage lang fenc.desc prepend value '{"translate":"[説明] %s","with":["トーナメント形式で２人ずつ戦う競技です。"]}'
@@ -226,31 +230,22 @@ data modify storage lang fenc.round append value '{"translate":"準決勝 第%s�
 data modify storage lang fenc.round append value '{"text":"３位決定戦"}'
 data modify storage lang fenc.round append value '{"text":"決勝戦"}'
 
-data modify storage lang fenc.count.attack set value '{"color":"yellow","translate":"[実況] %s 選手がフライングで失格！！","with":[{"selector":"@a[scores={_LOSER=1}]"}]}'
-data modify storage lang fenc.win set value '{"color":"yellow","translate":"[実況] %s 選手が吹き飛ばした！勝利です！","with":[{"selector":"@a[predicate=util:play,scores={_DAMAGE=0}]"}]}'
+data modify storage lang fenc.count.attack set value '{"color":"#FF5200","translate":"[実況] %s 選手がフライングで失格！！","with":[{"selector":"@a[scores={_LOSER=1}]"}]}'
+data modify storage lang fenc.win set value '{"color":"#FF5200","translate":"[実況] %s 選手が吹き飛ばした！勝利です！","with":[{"selector":"@a[predicate=util:play,scores={_DAMAGE=0}]"}]}'
 
 ## ボートの説明
 data remove storage lang boat
-data modify storage lang boat.title set value '{"color":"yellow","text":"= ボートレース ="}'
-data modify storage lang boat.descNum set value 7
+data modify storage lang boat.title set value '{"color":"#FF5200","text":"= ボートレース ="}'
+data modify storage lang boat.descNum set value 8
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["= ボートレース ="]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ボートで競技場をいち早く２周する競技です。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技が始まると、ボートが用意されているため、乗ってください。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["スタートの合図で、ボートが動き始めます。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["競技場にはさまざまな障害物が用意されているため、"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["ショートカットを活用して誰よりも速く２周してください。"]}'
+data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["妨害として半周ごとに先を漕いでいる選手には盲目を一定時間付与します。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 個人戦
-data modify storage lang boat.full.single set value '{"color":"yellow","translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
-data modify storage lang boat.goal.single set value '{"color":"yellow","translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
-## OBSOLETE: 一周
-# data modify storage lang boat.full.r set value '{"text":"[実況] 赤チーム、残り１周です！"}'
-# data modify storage lang boat.full.b set value '{"text":"[実況] 青チーム、残り１周です！"}'
-# data modify storage lang boat.full.y set value '{"text":"[実況] 黄チーム、残り１周です！"}'
-# data modify storage lang boat.full.g set value '{"text":"[実況] 緑チーム、残り１周です！"}'
-## OBSOLETE: 全員ゴール
-# data modify storage lang boat.goal.r set value '{"text":"[実況] 赤チーム、ゴール！"}'
-# data modify storage lang boat.goal.b set value '{"text":"[実況] 青チーム、ゴール！"}'
-# data modify storage lang boat.goal.y set value '{"text":"[実況] 黄チーム、ゴール！"}'
-# data modify storage lang boat.goal.g set value '{"text":"[実況] 緑チーム、ゴール！"}'
+data modify storage lang boat.full.single set value '{"color":"#FF5200","translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
+data modify storage lang boat.goal.single set value '{"color":"#FF5200","translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
