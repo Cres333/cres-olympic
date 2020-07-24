@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "soccer:black-goal"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "soccer:white-goal"
+    }
+  ]
+}
