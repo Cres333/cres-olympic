@@ -9,7 +9,8 @@ data modify storage lang core.setting.book set value '{"translate":"● ゲー�
 ## 競技選択
 data modify storage lang core.select.complete set value '{"color":"#E997F4","text":"[システム] プレイする競技を登録しました"}'
 data modify storage lang core.select.reset set value '{"color":"#E997F4","text":"[システム] プレイする競技を初期化しました"}'
-data modify storage lang core.setting.update set value '{"color":"#E997F4","text":"[システム] ゲーム説明の有無を更新しました"}'
+data modify storage lang core.setting.update.on set value '{"color":"#E997F4","text":"[システム] ゲーム説明の省略を有効にしました"}'
+data modify storage lang core.setting.update.off set value '{"color":"#E997F4","text":"[システム] ゲーム説明の省略を無効にしました"}'
 ## ゲーム開始時
 data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
 data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'
@@ -21,7 +22,7 @@ data modify storage lang core.term.finish set value '{"color":"#E997F4","text":"
 ## チーム分け本
 data modify storage lang core.book.play.finish set value '{"text":"チーム分け完了","clickEvent":{"action": "run_command","value": "/function core:play/finish"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
 data modify storage lang core.book.play.cancel set value '{"text":"チーム分けキャンセル","clickEvent":{"action": "run_command","value": "/function core:play/cancel"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
-data modify storage lang core.book.play.ready set value '{"translate":"● チーム分け\\n\\n- %s\\n\\n\\n- %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.play.finish"},{"interpret":true,"storage":"lang","nbt":"core.book.play.cancel"}]}'
+data modify storage lang core.book.play.ready set value '{"translate":"● チーム分け\\n\\n\\n=> %s\\n\\n\\n=> %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.play.finish"},{"interpret":true,"storage":"lang","nbt":"core.book.play.cancel"}]}'
 ## 成績本
 data modify storage lang core.book.jump.exit set value '{"text":"● ゲームを終了する","clickEvent":{"action":"run_command","value":"/function core:term/finish"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで終了"}}}'
 data modify storage lang core.book.jump.mvp set value '{"text":"● 活躍したプレイヤー","clickEvent":{"action":"change_page","value":"2"},"hoverEvent":{"action":"show_text","value":{"text":"クリックでページ移動"}}}'
@@ -40,7 +41,7 @@ data modify storage lang core.book.pages append value '{"translate":"● 青チ�
 data modify storage lang core.book.pages append value '{"translate":"● 黄チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"GOLD","name":"$y"}},{"score":{"objective":"SILVER","name":"$y"}},{"score":{"objective":"BRONZE","name":"$y"}},{"score":{"objective":"POINT","name":"$y"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 緑チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$g"}},{"score":{"objective":"GOLD","name":"$g"}},{"score":{"objective":"SILVER","name":"$g"}},{"score":{"objective":"BRONZE","name":"$g"}},{"score":{"objective":"POINT","name":"$g"}}]}'
 ## チーム戦成績本
-data modify storage lang core.book.team set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s\\n%s\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
+data modify storage lang core.book.team set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s\\n\\n%s\\n%s\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.summary"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.red"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.blue"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.yellow"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.green"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 ## 個人戦成績本
 data modify storage lang core.book.single set value '{"translate":"● 目次\\n-----\\n\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.jump.mvp"},{"interpret":true,"storage":"lang","nbt":"core.book.jump.exit"}]}'
 ## 練習成績本
