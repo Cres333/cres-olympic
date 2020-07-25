@@ -1,5 +1,5 @@
 ## エフェクト表示
-execute as @a[predicate=util:play,scores={_EFFECT=1..}] at @s run particle minecraft:note ~ ~2 ~ 0.2 0 0.2 1 1 force
+execute as @a[predicate=util:play,scores={_EFFECT=1..}] at @s run particle minecraft:note ~ ~2.5 ~ 0.2 0 0.2 1 1 force
 
 ## ループ
 scoreboard players reset * _EFFECT

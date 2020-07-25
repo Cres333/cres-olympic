@@ -4,6 +4,7 @@ scoreboard players set $summon _ 0
 
 ## キルカウントリセット
 scoreboard players reset * _KILL
+execute as @a[predicate=util:join] run scoreboard players operation @s _KILL = @s SCORE
 scoreboard players set @p[predicate=util:play] _KILL 0
 
 ## 選手にユニフォームを着せる
