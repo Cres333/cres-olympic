@@ -7,10 +7,10 @@ data modify storage lang core.setting.skip.off set value '{"text":"● ゲーム
 data modify storage lang core.setting.reset set value '{"text":"● 競技を初期化する","clickEvent":{"action":"run_command","value":"/function core:setting/init"}}'
 data modify storage lang core.setting.book set value '{"translate":"● ゲーム設定\\n-----\\n\\n%s\\n\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.setting.start"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.on"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.off"},{"interpret":true,"storage":"lang","nbt":"core.setting.reset"}]}'
 ## 競技選択
-data modify storage lang core.select.complete set value '{"color":"#E997F4","text":"[システム] プレイする競技を登録しました"}'
+data modify storage lang core.select.complete set value '{"color":"#E997F4","text":"[システム] プレイする競技を以下で登録しました"}'
 data modify storage lang core.select.reset set value '{"color":"#E997F4","text":"[システム] プレイする競技を初期化しました"}'
-data modify storage lang core.setting.update.on set value '{"color":"#E997F4","text":"[システム] ゲーム説明の省略を有効にしました"}'
-data modify storage lang core.setting.update.off set value '{"color":"#E997F4","text":"[システム] ゲーム説明の省略を無効にしました"}'
+data modify storage lang core.setting.update.on set value '{"color":"#E997F4","text":"[システム] ゲーム説明の省略を無効にしました"}'
+data modify storage lang core.setting.update.off set value '{"color":"#E997F4","text":"[システム] ゲーム説明の省略を有効にしました"}'
 ## ゲーム開始時
 data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
 data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'
