@@ -247,6 +247,8 @@ data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["妨害として半周ごとに先を漕いでいる選手には盲目を一定時間付与します。"]}'
 data modify storage lang boat.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、２人を選出してください。"]}'
 
+## 各選手一斉にスタート
+data modify storage lang boat.start.all set value '{"color":"#E997F4","text":"[実況] 各選手、一斉にスタートしました！"}'
 ## 個人戦
 data modify storage lang boat.full.single set value '{"color":"#E997F4","translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
 data modify storage lang boat.goal.single set value '{"color":"#E997F4","translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
