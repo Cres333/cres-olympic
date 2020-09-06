@@ -80,13 +80,14 @@ data modify storage lang weight.retire set value '{"color":"#E997F4","translate"
 # サッカーの説明
 data remove storage lang soccer
 data modify storage lang soccer.title set value '{"color":"#E997F4","text":"= サッカー ="}'
-data modify storage lang soccer.descNum set value 9
+data modify storage lang soccer.descNum set value 10
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["= サッカー ="]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っている選手には雪玉が渡されます。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["雪玉を投げるとボールも飛んでいきます。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っていない選手は幸運エフェクトがかかっているため、"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを持っている選手を叩くとボールを落とします。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["ボールを蹴ったり、拾うと、一定時間周囲の選手はボールを拾えなくなります。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["制限時間の３分以内に相手のゴールへたくさんボールを入れてください。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["各チームからは、４人を選出してください。"]}'
