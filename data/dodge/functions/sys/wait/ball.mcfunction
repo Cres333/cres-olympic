@@ -10,6 +10,9 @@ execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ yellow_wo
 execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ green_wool run summon fireball 1064 35 -1351 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:1,Tags:["notfound"]}
 execute as @e[type=fireball,tag=notfound] run data merge entity @s {power:[0.0,0.0,0.0],Tags:[]}
 
+## 為念リセット
+execute if score $notfound _ matches 1 run advancement revoke @a only event:dodge/out
+
 scoreboard players set $notfound _ 0
 
 ## Fireballにアマスタを追従させる
