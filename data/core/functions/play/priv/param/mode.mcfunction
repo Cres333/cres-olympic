@@ -6,10 +6,10 @@ execute as @a[team=y] run scoreboard players add $core:yNum _ 1
 execute as @a[team=g] run scoreboard players add $core:gNum _ 1
 
 ## 全チームの最低人数を計算する
-execute if score $core:rNum _ matches 1.. run scoreboard players operation $core:minNum _ > $core:rNum _
-execute if score $core:bNum _ matches 1.. run scoreboard players operation $core:minNum _ > $core:bNum _
-execute if score $core:yNum _ matches 1.. run scoreboard players operation $core:minNum _ > $core:yNum _
-execute if score $core:gNum _ matches 1.. run scoreboard players operation $core:minNum _ > $core:gNum _
+execute if score $core:rNum _ matches 1.. run scoreboard players operation $core:minNum _ < $core:rNum _
+execute if score $core:bNum _ matches 1.. run scoreboard players operation $core:minNum _ < $core:bNum _
+execute if score $core:yNum _ matches 1.. run scoreboard players operation $core:minNum _ < $core:yNum _
+execute if score $core:gNum _ matches 1.. run scoreboard players operation $core:minNum _ < $core:gNum _
 
 ## 最低人数を設定
 execute store result storage main minNum int 1 run scoreboard players get $core:minNum _
