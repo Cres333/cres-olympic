@@ -8,6 +8,10 @@ tellraw @a {"interpret":true,"storage":"lang","nbt":"relay.start.all"}
 ## PLAYに追加
 scoreboard players set @a[predicate=relay:1] PLAY 1
 
+## 選手表示
+scoreboard players set @a[predicate=relay:1] _LIST 1
+scoreboard objectives setdisplay sidebar _LIST
+
 ## タイマー作動
 scoreboard players set $time _ 0
 

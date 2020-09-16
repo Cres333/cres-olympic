@@ -15,6 +15,7 @@ scoreboard objectives remove _Y
 scoreboard objectives remove _G
 scoreboard objectives remove _USE
 scoreboard objectives remove _COOL
+scoreboard objectives remove _LIST
 
 ## 次のゲーム
 function core:game/next
