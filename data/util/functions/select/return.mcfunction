@@ -17,7 +17,7 @@ scoreboard players set @a[predicate=util:join] SCORE 0
 scoreboard objectives setdisplay list SCORE
 
 ## プレイヤーをTP
-function util:spectator/tp
+execute as @a[gamemode=!spectator] run function util:spectator/tp
 
 ## メンバー選出後の戻り
 execute if data storage main {game:soccer} run function soccer:game/start

@@ -5,6 +5,9 @@ gamemode spectator @s
 ## PLAYから外す
 scoreboard players reset @s PLAY
 
+## サイドバーから消す
+scoreboard players reset @s _LIST
+
 ## アイテムを消す
 clear @s trident
 

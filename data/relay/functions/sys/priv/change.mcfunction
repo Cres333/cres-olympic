@@ -5,6 +5,11 @@ gamemode adventure @s
 ## PLAYに入れる
 scoreboard players set @s PLAY 1
 
+## サイドバーに追加する
+scoreboard players set @s[predicate=relay:2] _LIST 2
+scoreboard players set @s[predicate=relay:3] _LIST 3
+scoreboard players set @s[predicate=relay:4] _LIST 4
+
 ## START表示
 title @s title {"text":"!! START !!","color":"green"}
 

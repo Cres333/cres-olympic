@@ -2,7 +2,7 @@
 ## クリア
 effect clear @a
 
-## ボートと矢を削除
+## ボートを削除
 kill @e[type=item]
 kill @e[type=boat]
 kill @e[tag=rider]

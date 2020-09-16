@@ -5,6 +5,9 @@ gamemode spectator @s
 ## PLAYから外す
 scoreboard players reset @s PLAY
 
+## サイドバーから消す
+scoreboard players reset @s _LIST
+
 ## タイマー(ポイント)を入れる
 scoreboard players operation @s SCORE += $time _
 

@@ -5,6 +5,10 @@ fill 1066 37 -1311 1065 35 -1311 water
 fill 1069 37 -1311 1068 35 -1311 water
 fill 1072 37 -1311 1071 35 -1311 water
 
+## 選手表示
+scoreboard players set @a[predicate=swim:1] _LIST 1
+scoreboard objectives setdisplay sidebar _LIST
+
 ## スタートのメッセージ
 tellraw @a {"interpret":true,"storage":"lang","nbt":"swim.start.all"}
 

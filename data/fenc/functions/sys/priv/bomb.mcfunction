@@ -4,7 +4,7 @@ schedule clear fenc:sys/wait/bomb
 kill @e[tag=move]
 
 ## 爆発
-execute as @a[scores={_LOSER=1}] at @s run summon firework_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:1,Trail:1,Flicker:1,Colors:[I;15477541],FadeColors:[I;14602026]}],Flight:1}}}}
+execute as @a[scores={_LOSER=1}] at @s run summon firework_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:1,Trail:1,Flicker:1,Colors:[I;16631835],FadeColors:[I;14602026]}],Flight:1}}}}
 schedule function fenc:sys/priv/delay/a 10t
 
 ## ゲームモード変更

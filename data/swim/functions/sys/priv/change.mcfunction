@@ -5,6 +5,11 @@ gamemode adventure @s
 ## PLAYに入れる
 scoreboard players set @s PLAY 1
 
+## サイドバーに追加する
+scoreboard players set @s[predicate=swim:2] _LIST 2
+scoreboard players set @s[predicate=swim:3] _LIST 3
+scoreboard players set @s[predicate=swim:4] _LIST 4
+
 ## クールダウンを0にする
 scoreboard players set @s _COOL 0
 
