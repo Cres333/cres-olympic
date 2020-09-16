@@ -13,5 +13,11 @@ execute if score $team _TICKET matches 2 as @p[team=b] at @s run playsound minec
 execute if score $team _TICKET matches 3 as @p[team=y] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 10
 execute if score $team _TICKET matches 4 as @p[team=g] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 10
 
+# 下見実行
+execute if score $team _TICKET matches 1 run execute as @a[team=r] run function util:spectator/tp
+execute if score $team _TICKET matches 2 run execute as @a[team=b] run function util:spectator/tp
+execute if score $team _TICKET matches 3 run execute as @a[team=y] run function util:spectator/tp
+execute if score $team _TICKET matches 4 run execute as @a[team=g] run function util:spectator/tp
+
 ## チームメンバー確定
 scoreboard players add $teamSum _TICKET 1
