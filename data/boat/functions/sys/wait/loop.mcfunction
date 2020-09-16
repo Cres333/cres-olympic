@@ -1,7 +1,4 @@
 # ループ処理
-## 矢の判定
-execute if entity @e[type=arrow] run function boat:sys/wait/arrow
-
 ## ボートから降りたら近くのボートをTP
 execute as @a[predicate=boat:ride] at @s run function boat:sys/priv/out
 
