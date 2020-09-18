@@ -1,6 +1,7 @@
 {
   "values": [
     "lang:define",
-    "core:setting/wait/check"
+    "core:setting/wait/check",
+    "core:setting/wait/health"
   ]
 }
