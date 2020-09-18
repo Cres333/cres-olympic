@@ -3,12 +3,11 @@
 execute unless entity @e[type=fireball] run scoreboard players set $notfound _ 1
 
 ## 召喚位置 + 羊毛座標
-execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ white_wool run summon fireball 1059 35 -1346 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:1,Tags:["notfound"]}
-execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ red_wool run summon fireball 1054 35 -1351 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:1,Tags:["notfound"]}
-execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ blue_wool run summon fireball 1064 35 -1341 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:1,Tags:["notfound"]}
-execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ yellow_wool run summon fireball 1054 35 -1341 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:1,Tags:["notfound"]}
-execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ green_wool run summon fireball 1064 35 -1351 {direction:[0,0,0],power:[0.0,-0.0002,0.0],ExplosionPower:1,Tags:["notfound"]}
-execute as @e[type=fireball,tag=notfound] run data merge entity @s {power:[0.0,0.0,0.0],Tags:[]}
+execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ white_wool run summon fireball 1059 35 -1346 {Motion:[0.0,0.0,0.0],ExplosionPower:1}
+execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ red_wool run summon fireball 1054 35 -1351 {Motion:[0.0,0.0,0.0],ExplosionPower:1}
+execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ blue_wool run summon fireball 1064 35 -1341 {Motion:[0.0,0.0,0.0],ExplosionPower:1}
+execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ yellow_wool run summon fireball 1054 35 -1341 {Motion:[0.0,0.0,0.0],ExplosionPower:1}
+execute if score $notfound _ matches 1 at @e[tag=ball] if block ~ 33 ~ green_wool run summon fireball 1064 35 -1351 {Motion:[0.0,0.0,0.0],ExplosionPower:1}
 
 ## 為念リセット
 execute if score $notfound _ matches 1 run advancement revoke @a only event:dodge/out
