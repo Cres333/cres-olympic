@@ -3,7 +3,7 @@
 kill @e[type=item]
 
 ## 捨てた人からパーティクル表示
-execute as @a[team=!,gamemode=!spectator,predicate=!util:has-ticket] at @s run particle heart ~ ~1.5 ~ 0 0 0 0 0
+execute as @a[team=!,gamemode=!spectator,predicate=!util:has-ticket] at @s run particle heart ~ ~2 ~ 0 0 0 0 0
 
 ## ライトの点灯チェック (まだチームメンバーが確定していないライトのみ)
 scoreboard players set $team _TICKET 0

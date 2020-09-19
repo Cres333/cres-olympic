@@ -34,7 +34,7 @@ data modify storage lang core.book.jump.green set value '{"text":"● 緑チー�
 data modify storage lang core.book.show.score set value '{"text":"スコア表示","bold":true,"clickEvent":{"action":"run_command","value":"/function core:term/priv/show"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで表示"}}}'
 data modify storage lang core.book.summary.medal set value '{"translate":"赤 : %s\\n青 : %s\\n黄 : %s\\n緑 : %s","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"_MEDAL","name":"$y"}},{"score":{"objective":"_MEDAL","name":"$g"}}]}'
 data modify storage lang core.book.summary.score set value '{"translate":"赤 : %s pt\\n青 : %s pt\\n黄 : %s pt\\n緑 : %s pt","with":[{"score":{"objective":"POINT","name":"$r"}},{"score":{"objective":"POINT","name":"$b"}},{"score":{"objective":"POINT","name":"$y"}},{"score":{"objective":"POINT","name":"$g"}}]}'
-data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- %s\\n\\n- 最高得点獲得賞\\n%s\\n（%s pt）","with":[{"interpret":true,"storage":"lang","nbt":"core.book.show.score"},{"score":{"objective":"_MOST","name":"$gold"}},{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$score"}}]}'
+data modify storage lang core.book.pages append value '{"translate":"● 活躍したプレイヤー\\n\\n- %s\\n\\n- 最高得点獲得賞\\n%s\\n（%s pt）","with":[{"interpret":true,"storage":"lang","nbt":"core.book.show.score"},{"selector":"@a[scores={_MOST=1}]"},{"score":{"objective":"_MOST","name":"$score"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 成績まとめ\\n\\n- メダル総数 :\\n%s\\n\\n- チーム得点 :\\n%s\\n\\n","with":[{"interpret":true,"storage":"lang","nbt":"core.book.summary.medal","clickEvent":{"action":"run_command","value":"/scoreboard objectives setdisplay sidebar _SHOW_MEDAL"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで表示"}}},{"interpret":true,"storage":"lang","nbt":"core.book.summary.score","clickEvent":{"action":"run_command","value":"/scoreboard objectives setdisplay sidebar _SHOW_POINT"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで表示"}}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 赤チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$r"}},{"score":{"objective":"GOLD","name":"$r"}},{"score":{"objective":"SILVER","name":"$r"}},{"score":{"objective":"BRONZE","name":"$r"}},{"score":{"objective":"POINT","name":"$r"}}]}'
 data modify storage lang core.book.pages append value '{"translate":"● 青チームの成績\\n\\n- メダル総数 : %s 個\\n（金 : %s, 銀 : %s, 銅 : %s）\\n\\n- チーム得点 : %s pt","with":[{"score":{"objective":"_MEDAL","name":"$b"}},{"score":{"objective":"GOLD","name":"$b"}},{"score":{"objective":"SILVER","name":"$b"}},{"score":{"objective":"BRONZE","name":"$b"}},{"score":{"objective":"POINT","name":"$b"}}]}'
@@ -93,6 +93,7 @@ data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["�
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red","bold":true}'
+data modify storage lang soccer.has set value '{"translate":"ボール保持： %s 選手","with":[{"selector":"@p[scores={_HAS=1}]"}]}'
 
 data modify storage lang soccer.goal.rb set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"blue","score":{"name":"$b","objective":"_"}}]}'
 data modify storage lang soccer.goal.ry set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'
@@ -107,10 +108,10 @@ data modify storage lang swim.title set value '{"color":"#FFF9C1","text":"= 水�
 data modify storage lang swim.descNum set value 8
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
-data modify storage lang swim.desc prepend value '{"translate":"%s","with":["水中は柵や鎖、水流など行く手を阻むなどの障害物があります。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"%s","with":["水中は柵や鎖、水流など行く手を阻む障害物があります。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["選手には泳ぎ始めるときに、トライデントが渡されます。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["トライデントを使うと、スピードが上がりますが、"]}'
-data modify storage lang swim.desc prepend value '{"translate":"%s","with":["一定時間、経たないと使うことができません。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"%s","with":["一定時間経たないと、使うことができません。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各選手は反対側の壁まで泳ぎきると、次の選手が泳げるようになります。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
