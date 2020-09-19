@@ -107,10 +107,10 @@ data modify storage lang swim.title set value '{"color":"#FFF9C1","text":"= 水�
 data modify storage lang swim.descNum set value 8
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
-data modify storage lang swim.desc prepend value '{"translate":"%s","with":["水中は柵や鎖、水流など行く手を阻むなどの障害物があります。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"%s","with":["水中は柵や鎖、水流など行く手を阻む障害物があります。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["選手には泳ぎ始めるときに、トライデントが渡されます。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["トライデントを使うと、スピードが上がりますが、"]}'
-data modify storage lang swim.desc prepend value '{"translate":"%s","with":["一定時間、経たないと使うことができません。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"%s","with":["一定時間経たないと、使うことができません。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各選手は反対側の壁まで泳ぎきると、次の選手が泳げるようになります。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
