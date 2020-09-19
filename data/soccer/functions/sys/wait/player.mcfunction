@@ -7,3 +7,6 @@ execute if entity @p[scores={_HAS=1}] run function soccer:sys/priv/goal/check-di
 
 ## ボールを持っているプレイヤーがいたら、ボールを追っかけさせる
 execute as @p[scores={_HAS=1}] at @s positioned ^ ^ ^2 run tp @e[tag=ground] ~ 30.7 ~
+
+## ボールを持っているプレイヤーを表示
+execute if entity @p[scores={_HAS=1}] run title @a[gamemode=spectator] actionbar {"interpret":true,"storage":"lang","nbt":"soccer.has"}

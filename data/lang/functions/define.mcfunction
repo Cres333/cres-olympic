@@ -93,6 +93,7 @@ data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["�
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red","bold":true}'
+data modify storage lang soccer.has set value '{"translate":"ボール保持： %s 選手","with":[{"selector":"@p[scores={_HAS=1}]"}]}'
 
 data modify storage lang soccer.goal.rb set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"blue","score":{"name":"$b","objective":"_"}}]}'
 data modify storage lang soccer.goal.ry set value '{"translate":"%s - %s","with":[{"color":"red","score":{"name":"$w","objective":"_"}},{"color":"yellow","score":{"name":"$b","objective":"_"}}]}'
