@@ -147,7 +147,7 @@ data modify storage lang clay.desc prepend value '{"translate":"%s","with":["２
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["各チームからは、２人を選出してください。"]}'
 
 ## 記録
-data modify storage lang clay.record set value '{"color":"#FFF9C1","translate":"[実況] %s 選手、記録 %s 匹です！","with":[{"selector":"@p[predicate=util:play]"},{"score":{"objective":"_KILL","name":"@p[predicate=util:play]"}}]}'
+data modify storage lang clay.record set value '{"color":"#FFF9C1","translate":"[実況] %s 選手、%s 回目の記録 %s 匹です！","with":[{"selector":"@p[predicate=util:play]"},{"score":{"objective":"_","name":"$round"}},{"score":{"objective":"_KILL","name":"@p[predicate=util:play]"}}]}'
 
 ## リタイア
 data modify storage lang clay.retire set value '{"color":"#FFF9C1","translate":"[実況] %s 選手、赤枠を踏んでしまいリタイアです！","with":[{"selector":"@p[predicate=util:play]"}]}'
