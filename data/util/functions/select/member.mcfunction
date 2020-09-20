@@ -10,6 +10,7 @@ scoreboard players set $r _TICKET 0
 scoreboard players set $b _TICKET 0
 scoreboard players set $y _TICKET 0
 scoreboard players set $g _TICKET 0
+scoreboard players set $play LOGOUT 0
 
 ## 全員をTPさせる
 gamemode adventure @a[team=!]

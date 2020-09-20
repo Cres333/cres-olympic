@@ -3,6 +3,7 @@
 scoreboard objectives remove _TICKET
 clear @a
 kill @e[type=item]
+scoreboard players set $play LOGOUT 1
 
 ## カウントを増やす
 scoreboard players add @a[predicate=util:join] COUNT 1

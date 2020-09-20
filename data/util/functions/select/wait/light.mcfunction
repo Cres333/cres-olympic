@@ -27,4 +27,4 @@ execute if score $g _TICKET matches 1 unless entity @p[team=g,predicate=util:joi
 execute if score $team _TICKET matches 1.. run function util:select/priv/check-join
 
 execute if score $end _TICKET matches 0 run schedule function util:select/wait/light 5t
-execute if score $end _TICKET matches 1 run schedule function util:select/return 3s
+execute if score $end _TICKET matches 1 run function util:select/wait/check-last
