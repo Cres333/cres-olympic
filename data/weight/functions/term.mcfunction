@@ -24,6 +24,7 @@ bossbar remove life7
 bossbar remove life8
 
 ## スコアボード破棄
+scoreboard objectives remove _LOG
 scoreboard objectives remove _EFFECT
 scoreboard objectives remove _CLICK
 scoreboard objectives remove _LIFE

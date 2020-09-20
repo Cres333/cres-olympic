@@ -8,6 +8,7 @@ scoreboard objectives add _CLICK minecraft.used:minecraft.carrot_on_a_stick "ク
 scoreboard objectives add _LIFE dummy "ライフ"
 scoreboard objectives add _SHOW dummy "右クリック連打数"
 scoreboard objectives add _ID dummy "背番号"
+scoreboard objectives add _LOG custom:leave_game "ログアウト判定"
 
 ## ボスバー
 bossbar add life1 "ライフ"
