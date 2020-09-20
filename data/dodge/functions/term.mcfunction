@@ -8,6 +8,7 @@ fill 1036 32 -1369 1082 40 -1323 air
 schedule clear dodge:sys/wait/loop
 
 ## ゲーム設定を削除
+scoreboard objectives remove _LOG
 scoreboard objectives remove _R
 scoreboard objectives remove _B
 scoreboard objectives remove _Y

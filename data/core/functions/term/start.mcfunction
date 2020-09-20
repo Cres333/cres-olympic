@@ -12,5 +12,8 @@ function core:term/priv/setting
 ## ゲーム終了テキスト
 tellraw @a {"interpret":true,"storage":"lang","nbt":"core.term.message"}
 
+## ゲーム実行中フラグ
+scoreboard players set $play LOGOUT 0
+
 ## ループ
 function core:term/wait/gamemode

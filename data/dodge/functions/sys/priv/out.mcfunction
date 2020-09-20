@@ -9,7 +9,8 @@ tellraw @a {"interpret":true,"storage":"lang","nbt":"dodge.retire"}
 scoreboard players reset @s PLAY
 
 ## スコアに時間を入れる
-scoreboard players operation @s SCORE = $time _
+scoreboard players operation @s[scores={_LOG=0}] SCORE = $time _
+scoreboard players set @s[scores={_LOG=1..}] SCORE 20
 
 ## エフェクト削除
 effect clear @s

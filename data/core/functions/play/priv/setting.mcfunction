@@ -22,5 +22,8 @@ function core:play/priv/param/game
 ## 参加数をリストに表示する
 scoreboard objectives setdisplay list COUNT
 
+## ゲーム実行中フラグ
+scoreboard players set $play LOGOUT 1
+
 ## 競技選択処理
 function core:game/next
