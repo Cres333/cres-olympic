@@ -18,6 +18,16 @@ execute if score $1 _ matches 2 as @p[scores={_B=2}] run function swim:sys/priv/
 execute if score $1 _ matches 3 as @p[scores={_Y=2}] run function swim:sys/priv/change
 execute if score $1 _ matches 4 as @p[scores={_G=2}] run function swim:sys/priv/change
 
+## 第３泳者を配置
+execute if score $1 _ matches 1 run gamemode adventure @p[scores={_R=3}]
+execute if score $1 _ matches 2 run gamemode adventure @p[scores={_B=3}]
+execute if score $1 _ matches 3 run gamemode adventure @p[scores={_Y=3}]
+execute if score $1 _ matches 4 run gamemode adventure @p[scores={_G=3}]
+execute if score $1 _ matches 1 run tp @p[scores={_R=3}] 1056.0 36 -1308 180 0
+execute if score $1 _ matches 2 run tp @p[scores={_B=3}] 1053.0 36 -1308 180 0
+execute if score $1 _ matches 3 run tp @p[scores={_Y=3}] 1050.0 36 -1308 180 0
+execute if score $1 _ matches 4 run tp @p[scores={_G=3}] 1047.0 36 -1308 180 0
+
 ## フィールド開放
 execute if score $1 _ matches 1 run fill 1046 37 -1381 1047 35 -1381 water
 execute if score $1 _ matches 2 run fill 1049 37 -1381 1050 35 -1381 water
