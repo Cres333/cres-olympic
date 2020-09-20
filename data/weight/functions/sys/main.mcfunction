@@ -1,6 +1,7 @@
 # ゲームの機構
 ## 初期化
 scoreboard players set $end _ 0
+scoreboard players reset * _LOG
 
 ## ボスバーを設定
 function weight:sys/priv/bar
