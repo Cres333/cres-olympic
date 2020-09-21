@@ -7,7 +7,7 @@ data modify storage lang core.setting.skip.off set value '{"text":"● ゲーム
 data modify storage lang core.setting.reset set value '{"text":"● 競技を初期化する","clickEvent":{"action":"run_command","value":"/function core:setting/init"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
 data modify storage lang core.setting.book set value '{"translate":"● ゲーム設定\\n-----\\n\\n%s\\n\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.setting.start"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.off"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.on"},{"interpret":true,"storage":"lang","nbt":"core.setting.reset"}]}'
 ## 下見本
-data modify storage lang draft.next set value '{"text":"=> 次の競技を開始","clickEvent":{"action": "run_command","value": "/function draft:util/next/click"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
+data modify storage lang draft.next set value '{"text":"\\n\\n=> 次の競技を開始","clickEvent":{"action": "run_command","value": "/function draft:util/next/click"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
 ## 競技選択
 data modify storage lang core.select.complete set value '{"color":"#FFF9C1","text":"[システム] プレイする競技を以下で登録しました"}'
 data modify storage lang core.select.reset set value '{"color":"#FFF9C1","text":"[システム] プレイする競技を初期化しました"}'
