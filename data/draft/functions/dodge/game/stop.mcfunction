@@ -1,5 +1,7 @@
 ## スケジュールを停止
+scoreboard players set $end _ 1
 schedule clear draft:dodge/sys/wait/loop
+schedule clear draft:dodge/sys/priv/retry
 
 ## アマスタ削除
 kill @e[tag=ball]
