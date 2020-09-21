@@ -1,17 +1,10 @@
 # フラグ追加
 scoreboard players set @a JOIN 1
-scoreboard players set @a PLAY 1
 
 ## 戻す
 clear @a
 kill @e[type=item]
 scoreboard players set $play LOGOUT 1
-
-## スコアを追加する
-scoreboard players set @a[predicate=util:join] SCORE 0
-
-## スコアをリストに表示する
-scoreboard objectives setdisplay list SCORE
 
 ## プレイヤーをTP
 execute as @a[gamemode=!spectator] run function util:spectator/tp

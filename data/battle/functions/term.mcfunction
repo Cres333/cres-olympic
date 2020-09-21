@@ -6,6 +6,7 @@ fill 1040 32 -1365 1078 51 -1327 air
 
 ## スケジュールを削除
 schedule clear battle:sys/wait/loop
+schedule clear battle:sys/wait/effect
 
 ## ゲーム設定を削除
 scoreboard objectives remove _R
