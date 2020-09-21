@@ -1,6 +1,8 @@
 # フィールド削除
 fill 1056 32 -1368 1062 55 -1324 air
 
+schedule clear draft:fenc/sys/wait/loop
+
 ## スコアボード破棄
 scoreboard objectives remove _ATTACK
 scoreboard objectives remove _DAMAGE

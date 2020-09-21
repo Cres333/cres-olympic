@@ -2,6 +2,7 @@ schedule clear draft:fenc/sys/wait/loop
 schedule clear fenc:sys/wait/bomb
 schedule clear draft:fenc/sys/main
 schedule clear draft:fenc/sys/priv/end
+schedule clear draft:fenc/sys/wait/loop
 
 ## リセット
 scoreboard players reset * _LOSER

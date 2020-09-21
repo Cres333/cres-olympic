@@ -14,6 +14,8 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 ## スペクテイターモードに変更
 gamemode spectator @a
 
+scoreboard players reset * PLAY
+
 ## メッセージ
 tellraw @a {"color":"yellow","text":"[下見] ランダムに次の選手を選びます"}
 

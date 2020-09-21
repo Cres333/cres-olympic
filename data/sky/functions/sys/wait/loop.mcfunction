@@ -1,6 +1,4 @@
 # 各wait処理
-## プレイヤーエフェクト
-function sky:sys/wait/effect
 ## クールダウン
 function sky:sys/wait/cool
 ## カラー処理
