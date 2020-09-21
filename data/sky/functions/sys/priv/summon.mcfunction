@@ -1,4 +1,5 @@
 # 召喚
+kill @e[tag=color]
 summon minecraft:armor_stand 1027 44 -1257 {Tags:["color"],Invisible:true,NoGravity:true,Marker:true}
 summon minecraft:armor_stand 1037 38 -1312 {Tags:["color"],Invisible:true,NoGravity:true,Marker:true}
 summon minecraft:armor_stand 1090 47 -1267 {Tags:["color"],Invisible:true,NoGravity:true,Marker:true}

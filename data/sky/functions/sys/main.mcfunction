@@ -1,10 +1,12 @@
 # ゲームの機構
 ## 初期化
+scoreboard players set $cool _ 200
 scoreboard players set $time _ 3600
 scoreboard players set @a[predicate=util:play,team=r] _COLOR 1
 scoreboard players set @a[predicate=util:play,team=b] _COLOR 2
 scoreboard players set @a[predicate=util:play,team=y] _COLOR 3
 scoreboard players set @a[predicate=util:play,team=g] _COLOR 4
+scoreboard objectives setdisplay sidebar _SHOW
 
 ## 時間
 bossbar set time color white
@@ -23,9 +25,6 @@ give @a[predicate=util:play] firework_rocket 3
 
 ## 選手をTPする
 function sky:sys/priv/setting-position
-
-## カラーを召喚
-function sky:sys/priv/summon
 
 ## カウントダウン開始
 schedule function util:count/start 5s
