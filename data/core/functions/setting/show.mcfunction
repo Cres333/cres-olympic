@@ -10,5 +10,6 @@ execute if data storage play games[{"type":"dodge"}] run tellraw @a {"interpret"
 execute if data storage play games[{"type":"weight"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"weight.title"}
 execute if data storage play games[{"type":"battle"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"battle.title"}
 execute if data storage play games[{"type":"relay"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"relay.title"}
+execute if data storage play games[{"type":"sky"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"sky.title"}
 
 tellraw @a {"text":""}

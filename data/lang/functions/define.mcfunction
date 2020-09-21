@@ -257,3 +257,20 @@ data modify storage lang boat.start.all set value '{"color":"#FFF9C1","text":"[�
 ## 個人戦
 data modify storage lang boat.full.single set value '{"color":"#FFF9C1","translate":"[実況] %s 選手、残り１周です！","with":[{"selector":"@s"}]}'
 data modify storage lang boat.goal.single set value '{"color":"#FFF9C1","translate":"[実況] %s 選手、ゴール！","with":[{"selector":"@s"}]}'
+
+## スカイダイビングの説明
+data remove storage lang sky
+data modify storage lang sky.title set value '{"color":"#FFF9C1","text":"= スカイダイビング ="}'
+data modify storage lang sky.descNum set value 9
+data modify storage lang sky.desc prepend value '{"translate":"[説明] %s","with":["= スカイダイビング ="]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["空中にあるパーティクルをチームの色に染める競技です。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["競技が始まると、エリトラと花火を装備した状態で空中から始まります。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["落下中にジャンプすると空を飛ぶことができ、花火を使うと加速します。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["空中には白色のパーティクルが浮遊しており、"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["パーティクルにぶつかると、自分のチームの色に変わります。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["より多くのパーティクルをチームの色に塗り替えたチームが勝利します。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["本競技はビデオ設定から「パーティクルの表示をすべて」にしてください。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["各チームからは、２人を選出してください。"]}'
+
+## 各選手一斉にスタート
+data modify storage lang sky.start.all set value '{"color":"#FFF9C1","text":"[実況] 各選手、一斉にスタートしました！"}'

@@ -21,6 +21,7 @@ execute unless data storage main {mode:multi} run data remove storage play playi
 execute unless data storage main {mode:multi} run data remove storage play playing[{"type":"relay"}]
 execute unless data storage main {mode:multi} run data remove storage play playing[{"type":"soccer"}]
 execute unless data storage main {mode:multi} run data remove storage play playing[{"type":"swim"}]
+execute unless data storage main {mode:multi} run data remove storage play playing[{"type":"sky"}]
 
 ## 4人以上必須のゲーム
 execute unless score $core:minNum _ matches 4.. run data remove storage play playing[{"type":"relay"}]

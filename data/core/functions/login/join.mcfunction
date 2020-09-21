@@ -8,3 +8,4 @@ execute if data storage main {game:relay} run function relay:game/join
 ## execute if data storage main {game:fenc} run
 ## execute if data storage main {game:boat} run
 ## execute if data storage main {game:weight} run
+## execute if data storage main {game:sky} run

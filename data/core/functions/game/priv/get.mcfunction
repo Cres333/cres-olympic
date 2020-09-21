@@ -14,3 +14,4 @@ execute if data storage play {now:relay} run scoreboard players set $game _NEXT 
 execute if data storage play {now:soccer} run scoreboard players set $game _NEXT 7
 execute if data storage play {now:swim} run scoreboard players set $game _NEXT 8
 execute if data storage play {now:weight} run scoreboard players set $game _NEXT 9
+execute if data storage play {now:sky} run scoreboard players set $game _NEXT 10

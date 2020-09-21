@@ -13,9 +13,9 @@ gamerule announceAdvancements false
 ## 初期値：true
 gamerule commandBlockOutput false
 
-# サーバーでエリトラで飛んでいるプレイヤーの速度をチェックするかどうか
+# サーバーでエリトラで飛んでいるプレイヤーの速度をチェックしないかどうか
 ## 初期値：false
-gamerule disableElytraMovementCheck false
+gamerule disableElytraMovementCheck true
 
 # 村の襲撃イベントを無効にするかどうか
 ## 初期値：false
