@@ -9,6 +9,7 @@ scoreboard players reset * _DAMAGE
 scoreboard players reset * _ATTACK
 
 ## とりあえずクリア
+kill @e[tag=move]
 clear @a iron_sword
 effect clear @a
 

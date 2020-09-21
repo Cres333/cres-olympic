@@ -12,7 +12,8 @@ gamemode adventure @a[predicate=util:play]
 tp @a[predicate=util:play] 1063.0 36 -1308 180 0
 
 ## フィールド開放
-fill 1063 37 -1311 1062 35 -1311 water
+fill 1073 34 -1313 1045 40 -1307 water
+fill 1045 34 -1379 1073 40 -1385 water
 
 ## トライデントの利用回数をリセット
 scoreboard players reset * _USE

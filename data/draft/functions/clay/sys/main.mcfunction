@@ -1,6 +1,7 @@
 # ゲームの機構
 ## 初期化
 scoreboard players set $summon _ 0
+execute unless entity @p[predicate=util:play] run scoreboard players set @r[predicate=util:join,limit=1] PLAY 1
 
 ## 選手を配置
 gamemode adventure @p[predicate=util:play]

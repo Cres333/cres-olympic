@@ -22,6 +22,7 @@ fill 1081 33 -1368 1060 33 -1347 white_wool
 ## TP
 spreadplayers 1059 -1346 3 10 false @a[predicate=util:play]
 gamemode adventure @a[predicate=util:play]
+execute as @a[predicate=util:play] at @s run tp @s ~ 35 ~ facing 1059 35 -1346
 
 ## ボール召喚
 function dodge:sys/wait/ball
