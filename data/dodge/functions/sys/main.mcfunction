@@ -3,7 +3,7 @@
 advancement revoke @a only event:dodge/out
 scoreboard players set $end _ 0
 scoreboard players set @a[predicate=util:join] PLAY 1
-scoreboard players reset * _LOG
+scoreboard players set @a[predicate=util:join] _LOG 0
 
 scoreboard players set $r SCORE 0
 scoreboard players set $b SCORE 0
