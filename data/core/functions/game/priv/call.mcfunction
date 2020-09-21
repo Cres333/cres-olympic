@@ -8,5 +8,6 @@ execute if score $game _NEXT matches 6 run function relay:init
 execute if score $game _NEXT matches 7 run function soccer:init
 execute if score $game _NEXT matches 8 run function swim:init
 execute if score $game _NEXT matches 9 run function weight:init
+execute if score $game _NEXT matches 10 run function sky:init
 
 scoreboard objectives remove _NEXT

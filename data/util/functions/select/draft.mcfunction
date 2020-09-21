@@ -19,3 +19,4 @@ execute if data storage main {game:battle} run function draft:battle/game/start
 execute if data storage main {game:fenc} run function draft:fenc/game/start
 execute if data storage main {game:boat} run function draft:boat/game/start
 execute if data storage main {game:weight} run function draft:weight/game/start
+execute if data storage main {game:sky} run function draft:sky/game/start
