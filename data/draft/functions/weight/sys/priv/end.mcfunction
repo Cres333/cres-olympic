@@ -22,5 +22,8 @@ schedule function weight:sys/priv/check/remove_anvil 3s
 gamemode spectator @a[predicate=util:play]
 scoreboard players reset * PLAY
 
+## メッセージ
+tellraw @a {"color":"yellow","text":"[下見] ランダムに次の選手を選びます"}
+
 ## 次のラウンド
 execute unless score $end _ matches 1 run schedule function draft:weight/sys/main 8s

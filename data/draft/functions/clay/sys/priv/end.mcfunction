@@ -19,5 +19,8 @@ execute unless entity @p[tag=next] run tag @p[predicate=util:play] add next
 ## PLAYから除外
 scoreboard players reset * PLAY
 
+## メッセージ
+tellraw @a {"color":"yellow","text":"[下見] 競技中のプレイヤーから最も近いプレイヤーが次の選手に選ばれます"}
+
 ## 次の選手へ
 schedule function draft:clay/sys/main 1s

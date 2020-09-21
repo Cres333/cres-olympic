@@ -1,5 +1,10 @@
 # 強制的にプレイヤーを追加
-function draft:battle/sys/priv/player
+## 現状のプレイ人数
+scoreboard players set $i _ 0
+execute as @a[predicate=util:play] run scoreboard players add $i _ 1
+
+## まだ余裕があったら追加
+execute if score $i _ matches ..3 as @r[predicate=!util:play,predicate=util:join,limit=1] at @s run function draft:battle/sys/priv/player
 
 # リタイア判定
 ## 落ちた

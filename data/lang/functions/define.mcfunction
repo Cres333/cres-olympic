@@ -24,7 +24,7 @@ data modify storage lang core.term.finish set value '{"color":"#FFF9C1","text":"
 ## チーム分け本
 data modify storage lang core.book.play.finish set value '{"text":"チーム分け完了","clickEvent":{"action": "run_command","value": "/function core:play/finish"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
 data modify storage lang core.book.play.cancel set value '{"text":"チーム分けキャンセル","clickEvent":{"action": "run_command","value": "/function core:play/cancel"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
-data modify storage lang core.book.play.draft set value '{"text":"下見(練習)モードを開始","clickEvent":{"action": "run_command","value": "/function core:play/draft"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
+data modify storage lang core.book.play.draft set value '{"text":"下見(練習)モード開始","clickEvent":{"action": "run_command","value": "/function core:play/draft"},"hoverEvent":{"action":"show_text","value":"一部の機能を無効化して競技を確認できるモード\\nクリックで実行"}}'
 data modify storage lang core.book.play.ready set value '{"translate":"● チーム分け\\n\\n\\n=> %s\\n\\n\\n=> %s\\n\\n\\n\\n=> %s","with":[{"interpret":true,"storage":"lang","nbt":"core.book.play.finish"},{"interpret":true,"storage":"lang","nbt":"core.book.play.cancel"},{"interpret":true,"storage":"lang","nbt":"core.book.play.draft"}]}'
 ## 成績本
 data modify storage lang core.book.jump.exit set value '{"text":"● ゲームを終了する","clickEvent":{"action":"run_command","value":"/function core:term/finish"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで終了"}}}'
