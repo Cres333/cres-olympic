@@ -28,6 +28,9 @@ effect give @a[predicate=util:play] speed 1000000 3 true
 # ポジションリセット
 function soccer:sys/priv/setting-position
 
+# 念の為リセット
+advancement revoke @a only event:soccer/drop
+
 # ボールを再召喚
 scoreboard players set $cornor _ 1
 execute if score $isW _ matches 1 run scoreboard players set $cornor _ 2
