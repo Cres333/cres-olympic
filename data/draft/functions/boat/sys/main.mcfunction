@@ -6,7 +6,7 @@ scoreboard players set $end _ 0
 effect give @a[predicate=util:join] resistance 1000000 100 true
 
 ## 選手をTPする
-spreadplayers 1102 -1364 3 6 under 38 false @a[predicate=util:join]
+tp @a[predicate=util:join] 1102 37 -1364 180 0
 gamemode adventure @a[predicate=util:join]
 scoreboard players set @a[predicate=util:join] PLAY 1
 

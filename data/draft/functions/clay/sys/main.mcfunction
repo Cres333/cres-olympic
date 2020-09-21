@@ -1,6 +1,8 @@
 # ゲームの機構
 ## 初期化
 scoreboard players set $summon _ 0
+scoreboard players set @p[tag=next] PLAY 1
+tag @a remove next
 execute unless entity @p[predicate=util:play] run scoreboard players set @r[predicate=util:join,limit=1] PLAY 1
 
 ## 選手を配置

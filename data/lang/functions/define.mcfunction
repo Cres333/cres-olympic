@@ -159,12 +159,13 @@ data modify storage lang clay.retire set value '{"color":"#FFF9C1","translate":"
 # リレーの説明
 data remove storage lang relay
 data modify storage lang relay.title set value '{"color":"#FFF9C1","text":"= リレー ="}'
-data modify storage lang relay.descNum set value 7
+data modify storage lang relay.descNum set value 8
 data modify storage lang relay.desc prepend value '{"translate":"[説明] %s","with":["= リレー ="]}'
 data modify storage lang relay.desc prepend value '{"translate":"%s","with":["各チーム４人で様々な障害物を乗り越えて２周走る競技です。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"%s","with":["各選手はトラックを半周して、次の選手につなぎます。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"%s","with":["トラック上にはダイヤモンドブロックと金ブロックがあり、"]}'
 data modify storage lang relay.desc prepend value '{"translate":"%s","with":["それぞれのブロックの上を通過するとスピードが上昇します。"]}'
+data modify storage lang relay.desc prepend value '{"translate":"%s","with":["金ブロックよりもダイヤモンドブロックの方が効果は高くなります。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"%s","with":["また、石炭ブロックのエリアでは一定時間、盲目がかかります。"]}'
 data modify storage lang relay.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
@@ -261,11 +262,12 @@ data modify storage lang boat.goal.single set value '{"color":"#FFF9C1","transla
 ## スカイダイビングの説明
 data remove storage lang sky
 data modify storage lang sky.title set value '{"color":"#FFF9C1","text":"= スカイダイビング ="}'
-data modify storage lang sky.descNum set value 8
+data modify storage lang sky.descNum set value 9
 data modify storage lang sky.desc prepend value '{"translate":"[説明] %s","with":["= スカイダイビング ="]}'
 data modify storage lang sky.desc prepend value '{"translate":"%s","with":["空中にあるパーティクルをチームの色に染める競技です。"]}'
 data modify storage lang sky.desc prepend value '{"translate":"%s","with":["競技が始まると、エリトラと花火を装備した状態で空中から始まります。"]}'
 data modify storage lang sky.desc prepend value '{"translate":"%s","with":["落下中にジャンプすると空を飛ぶことができ、花火を使うと加速します。"]}'
+data modify storage lang sky.desc prepend value '{"translate":"%s","with":["花火は一定時間ごとに補充されます。"]}'
 data modify storage lang sky.desc prepend value '{"translate":"%s","with":["空中には白色のパーティクルが浮遊しており、"]}'
 data modify storage lang sky.desc prepend value '{"translate":"%s","with":["パーティクルにぶつかると、自分のチームの色に変わります。"]}'
 data modify storage lang sky.desc prepend value '{"translate":"%s","with":["より多くのパーティクルをチームの色に塗り替えたチームが勝利します。"]}'
@@ -273,3 +275,8 @@ data modify storage lang sky.desc prepend value '{"translate":"%s","with":["各�
 
 ## 各選手一斉にスタート
 data modify storage lang sky.start.all set value '{"color":"#FFF9C1","text":"[実況] 各選手、一斉にスタートしました！"}'
+
+## 結果
+data modify storage lang sky.result.two set value '{"color":"#FFF9C1","translate":"[実況] 赤 %s個、青 %s個を獲得です！","with":[{"score":{"name":"赤チーム","objective":"_SHOW"}},{"score":{"name":"青チーム","objective":"_SHOW"}}]}'
+data modify storage lang sky.result.three set value '{"color":"#FFF9C1","translate":"[実況] 赤 %s個、青 %s個、黄 %s個を獲得です！","with":[{"score":{"name":"赤チーム","objective":"_SHOW"}},{"score":{"name":"青チーム","objective":"_SHOW"}},{"score":{"name":"黄チーム","objective":"_SHOW"}}]}'
+data modify storage lang sky.result.four set value '{"color":"#FFF9C1","translate":"[実況] 赤 %s個、青 %s個、黄 %s個、緑 %s個を獲得です！","with":[{"score":{"name":"赤チーム","objective":"_SHOW"}},{"score":{"name":"青チーム","objective":"_SHOW"}},{"score":{"name":"黄チーム","objective":"_SHOW"}},{"score":{"name":"緑チーム","objective":"_SHOW"}}]}'

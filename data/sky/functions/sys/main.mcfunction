@@ -1,7 +1,7 @@
 # ゲームの機構
 ## 初期化
 scoreboard players set $cool _ 200
-scoreboard players set $time _ 3600
+scoreboard players set $time _ 1800
 scoreboard players set @a[predicate=util:play,team=r] _COLOR 1
 scoreboard players set @a[predicate=util:play,team=b] _COLOR 2
 scoreboard players set @a[predicate=util:play,team=y] _COLOR 3
