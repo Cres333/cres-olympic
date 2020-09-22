@@ -13,6 +13,7 @@ give @p orange_wool{settingItem:true,game:{type:weight},display:{Name:'{"text":"
 give @p lime_wool{settingItem:true,game:{type:battle},display:{Name:'{"text":"勝ち抜き戦"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム全員参加"}']}}
 give @p purple_wool{settingItem:true,game:{type:relay},display:{Name:'{"text":"リレー"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低４人"}']}}
 give @p red_stained_glass{settingItem:true,game:{type:sky},display:{Name:'{"text":"スカイダイビング"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低２人"}']}}
+give @p blue_stained_glass{settingItem:true,game:{type:beach},display:{Name:'{"text":"ビーチフラッグス"}',Lore:['{"text":"チーム戦・個人戦"}','{"text":"各チーム最低２人"}']}}
 
 ## banner
 give @p red_banner{settingItem:true,display:{Name:'{"text":"第1競技"}'},HideFlags:63,BlockEntityTag:{Patterns:[{Pattern:cs,Color:0},{Pattern:tl,Color:0},{Pattern:cbo,Color:14},{Pattern:bs,Color:0},{Pattern:bo,Color:14}]}}

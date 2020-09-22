@@ -16,3 +16,4 @@ execute if data storage main {game:fenc} run function draft:fenc/game/stop
 execute if data storage main {game:boat} run function draft:boat/game/stop
 execute if data storage main {game:weight} run function draft:weight/game/stop
 execute if data storage main {game:sky} run function draft:sky/game/stop
+execute if data storage main {game:beach} run function draft:beach/game/stop

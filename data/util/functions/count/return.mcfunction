@@ -12,3 +12,4 @@ execute if data storage main {game:fenc} run function fenc:sys/start
 execute if data storage main {game:boat} run function boat:sys/start
 execute if data storage main {game:weight} run function weight:sys/start
 execute if data storage main {game:sky} run function sky:sys/start
+execute if data storage main {game:beach} run function beach:sys/start
