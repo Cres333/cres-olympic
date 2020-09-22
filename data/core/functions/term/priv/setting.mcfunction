@@ -51,7 +51,7 @@ scoreboard players operation $score _MOST > @a[team=!] SCORE
 execute as @a[team=!] if score $score _MOST = @s SCORE run scoreboard players set @s _MOST 1
 
 ## 関係者以外を外す
-scoreboard players reset @a[team=!] SCORE
+scoreboard players reset @a[team=] SCORE
 
 ## 表示用のスコアボード生成
 function core:term/priv/score
