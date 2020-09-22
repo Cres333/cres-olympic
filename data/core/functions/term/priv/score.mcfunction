@@ -1,4 +1,10 @@
 # 表示用のスコアボードを用意
+## チームに追加
+team join r 赤チーム
+team join b 青チーム
+team join y 黄チーム
+team join g 緑チーム
+
 ## 総メダル獲得数
 scoreboard objectives add _SHOW_MEDAL dummy "総メダル獲得数"
 scoreboard players operation 赤チーム _SHOW_MEDAL = $r _MEDAL

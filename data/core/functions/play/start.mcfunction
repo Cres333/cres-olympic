@@ -27,5 +27,11 @@ scoreboard objectives setdisplay sidebar _TEAM
 ## チーム分け完了本を渡す
 give @s written_book{title:"チーム分け",author:"",pages:['{"interpret":true,"storage":"lang","nbt":"core.book.play.ready"}']}
 
+## チーム表示
+team join r 赤チーム
+team join b 青チーム
+team join y 黄チーム
+team join g 緑チーム
+
 ## チーム人数を変動させる
 function core:play/wait/team
