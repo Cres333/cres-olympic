@@ -9,5 +9,6 @@ execute if score $game _NEXT matches 7 run function draft:soccer/init
 execute if score $game _NEXT matches 8 run function draft:swim/init
 execute if score $game _NEXT matches 9 run function draft:weight/init
 execute if score $game _NEXT matches 10 run function draft:sky/init
+execute if score $game _NEXT matches 11 run function draft:beach/init
 
 scoreboard objectives remove _NEXT

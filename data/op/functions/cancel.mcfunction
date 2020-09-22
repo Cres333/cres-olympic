@@ -22,3 +22,5 @@ execute if data storage main {game:battle} run function battle:term
 execute if data storage main {game:fenc} run function fenc:term
 execute if data storage main {game:boat} run function boat:term
 execute if data storage main {game:weight} run function weight:term
+execute if data storage main {game:sky} run function sky:term
+execute if data storage main {game:beach} run function beach:term

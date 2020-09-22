@@ -13,3 +13,9 @@ scoreboard players set $play LOGOUT 0
 
 ## スコアボードを消す
 scoreboard objectives remove _TEAM
+
+## チーム削除
+team leave 赤チーム
+team leave 青チーム
+team leave 黄チーム
+team leave 緑チーム

@@ -33,3 +33,4 @@ execute unless score $core:minNum _ matches 3.. run data remove storage play pla
 
 ## 2人以上必須のゲーム
 execute unless score $core:minNum _ matches 2.. run data remove storage play playing[{"type":"fenc"}]
+execute unless score $core:minNum _ matches 2.. run data remove storage play playing[{"type":"beach"}]

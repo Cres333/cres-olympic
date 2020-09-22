@@ -280,3 +280,21 @@ data modify storage lang sky.start.all set value '{"color":"#FFF9C1","text":"[�
 data modify storage lang sky.result.two set value '{"color":"#FFF9C1","translate":"[実況] 赤 %s個、青 %s個を獲得です！","with":[{"score":{"name":"赤チーム","objective":"_SHOW"}},{"score":{"name":"青チーム","objective":"_SHOW"}}]}'
 data modify storage lang sky.result.three set value '{"color":"#FFF9C1","translate":"[実況] 赤 %s個、青 %s個、黄 %s個を獲得です！","with":[{"score":{"name":"赤チーム","objective":"_SHOW"}},{"score":{"name":"青チーム","objective":"_SHOW"}},{"score":{"name":"黄チーム","objective":"_SHOW"}}]}'
 data modify storage lang sky.result.four set value '{"color":"#FFF9C1","translate":"[実況] 赤 %s個、青 %s個、黄 %s個、緑 %s個を獲得です！","with":[{"score":{"name":"赤チーム","objective":"_SHOW"}},{"score":{"name":"青チーム","objective":"_SHOW"}},{"score":{"name":"黄チーム","objective":"_SHOW"}},{"score":{"name":"緑チーム","objective":"_SHOW"}}]}'
+
+# ビーチフラッグスの説明
+data remove storage lang beach
+data modify storage lang beach.title set value '{"color":"#FFF9C1","text":"= ビーチフラッグス ="}'
+data modify storage lang beach.descNum set value 7
+data modify storage lang beach.desc prepend value '{"translate":"[説明] %s","with":["= ビーチフラッグス ="]}'
+data modify storage lang beach.desc prepend value '{"translate":"%s","with":["他の誰よりも速く、手持ちの旗を目標に置く競技です。"]}'
+data modify storage lang beach.desc prepend value '{"translate":"%s","with":["試合が始まると、旗が渡され、カウントダウンが始まります。"]}'
+data modify storage lang beach.desc prepend value '{"translate":"%s","with":["最初は反対方向を向いているため、スタートの合図で振り返って走ります。"]}'
+data modify storage lang beach.desc prepend value '{"translate":"%s","with":["誰よりも速く、旗を骨ブロックに置いた選手が勝ち残ります。"]}'
+data modify storage lang beach.desc prepend value '{"translate":"%s","with":["対戦相手は減っていき、最後まで旗を置くことができた選手が勝利します。"]}'
+data modify storage lang beach.desc prepend value '{"translate":"%s","with":["各チームからは、２人を選出してください。"]}'
+
+data modify storage lang beach.round append value '{"translate":"%s 回戦","with":[{"score":{"name":"$phase","objective":"_"}}]}'
+data modify storage lang beach.round append value '{"text":"準決勝"}'
+data modify storage lang beach.round append value '{"text":"決勝戦"}'
+
+data modify storage lang beach.win set value '{"color":"#FFF9C1","translate":"[実況] %s 選手が勝ち残りました！","with":[{"selector":"@a[predicate=util:play]"}]}'

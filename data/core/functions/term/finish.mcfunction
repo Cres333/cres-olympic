@@ -7,6 +7,12 @@ scoreboard objectives remove _MOST
 scoreboard objectives remove _SHOW_MEDAL
 scoreboard objectives remove _SHOW_POINT
 
+## チーム削除
+team leave 赤チーム
+team leave 青チーム
+team leave 黄チーム
+team leave 緑チーム
+
 ## 必要な分を初期化
 function storage:settings/game
 function storage:settings/score
