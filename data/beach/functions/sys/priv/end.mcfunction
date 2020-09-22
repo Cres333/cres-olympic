@@ -1,7 +1,4 @@
 # システム終了処理
-## 勝者を表示
-tellraw @a {"interpret":true,"storage":"lang","nbt":"beach.win"}
-
 ## とりあえずクリア
 clear @a white_banner
 kill @e[type=item]
@@ -9,6 +6,9 @@ effect clear @a
 
 ## 対象から消す
 scoreboard players reset @a[predicate=util:play,scores={_PLACE=0}] PLAY
+
+## 勝者を表示
+tellraw @a {"interpret":true,"storage":"lang","nbt":"beach.win"}
 
 ## 勝者にはスコア追加
 execute if score $round _ matches 1 run scoreboard players add @a[predicate=util:play] SCORE 10
@@ -23,4 +23,4 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 gamemode spectator @a
 
 ## 次のゲーム
-function beach:game/next
+schedule function beach:game/next 3s
