@@ -6,7 +6,7 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 clear @a crossbow
 clear @a arrow
 kill @e[type=item]
-kill @e[type=pig]
+kill @e[type=creeper]
 kill @e[type=arrow]
 
 ## 次のプレイヤーを選別

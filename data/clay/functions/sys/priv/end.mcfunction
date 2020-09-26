@@ -15,7 +15,7 @@ execute as @p[predicate=util:play] run scoreboard players operation @s SCORE > @
 clear @a crossbow
 clear @a arrow
 kill @e[type=item]
-kill @e[type=pig]
+kill @e[type=creeper]
 kill @e[type=arrow]
 
 ## PLAYから除外

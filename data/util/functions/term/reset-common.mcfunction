@@ -2,6 +2,7 @@
 ## プレイヤー設定
 gamemode spectator @a
 clear @a
+kill @e[type=item]
 effect clear @a
 
 ## スコアボード削除
