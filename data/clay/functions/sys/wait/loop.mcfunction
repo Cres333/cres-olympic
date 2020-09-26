@@ -5,7 +5,7 @@ scoreboard players add $summon _ 1
 ## 発射位置をランダムで決定
 execute if score $summon _ matches ..10 run function clay:sys/priv/play/random
 
-## 豚を召喚する
+## クリーパーを召喚する
 execute if score $summon _ matches ..10 run function clay:sys/priv/play/summon
 
 ## 5秒ごとに繰り返す
