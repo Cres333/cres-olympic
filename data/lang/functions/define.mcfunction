@@ -146,7 +146,7 @@ data modify storage lang clay.desc prepend value '{"translate":"%s","with":["選
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["その後にカウントダウンが始まり、"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["５秒ごとに連続で１０匹のクリーパーが飛んできます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["より多くのクリーパーをクロスボウで撃ち抜いてください。"]}'
-data modify storage lang clay.desc prepend value '{"translate":"%s","with":["競技台の赤の部分に降りてしまうとリタイアとなります。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"%s","with":["競技台の赤の部分に乗ってしまうとリタイアとなります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["２回ずつ競技を行い、より多く撃ち抜いた方が得点となります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["各チームからは、２人を選出してください。"]}'
 

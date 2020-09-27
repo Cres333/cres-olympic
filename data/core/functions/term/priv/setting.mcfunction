@@ -23,7 +23,7 @@ scoreboard players operation $g _MEDAL += $g BRONZE
 execute as @e[tag=m] run scoreboard players operation @s POINT /= $per POINT
 execute as @e[tag=m] run scoreboard players operation @s POINT /= @s COUNT
 
-## 各チームの合計ポイントを算出
+## 各チームの平均ポイントを算出
 scoreboard players set $r POINT 0
 scoreboard players set $b POINT 0
 scoreboard players set $y POINT 0
@@ -32,6 +32,19 @@ scoreboard players operation $r POINT += @e[tag=r] POINT
 scoreboard players operation $b POINT += @e[tag=b] POINT
 scoreboard players operation $y POINT += @e[tag=y] POINT
 scoreboard players operation $g POINT += @e[tag=g] POINT
+
+scoreboard players set $rn POINT 0
+scoreboard players set $bn POINT 0
+scoreboard players set $yn POINT 0
+scoreboard players set $gn POINT 0
+execute as @e[tag=r,scores={POINT=1..}] run scoreboard players add $rn POINT 1
+execute as @e[tag=b,scores={POINT=1..}] run scoreboard players add $bn POINT 1
+execute as @e[tag=y,scores={POINT=1..}] run scoreboard players add $yn POINT 1
+execute as @e[tag=g,scores={POINT=1..}] run scoreboard players add $gn POINT 1
+scoreboard players operation $r POINT /= $rn POINT
+scoreboard players operation $b POINT /= $bn POINT
+scoreboard players operation $y POINT /= $yn POINT
+scoreboard players operation $g POINT /= $gn POINT
 
 ## 各プレイヤーにスコアを書き戻す
 scoreboard players reset * SCORE
