@@ -9,7 +9,7 @@ scoreboard objectives add _Y dummy "黄チームの背番号"
 scoreboard objectives add _G dummy "緑チームの背番号"
 scoreboard objectives add _DEATH deathCount "死亡判定"
 scoreboard objectives add _LOG custom:leave_game "ログアウト判定"
-scoreboard objectives add _WIN dummy "連勝数"
+scoreboard objectives add _WIN dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"連勝数","color":"gold"}]}
 
 scoreboard objectives setdisplay sidebar _WIN
 

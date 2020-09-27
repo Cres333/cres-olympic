@@ -9,7 +9,7 @@ scoreboard objectives add _Y dummy "黄チームの背番号"
 scoreboard objectives add _G dummy "緑チームの背番号"
 scoreboard objectives add _USE used:trident "トライデントの利用フラグ"
 scoreboard objectives add _COOL dummy "クールダウンの時間"
-scoreboard objectives add _LIST dummy "選手"
+scoreboard objectives add _LIST dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"選手","color":"gold"}]}
 
 ## フィールド生成
 clone 0 153 0 30 162 41 1044 32 -1386 masked normal

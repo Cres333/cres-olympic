@@ -21,7 +21,7 @@ tp @a 1085 32 -1346 90 0
 clone 7 1 37 29 5 59 1048 32 -1357
 
 ## それぞれの人数表示用のスコアボードを用意する
-scoreboard objectives add _TEAM dummy ":: チーム参加人数 ::"
+scoreboard objectives add _TEAM dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"チーム参加人数","color":"gold"}]}
 scoreboard objectives setdisplay sidebar _TEAM
 
 ## チーム分け完了本を渡す

@@ -7,7 +7,7 @@ scoreboard objectives add _R dummy "赤チームの背番号"
 scoreboard objectives add _B dummy "青チームの背番号"
 scoreboard objectives add _Y dummy "黄チームの背番号"
 scoreboard objectives add _G dummy "緑チームの背番号"
-scoreboard objectives add _LIST dummy "選手"
+scoreboard objectives add _LIST dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"選手","color":"gold"}]}
 
 ## フィールド生成
 clone 0 178 0 51 185 49 1008 32 -1445 masked normal

@@ -5,8 +5,8 @@ data merge storage main {game:weight,join:2,team:false,score:point}
 ## スコア設定
 scoreboard objectives add _EFFECT minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add _CLICK minecraft.used:minecraft.carrot_on_a_stick "クリック数"
-scoreboard objectives add _LIFE dummy "ライフ"
-scoreboard objectives add _SHOW dummy "右クリック連打数"
+scoreboard objectives add _LIFE dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"ライフ","color":"gold"}]}
+scoreboard objectives add _SHOW dummy {"color":"green","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"連打数","color":"gold"}]}
 scoreboard objectives add _ID dummy "背番号"
 scoreboard objectives add _LOG custom:leave_game "ログアウト判定"
 

@@ -5,7 +5,7 @@ data merge storage main {game:sky,join:2,team:true,score:point}
 ## スコア設定
 scoreboard objectives add _ID dummy "背番号"
 scoreboard objectives add _COLOR dummy "色"
-scoreboard objectives add _SHOW dummy "スコア"
+scoreboard objectives add _SHOW dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"スコア","color":"gold"}]}
 
 ## チームに加える
 team join r 赤チーム
