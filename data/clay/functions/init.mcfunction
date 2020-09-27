@@ -4,7 +4,7 @@ data merge storage main {game:clay,join:2,team:false,score:point}
 
 ## スコア設定
 scoreboard objectives add _ID dummy "背番号"
-scoreboard objectives add _KILL killed:creeper "スコア"
+scoreboard objectives add _KILL killed:creeper {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"スコア","color":"gold"}]}
 
 ## キルカウント表示
 scoreboard objectives setdisplay sidebar _KILL
