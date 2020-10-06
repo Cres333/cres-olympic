@@ -1,5 +1,6 @@
 # ゲーム終了処理
 ## 破棄
+schedule clear core:game/priv/message
 scoreboard objectives remove _NEXT
 
 ## 全員をTP

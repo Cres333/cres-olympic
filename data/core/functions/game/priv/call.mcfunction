@@ -1,4 +1,6 @@
 # 競技を呼び出す
+schedule clear core:game/priv/message
+
 execute if score $game _NEXT matches 1 run function battle:init
 execute if score $game _NEXT matches 2 run function boat:init
 execute if score $game _NEXT matches 3 run function clay:init
