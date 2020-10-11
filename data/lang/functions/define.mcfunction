@@ -92,7 +92,7 @@ data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["�
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["ボールを持っている選手を叩くとボールを落とします。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["ボールを蹴るか拾うと、一定時間周囲の選手はボールを拾えなくなります。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["制限時間の３分以内に相手のゴールへたくさんボールを入れてください。"]}'
-data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["競技は総当りで行い、より勝利とゴール数を稼いだチームが勝利します。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red","bold":true}'
