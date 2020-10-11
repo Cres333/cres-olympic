@@ -92,7 +92,7 @@ data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["�
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["ボールを持っている選手を叩くとボールを落とします。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["ボールを蹴るか拾うと、一定時間周囲の選手はボールを拾えなくなります。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["制限時間の３分以内に相手のゴールへたくさんボールを入れてください。"]}'
-data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["競技は総当りで行い、よりゴール数を稼いだチームが勝利します。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["競技は総当りで行い、より勝利とゴール数を稼いだチームが勝利します。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["各チームからは、４人を選出してください。"]}'
 
 data modify storage lang soccer.cooldown set value '{"text":":: 現在、ボールを奪えません ::","color":"red","bold":true}'
@@ -185,18 +185,17 @@ data modify storage lang relay.goal.b set value '{"color":"#FFF9C1","text":"[実
 data modify storage lang relay.goal.y set value '{"color":"#FFF9C1","text":"[実況] 黄チーム、ゴール！"}'
 data modify storage lang relay.goal.g set value '{"color":"#FFF9C1","text":"[実況] 緑チーム、ゴール！"}'
 
-# ドッヂの説明
+# ドッジの説明
 data remove storage lang dodge
-data modify storage lang dodge.title set value '{"color":"#FFF9C1","text":"= ドッヂボール ="}'
-data modify storage lang dodge.descNum set value 9
-data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["= ドッヂボール ="]}'
+data modify storage lang dodge.title set value '{"color":"#FFF9C1","text":"= ドッジボール ="}'
+data modify storage lang dodge.descNum set value 8
+data modify storage lang dodge.desc prepend value '{"translate":"[説明] %s","with":["= ドッジボール ="]}'
 data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["各チーム３人で炎の玉を相手チームに当てる競技です。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["各選手は各チームの色と同じ場所から競技が始まります。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["競技が始まると中央に炎の玉が出現するため、"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["他のチームに当てたり、飛んできた炎の玉を避けてください。"]}'
-data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["他のチームのエリアに入ると盲目と鈍足のエフェクトがかかります。"]}'
+data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["他のチームのエリアに入ると中央にテレポートします。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["また、各チームのエリアでボールが爆発すると、そのエリアは狭くなります。"]}'
-data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["狭くなった壁の中に埋まってしまった場合は、中央にテレポートします。"]}'
 data modify storage lang dodge.desc prepend value '{"translate":"%s","with":["各チームからは、３人を選出してください。"]}'
 
 ## アウト
