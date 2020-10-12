@@ -6,6 +6,7 @@ scoreboard objectives remove _GOLD
 scoreboard objectives remove _MOST
 scoreboard objectives remove _SHOW_MEDAL
 scoreboard objectives remove _SHOW_POINT
+scoreboard objectives remove _SHOW_TAB
 
 ## チーム削除
 team leave 赤チーム

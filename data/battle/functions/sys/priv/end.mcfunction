@@ -16,7 +16,7 @@ schedule clear battle:sys/priv/field/3
 schedule clear battle:sys/wait/effect
 
 ## PLAYとなっているプレイヤーにスコア追加
-scoreboard players add @a[predicate=util:play] SCORE 10
+scoreboard players add @a[predicate=util:play] SCORE 5
 scoreboard players add @a[predicate=util:play] _WIN 1
 
 ## 勝ち抜きメッセージ

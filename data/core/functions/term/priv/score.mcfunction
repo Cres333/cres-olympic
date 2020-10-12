@@ -12,9 +12,13 @@ scoreboard players operation 青チーム _SHOW_MEDAL = $b _MEDAL
 scoreboard players operation 黄チーム _SHOW_MEDAL = $y _MEDAL
 scoreboard players operation 緑チーム _SHOW_MEDAL = $g _MEDAL
 
-## チームポイント
-scoreboard objectives add _SHOW_POINT dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"チーム平均ポイント","color":"gold"}]}
-scoreboard players operation 赤チーム _SHOW_POINT = $r POINT
-scoreboard players operation 青チーム _SHOW_POINT = $b POINT
-scoreboard players operation 黄チーム _SHOW_POINT = $y POINT
-scoreboard players operation 緑チーム _SHOW_POINT = $g POINT
+## メダルポイント
+scoreboard objectives add _SHOW_POINT dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"メダルポイント","color":"gold"}]}
+scoreboard players operation 赤チーム _SHOW_POINT = $rp _MEDAL
+scoreboard players operation 青チーム _SHOW_POINT = $bp _MEDAL
+scoreboard players operation 黄チーム _SHOW_POINT = $yp _MEDAL
+scoreboard players operation 緑チーム _SHOW_POINT = $gp _MEDAL
+
+## 各プレイヤーのスコア
+scoreboard objectives add _SHOW_TAB dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"活躍ポイント","color":"gold"}]}
+execute as @a[team=!] run scoreboard players operation @s _SHOW_TAB = @s SCORE

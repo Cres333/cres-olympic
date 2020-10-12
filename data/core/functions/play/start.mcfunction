@@ -12,6 +12,7 @@ scoreboard objectives remove _GOLD
 scoreboard objectives remove _MOST
 scoreboard objectives remove _SHOW_MEDAL
 scoreboard objectives remove _SHOW_POINT
+scoreboard objectives remove _SHOW_TAB
 
 ## TP
 gamemode adventure @a

@@ -1,4 +1,6 @@
 # スコア/メダル計算
+scoreboard players set $basePoint _ 10
+scoreboard players operation @a[predicate=util:join] SCORE *= $basePoint _
 function util:score/point
 
 # フィールド削除

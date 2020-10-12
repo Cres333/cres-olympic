@@ -2,6 +2,7 @@
 ## 初期化
 advancement revoke @a only event:dodge/out
 scoreboard players set $end _ 0
+scoreboard players set $basePoint _ 0
 scoreboard players set @a[predicate=util:join] PLAY 1
 scoreboard players set @a[predicate=util:join] _LOG 0
 
