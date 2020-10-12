@@ -1,4 +1,6 @@
 # スコア/メダル計算
+scoreboard players set $basePoint _ 3
+scoreboard players operation @a[predicate=util:join] SCORE *= $basePoint _
 function util:score/point
 
 ## 説明用のスケジュールを消す
