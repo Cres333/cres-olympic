@@ -1,4 +1,5 @@
 # スコア/メダル計算
+execute as @a[predicate=util:join] run scoreboard players add @s SCORE 10
 function util:score/point
 
 # フィールド削除

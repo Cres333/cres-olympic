@@ -16,14 +16,14 @@ bossbar set time visible false
 
 ## 各チームに得点を加算
 ### 同点
-execute if score $w _ = $b _ run scoreboard players add @a[scores={_W=1..}] SCORE 20
-execute if score $w _ = $b _ run scoreboard players add @a[scores={_B=1..}] SCORE 20
+execute if score $w _ = $b _ run scoreboard players add @a[scores={_W=1..}] SCORE 30
+execute if score $w _ = $b _ run scoreboard players add @a[scores={_B=1..}] SCORE 30
 ### 白勝利
-execute if score $w _ > $b _ run scoreboard players add @a[scores={_W=1..}] SCORE 30
+execute if score $w _ > $b _ run scoreboard players add @a[scores={_W=1..}] SCORE 50
 execute if score $w _ > $b _ run scoreboard players add @a[scores={_B=1..}] SCORE 10
 ### 黒勝利
 execute if score $w _ < $b _ run scoreboard players add @a[scores={_W=1..}] SCORE 10
-execute if score $w _ < $b _ run scoreboard players add @a[scores={_B=1..}] SCORE 30
+execute if score $w _ < $b _ run scoreboard players add @a[scores={_B=1..}] SCORE 50
 ### 更に点数追加
 scoreboard players operation @a[scores={_W=1..}] SCORE += $w _
 scoreboard players operation @a[scores={_B=1..}] SCORE += $b _
