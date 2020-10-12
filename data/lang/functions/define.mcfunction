@@ -213,7 +213,7 @@ data modify storage lang battle.desc prepend value '{"translate":"%s","with":["�
 data modify storage lang battle.desc prepend value '{"translate":"%s","with":["フィールド中央にはエフェクトがランダムで発生しており、"]}'
 data modify storage lang battle.desc prepend value '{"translate":"%s","with":["有利になるエフェクトと不利になるエフェクトがあります。"]}'
 data modify storage lang battle.desc prepend value '{"translate":"%s","with":["他のチームの競技参加者を全員倒せば、次のラウンドが始まります。"]}'
-data modify storage lang battle.desc prepend value '{"translate":"%s","with":["全員参加ですので、すぐに競技が始まります。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"%s","with":["各チームから、メンバーを選出して下さい。"]}'
 
 ## 勝利
 data modify storage lang battle.win set value '{"color":"#FFF9C1","translate":"[実況] %s 選手が勝ち抜きました！","with":[{"selector":"@p[predicate=util:play]"}]}'
