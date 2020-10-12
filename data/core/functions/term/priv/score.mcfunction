@@ -18,3 +18,7 @@ scoreboard players operation 赤チーム _SHOW_POINT = $rp _MEDAL
 scoreboard players operation 青チーム _SHOW_POINT = $bp _MEDAL
 scoreboard players operation 黄チーム _SHOW_POINT = $yp _MEDAL
 scoreboard players operation 緑チーム _SHOW_POINT = $gp _MEDAL
+
+## 各プレイヤーのスコア
+scoreboard objectives add _SHOW_TAB dummy {"color":"light_purple","bold":true,"translate":"⇚ %s ⇛","with":[{"text":"活躍ポイント","color":"gold"}]}
+execute as @a[team=!] run scoreboard players operation @s _SHOW_TAB = @s SCORE
