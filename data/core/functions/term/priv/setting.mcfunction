@@ -4,6 +4,9 @@ scoreboard objectives add _MEDAL dummy "各チームのメダル総数"
 scoreboard objectives add _GOLD dummy "プレイヤーの金メダル数"
 scoreboard objectives add _MOST dummy "MVP"
 scoreboard players set $per POINT 100
+scoreboard players set $gpt POINT 1000
+scoreboard players set $spt POINT 500
+scoreboard players set $bpt POINT 250
 
 ## 各チームのメダル総数を算出
 scoreboard players operation $r _MEDAL = $r GOLD
@@ -25,6 +28,19 @@ function core:term/priv/point
 ## 各プレイヤーの平均ポイントを算出
 execute as @e[tag=m] run scoreboard players operation @s POINT /= $per POINT
 execute as @e[tag=m] run scoreboard players operation @s POINT /= @s COUNT
+
+## 各プレイヤーのメダルポイントを加算
+execute as @e[tag=m] run scoreboard players operation @s GOLD *= $gpt POINT
+execute as @e[tag=m] run scoreboard players operation @s SILVER *= $spt POINT
+execute as @e[tag=m] run scoreboard players operation @s BRONZE *= $bpt POINT
+
+execute as @e[tag=m] run scoreboard players operation @s POINT += @s GOLD
+execute as @e[tag=m] run scoreboard players operation @s POINT += @s SILVER
+execute as @e[tag=m] run scoreboard players operation @s POINT += @s BRONZE
+
+execute as @e[tag=m] run scoreboard players operation @s GOLD /= $gpt POINT
+execute as @e[tag=m] run scoreboard players operation @s SILVER /= $spt POINT
+execute as @e[tag=m] run scoreboard players operation @s BRONZE /= $bpt POINT
 
 ## 各チームの平均ポイントを算出
 scoreboard players set $r POINT 0
