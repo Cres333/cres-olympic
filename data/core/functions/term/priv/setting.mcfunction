@@ -19,6 +19,9 @@ scoreboard players operation $g _MEDAL = $g GOLD
 scoreboard players operation $g _MEDAL += $g SILVER
 scoreboard players operation $g _MEDAL += $g BRONZE
 
+## 各チームのメダルポイント算出
+function core:term/priv/point
+
 ## 各プレイヤーの平均ポイントを算出
 execute as @e[tag=m] run scoreboard players operation @s POINT /= $per POINT
 execute as @e[tag=m] run scoreboard players operation @s POINT /= @s COUNT
