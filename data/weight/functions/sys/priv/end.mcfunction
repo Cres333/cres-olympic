@@ -13,7 +13,7 @@ title @a times 10 80 10
 title @a[scores={_LIFE=1..}] title {"color":"red","text":"成功！"}
 
 # クリアしたプレイヤーのスコアを上げる
-scoreboard players add @a[predicate=util:play] SCORE 10
+execute as @a[predicate=util:play] run scoreboard players operation @s SCORE += @s _LIFE
 
 ## 金床を破棄
 schedule function weight:sys/priv/check/remove_anvil 3s

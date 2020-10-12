@@ -73,7 +73,7 @@ data modify storage lang weight.desc prepend value '{"translate":"%s","with":["�
 data modify storage lang weight.desc prepend value '{"translate":"%s","with":["最初に「何回、右クリックしろ」と指示が来るため、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"%s","with":["その回数以上、ニンジン棒を持って右クリックしてください。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"%s","with":["指定された回数未満だと、失格になります。"]}'
-data modify storage lang weight.desc prepend value '{"translate":"%s","with":["指定された回数以上でも、５０回分のライフが無くなると、"]}'
+data modify storage lang weight.desc prepend value '{"translate":"%s","with":["指定された回数以上でも、２０回分のライフが無くなると、"]}'
 data modify storage lang weight.desc prepend value '{"translate":"%s","with":["力尽きて、失格となります。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"%s","with":["全５回戦を行い、最もライフが残っていた人が勝利します。"]}'
 data modify storage lang weight.desc prepend value '{"translate":"%s","with":["各チームからは、２人を選出してください。"]}'

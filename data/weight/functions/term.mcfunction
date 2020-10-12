@@ -1,6 +1,3 @@
-## スコア計算の前にライフを加算
-execute as @a[predicate=util:play] run scoreboard players operation @s SCORE += @s _LIFE
-
 ## ゲームモード変更エフェクト
 execute as @a[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ ~1 ~ 0.2 2 0.2 0.3 100
 
