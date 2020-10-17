@@ -3,9 +3,11 @@ data remove storage lang core
 ## 設定本
 data modify storage lang core.setting.start set value '{"text":"● ゲームを開始する","clickEvent":{"action":"run_command","value":"/function core:play/start"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
 data modify storage lang core.setting.skip.on set value '{"text":"● ゲーム説明 : なし","clickEvent":{"action":"run_command","value":"/function core:setting/skip-on"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
-data modify storage lang core.setting.skip.off set value '{"text":"● ゲーム説明 : あり","clickEvent":{"action":"run_command","value":"/function core:setting/skip-off"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
+data modify storage lang core.setting.skip.off set value '{"text":"● ゲーム説明 : あり(default)","clickEvent":{"action":"run_command","value":"/function core:setting/skip-off"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
+data modify storage lang core.setting.load.short set value '{"text":"● 競技間のロード時間 : 15秒","clickEvent":{"action":"run_command","value":"/function core:setting/load-short"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
+data modify storage lang core.setting.load.long set value '{"text":"● 競技間のロード時間 : 30秒(default)","clickEvent":{"action":"run_command","value":"/function core:setting/load-long"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
 data modify storage lang core.setting.reset set value '{"text":"● 競技を初期化する","clickEvent":{"action":"run_command","value":"/function core:setting/init"},"hoverEvent":{"action":"show_text","value":{"text":"クリックで実行"}}}'
-data modify storage lang core.setting.book set value '{"translate":"● ゲーム設定\\n-----\\n\\n%s\\n\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.setting.start"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.off"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.on"},{"interpret":true,"storage":"lang","nbt":"core.setting.reset"}]}'
+data modify storage lang core.setting.book set value '{"translate":"● ゲーム設定\\n-----\\n\\n%s\\n\\n%s\\n%s\\n\\n%s\\n%s\\n\\n%s","with":[{"interpret":true,"storage":"lang","nbt":"core.setting.start"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.off"},{"interpret":true,"storage":"lang","nbt":"core.setting.skip.on"},{"interpret":true,"storage":"lang","nbt":"core.setting.load.short"},{"interpret":true,"storage":"lang","nbt":"core.setting.load.long"},{"interpret":true,"storage":"lang","nbt":"core.setting.reset"}]}'
 ## 下見本
 data modify storage lang draft.next set value '{"text":"\\n\\n=> 次の競技を開始","clickEvent":{"action": "run_command","value": "/function draft:util/next/click"},"hoverEvent":{"action":"show_text","value":"クリックで実行"}}'
 ## 競技選択
@@ -13,6 +15,8 @@ data modify storage lang core.select.complete set value '{"color":"#FFF9C1","tex
 data modify storage lang core.select.reset set value '{"color":"#FFF9C1","text":"[システム] プレイする競技を初期化しました"}'
 data modify storage lang core.setting.update.on set value '{"color":"#FFF9C1","text":"[システム] ゲーム説明を有効化しました"}'
 data modify storage lang core.setting.update.off set value '{"color":"#FFF9C1","text":"[システム] ゲーム説明を無効化しました"}'
+data modify storage lang core.setting.update.short set value '{"color":"#FFF9C1","text":"[システム] 競技間のロード時間を１５秒にしました"}'
+data modify storage lang core.setting.update.long set value '{"color":"#FFF9C1","text":"[システム] 競技間のロード時間を３０秒にしました"}'
 ## ゲーム開始時
 data modify storage lang core.play.error.over set value '{"text":"[システム] チームの最大人数が８人を超えています","color":"red"}'
 data modify storage lang core.play.error.less set value '{"text":"[システム] チームの最低人数を満たしていません","color":"red"}'

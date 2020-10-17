@@ -12,12 +12,10 @@ effect give @a saturation 1 255 true
 function core:game/priv/get
 
 ## メッセージ
-execute unless score $game _NEXT matches 0 run title @a actionbar {"text":"30 秒後に次の競技を開始します","bold":true}
-execute if score $game _NEXT matches 0 run title @a actionbar {"text":"30 秒後に競技を終了します","bold":true}
+execute unless score $game _NEXT matches 0 run title @a actionbar {"text":"次の競技までしばらくお待ちください","bold":true}
+execute if score $game _NEXT matches 0 run title @a actionbar {"text":"結果発表までしばらくお待ちください","bold":true}
 schedule function core:game/priv/message 5s
 
 ## 競技に合わせて呼び出す
-schedule function core:game/priv/call 30s
-
-## 競技がなかったら終了
-execute if score $game _NEXT matches 0 run schedule function core:term/start 30s
+execute unless data storage play {loading:long} run schedule function core:game/priv/call 15s
+execute if data storage play {loading:long} run schedule function core:game/priv/call 30s

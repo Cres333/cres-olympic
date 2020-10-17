@@ -13,4 +13,7 @@ execute if score $game _NEXT matches 9 run function weight:init
 execute if score $game _NEXT matches 10 run function sky:init
 execute if score $game _NEXT matches 11 run function beach:init
 
-scoreboard objectives remove _NEXT
+execute unless score $game _NEXT matches 0 run scoreboard objectives remove _NEXT
+
+## 競技がなかったら終了
+execute if score $game _NEXT matches 0 run function core:term/start
