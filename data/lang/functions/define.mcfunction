@@ -206,7 +206,7 @@ data remove storage lang battle
 data modify storage lang battle.title set value '{"color":"#FFF9C1","text":"= 勝ち抜き戦 ="}'
 data modify storage lang battle.descNum set value 9
 data modify storage lang battle.desc prepend value '{"translate":"[説明] %s","with":["= 勝ち抜き戦 ="]}'
-data modify storage lang battle.desc prepend value '{"translate":"%s","with":["全員参加のバトルロワイアル競技です。"]}'
+data modify storage lang battle.desc prepend value '{"translate":"%s","with":["勝ち抜き形式のバトルロワイアル競技です。"]}'
 data modify storage lang battle.desc prepend value '{"translate":"%s","with":["各チームからランダムに選ばれた１人がそのラウンドに参加します。"]}'
 data modify storage lang battle.desc prepend value '{"translate":"%s","with":["各プレイヤーはノックバック付きのダイアモンド剣を所持しています。"]}'
 data modify storage lang battle.desc prepend value '{"translate":"%s","with":["リタイアさせる方法は、フィールド外に落とすか、倒すかになります。"]}'
