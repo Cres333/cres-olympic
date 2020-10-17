@@ -20,4 +20,4 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 gamemode spectator @a
 
 ## 次のゲーム
-schedule function beach:game/next 3s
+schedule function beach:game/next 8s

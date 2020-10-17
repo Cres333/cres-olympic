@@ -26,4 +26,4 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 gamemode spectator @a
 
 ## 次のゲーム
-function fenc:game/next
+schedule function fenc:game/next 8s
