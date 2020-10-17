@@ -13,9 +13,9 @@ clear @a iron_sword
 effect clear @a
 
 ## 勝者にはスコア追加
-execute if score $round _ matches 1 run scoreboard players add @p[predicate=util:play] SCORE 5
-execute if score $round _ matches 2 unless score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 5
-execute if score $round _ matches 2 if score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 3
+execute if score $round _ matches 1 run scoreboard players add @p[predicate=util:play] SCORE 3
+execute if score $round _ matches 2 unless score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 3
+execute if score $round _ matches 2 if score $gp _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 1
 execute if score $round _ matches 2 if score $gp _ matches 3 run scoreboard players reset @p[predicate=util:play] _GP
 execute if score $round _ matches 3 run scoreboard players add @p[predicate=util:play] SCORE 3
 
@@ -26,4 +26,4 @@ execute as @p[predicate=util:play] at @s run particle minecraft:enchanted_hit ~ 
 gamemode spectator @a
 
 ## 次のゲーム
-function fenc:game/next
+schedule function fenc:game/next 8s

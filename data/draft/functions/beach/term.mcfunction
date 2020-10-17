@@ -1,5 +1,5 @@
 # フィールド削除
-fill 1043 32 -1368 1075 38 -1325 air
+fill 1043 32 -1386 1075 38 -1306 air
 
 ## スコアボード破棄
 scoreboard objectives remove _ID

@@ -28,6 +28,6 @@ function beach:sys/priv/field
 scoreboard players set $round _ 4
 
 ## 壁を破棄
-fill 1044 34 -1329 1074 36 -1326 air
+fill 1044 34 -1310 1074 36 -1307 air
 
 function draft:beach/sys/wait/loop

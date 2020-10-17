@@ -22,4 +22,4 @@ kill @e[type=arrow]
 scoreboard players reset * PLAY
 
 ## 次の選手へ
-function clay:game/next
+schedule function clay:game/next 8s
