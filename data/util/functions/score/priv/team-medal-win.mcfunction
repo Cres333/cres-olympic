@@ -1,6 +1,6 @@
 # チーム戦のメダル
 ## 初期化
-scoreboard players set $most SCORE 10000000
+scoreboard players set $most SCORE -1
 
 ## 金メダルを配分
 execute if score $r SCORE matches 1.. run scoreboard players operation $most SCORE > $r SCORE
