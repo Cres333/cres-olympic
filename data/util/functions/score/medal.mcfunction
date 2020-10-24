@@ -5,6 +5,7 @@ scoreboard players set $remainMedal _MEDAL 3
 
 ## チーム戦か個人戦か判断
 execute if data storage main {team:true,score:time} run function util:score/priv/team-medal-time
+execute if data storage main {team:true,score:win} run function util:score/priv/team-medal-win
 execute if data storage main {team:true,score:point} run function util:score/priv/team-medal
 execute if data storage main {team:false} run function util:score/priv/single-medal
 

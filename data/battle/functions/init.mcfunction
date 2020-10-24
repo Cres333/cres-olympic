@@ -1,6 +1,6 @@
 # 初期化
 ## ゲームモード設定
-data merge storage main {game:battle,join:0,team:true,score:point}
+data merge storage main {game:battle,join:0,team:true,score:win}
 data modify storage main join set from storage main minNum
 
 ## scoreboard 作成

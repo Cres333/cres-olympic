@@ -1,6 +1,5 @@
 # 台から降りたら強制終了
-execute as @p[predicate=util:play] at @s if block ~ ~-1 ~ red_concrete run function clay:sys/priv/play/error
-execute as @p[predicate=util:play] at @s if block ~ ~-0.1 ~ grass_block run function clay:sys/priv/play/error
+execute as @p[predicate=util:play] at @s align xz unless block ~ 32 ~ quartz_slab run function clay:sys/priv/play/error
 
 # クリーパーのエフェクト
 execute as @e[type=creeper] at @s run particle minecraft:cloud ~ ~ ~-1 0 0 0 0 3
