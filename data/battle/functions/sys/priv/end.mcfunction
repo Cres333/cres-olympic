@@ -19,6 +19,12 @@ schedule clear battle:sys/wait/effect
 scoreboard players add @a[predicate=util:play] SCORE 3
 scoreboard players add @a[predicate=util:play] _WIN 1
 
+## チームにポイント加算
+execute if entity @p[predicate=util:play,team=r] run scoreboard players add $r SCORE 3
+execute if entity @p[predicate=util:play,team=b] run scoreboard players add $b SCORE 3
+execute if entity @p[predicate=util:play,team=y] run scoreboard players add $y SCORE 3
+execute if entity @p[predicate=util:play,team=g] run scoreboard players add $g SCORE 3
+
 ## 勝ち抜きメッセージ
 execute if entity @p[predicate=util:play] run tellraw @a {"interpret":true,"storage":"lang","nbt":"battle.win"}
 execute unless entity @p[predicate=util:play] run tellraw @a {"interpret":true,"storage":"lang","nbt":"battle.even"}

@@ -1,4 +1,8 @@
 # スコア/メダル計算
+execute if entity @p[predicate=util:join,team=r] run scoreboard players add $r SCORE 1
+execute if entity @p[predicate=util:join,team=b] run scoreboard players add $b SCORE 1
+execute if entity @p[predicate=util:join,team=y] run scoreboard players add $y SCORE 1
+execute if entity @p[predicate=util:join,team=g] run scoreboard players add $g SCORE 1
 execute as @a[predicate=util:join] run scoreboard players add @s SCORE 10
 function util:score/point
 
