@@ -4,6 +4,10 @@ execute if score $num _TICKET matches 1.. run function util:select/priv/check-al
 execute if score $num _TICKET matches 2.. run function util:select/priv/check-all
 execute if score $num _TICKET matches 3.. run function util:select/priv/check-all
 execute if score $num _TICKET matches 4.. run function util:select/priv/check-all
+execute if score $num _TICKET matches 5.. run function util:select/priv/check-all
+execute if score $num _TICKET matches 6.. run function util:select/priv/check-all
+execute if score $num _TICKET matches 7.. run function util:select/priv/check-all
+execute if score $num _TICKET matches 8.. run function util:select/priv/check-all
 
 ## メッセージを表示
 execute if score $team _TICKET matches 1 run tellraw @a[team=r] {"interpret":true,"nbt":"util.select.ok","storage":"lang"}
