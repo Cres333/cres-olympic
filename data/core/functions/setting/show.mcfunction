@@ -1,16 +1,27 @@
 ## 確定メッセージ
 tellraw @a {"interpret":true,"storage":"lang","nbt":"core.select.complete"}
 
-execute if data storage play games[{"type":"clay"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"clay.title"}
-execute if data storage play games[{"type":"boat"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"boat.title"}
-execute if data storage play games[{"type":"soccer"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"soccer.title"}
-execute if data storage play games[{"type":"fenc"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"fenc.title"}
-execute if data storage play games[{"type":"swim"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"swim.title"}
-execute if data storage play games[{"type":"dodge"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"dodge.title"}
-execute if data storage play games[{"type":"weight"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"weight.title"}
-execute if data storage play games[{"type":"battle"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"battle.title"}
-execute if data storage play games[{"type":"relay"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"relay.title"}
-execute if data storage play games[{"type":"sky"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"sky.title"}
-execute if data storage play games[{"type":"beach"}] run tellraw @a {"interpret":true,"storage":"lang","nbt":"beach.title"}
+## リセット
+data remove storage play show
+
+## 表示
+data modify storage play show set from storage play games[0].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[1].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[2].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[3].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[4].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[5].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[6].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[7].type
+function core:setting/priv/show-message
+data modify storage play show set from storage play games[8].type
+function core:setting/priv/show-message
 
 tellraw @a {"text":""}
