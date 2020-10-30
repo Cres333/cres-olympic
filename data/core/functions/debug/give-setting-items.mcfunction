@@ -10,7 +10,7 @@ give @p green_wool{settingItem:true,game:{type:fenc},display:{Name:'{"text":"フ
 give @p pink_wool{settingItem:true,game:{type:swim},display:{Name:'{"text":"水泳"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低４人"}']}}
 give @p cyan_wool{settingItem:true,game:{type:dodge},display:{Name:'{"text":"ドッヂボール"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低３人"}']}}
 give @p orange_wool{settingItem:true,game:{type:weight},display:{Name:'{"text":"ウェイトリフティング"}',Lore:['{"text":"チーム戦・個人戦"}','{"text":"各チーム最低２人"}']}}
-give @p lime_wool{settingItem:true,game:{type:battle},display:{Name:'{"text":"勝ち抜き戦"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム全員参加"}']}}
+give @p lime_wool{settingItem:true,game:{type:battle},display:{Name:'{"text":"勝ち抜き戦"}',Lore:['{"text":"チーム戦限定"}','{"text":"チーム選択時の最低人数"}']}}
 give @p purple_wool{settingItem:true,game:{type:relay},display:{Name:'{"text":"リレー"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低４人"}']}}
 give @p red_stained_glass{settingItem:true,game:{type:sky},display:{Name:'{"text":"スカイダイビング"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低２人"}']}}
 give @p blue_stained_glass{settingItem:true,game:{type:beach},display:{Name:'{"text":"ビーチフラッグス"}',Lore:['{"text":"チーム戦・個人戦"}','{"text":"各チーム最低２人"}']}}
