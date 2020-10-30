@@ -123,7 +123,7 @@ gamerule randomTickSpeed 0
 ## 座標や方角など見せたくない場合はfalse推奨
 ## ヒットボックス表示(F3+B)やチャンク境界標示(F3+G)も含む
 ## 初期値：false
-# gamerule reducedDebugInfo true
+gamerule reducedDebugInfo true
 
 # プレイヤーが実行したコマンドをテキストチャットに表示するかどうか
 ## 初期値：true
