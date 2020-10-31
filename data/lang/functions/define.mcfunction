@@ -89,7 +89,7 @@ data remove storage lang soccer
 data modify storage lang soccer.title set value '{"color":"#FFF9C1","text":"= サッカー ="}'
 data modify storage lang soccer.descNum set value 10
 data modify storage lang soccer.desc prepend value '{"translate":"[説明] %s","with":["= サッカー ="]}'
-data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["各チーム４人で相手のチームのゴールにボールを入れる競技です。"]}'
+data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["各チーム４人で相手のゴールにボールを入れる競技です。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["ボールを持っている選手には雪玉が渡され、ジャンプができなくなります。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["雪玉を投げるとボールも飛んでいきます。"]}'
 data modify storage lang soccer.desc prepend value '{"translate":"%s","with":["ボールを持っていない選手は幸運エフェクトがかかっているため、"]}'
