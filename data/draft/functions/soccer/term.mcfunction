@@ -7,6 +7,7 @@ schedule clear draft:soccer/sys/wait/loop
 # ゲーム設定を削除
 scoreboard objectives remove _HAS
 scoreboard objectives remove _COOL
+bossbar remove cool
 
 ## 次のゲーム
 function draft:game/next
