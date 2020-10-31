@@ -10,8 +10,10 @@ give @p[scores={_HAS=1}] snowball
 
 ## ボールを持っているプレイヤーにエフェクトを掛ける
 effect clear @a[predicate=util:play] glowing
+effect clear @p[scores={_HAS=1}] jump_boost
 effect clear @p[scores={_HAS=1}] speed
 effect give @p[scores={_HAS=1}] glowing 1000000 1 true
+effect give @p[scores={_HAS=1}] jump_boost 1000000 200 true
 effect give @p[scores={_HAS=1}] speed 3 5 true
 
 ## ボールを持っていないプレイヤーにクールダウン発生
