@@ -21,8 +21,10 @@ scoreboard players set @a[predicate=util:play] _COOL 0
 effect give @a[predicate=util:play] luck 1000000 1 false
 
 effect clear @a[predicate=util:play] glowing
+effect clear @a[predicate=util:play] jump_boost
 effect clear @a[predicate=util:play] speed
 scoreboard players set @a[predicate=util:play] _HAS 0
+effect give @a[predicate=util:play] jump_boost 1000000 2 true
 effect give @a[predicate=util:play] speed 1000000 3 true
 
 # ポジションリセット
@@ -37,3 +39,7 @@ execute if score $isW _ matches 1 run scoreboard players set $cornor _ 2
 execute if score $isB _ matches 1 run scoreboard players set $cornor _ 3
 function soccer:sys/priv/cornor
 scoreboard players reset $cornor _
+
+# ボールを選手の前にTP
+execute if score $isW _ matches 1 as @e[type=snowball] at @r[scores={_B=1..3},limit=1] run tp @s ~ ~1 ~3
+execute if score $isB _ matches 1 as @e[type=snowball] at @r[scores={_W=1..3},limit=1] run tp @s ~ ~1 ~-3

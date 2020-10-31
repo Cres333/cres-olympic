@@ -15,6 +15,13 @@ bossbar set time style notched_6
 bossbar set time players @a
 bossbar set time visible false
 
+bossbar add cool {"text":":: 現在、ボールを奪えません ::","bold":true,"color":"dark_red"}
+bossbar set cool color red
+bossbar set cool style progress
+bossbar set cool visible true
+bossbar set cool max 1
+bossbar set cool value 1
+
 ## storage 作成
 data merge storage soccer {battle:[]}
 

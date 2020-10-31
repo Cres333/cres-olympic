@@ -4,15 +4,16 @@ summon husk 1058 60 -1345 {NoGravity:1b,Silent:1b,Invulnerable:1b,PersistenceReq
 effect give @e[tag=ball] minecraft:invisibility 1000000 1 true
 
 ## 初期状態を設定
-effect give @a[predicate=util:play] jump_boost 1000000 2 true
 
 effect clear @a[predicate=util:play] luck
 scoreboard players set @a[predicate=util:play] _COOL 0
 effect give @a[predicate=util:play] luck 1000000 1 false
 
 effect clear @a[predicate=util:play] glowing
+effect clear @a[predicate=util:play] jump_boost
 effect clear @a[predicate=util:play] speed
 scoreboard players set @a[predicate=util:play] _HAS 0
+effect give @a[predicate=util:play] jump_boost 1000000 2 true
 effect give @a[predicate=util:play] speed 1000000 3 true
 
 ## ボールを中央に召喚

@@ -11,6 +11,7 @@ scoreboard objectives remove _COOL
 scoreboard objectives remove _W
 scoreboard objectives remove _B
 bossbar remove time
+bossbar remove cool
 data remove storage soccer battle
 
 ## 次のゲーム

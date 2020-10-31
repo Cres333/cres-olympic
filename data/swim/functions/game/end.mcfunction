@@ -9,4 +9,4 @@ clear @a trident
 scoreboard players reset * PLAY
 
 ## 終了処理
-function swim:term
+schedule function swim:term 5s

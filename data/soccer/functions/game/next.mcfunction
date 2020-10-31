@@ -10,7 +10,7 @@ function soccer:game/priv/select-team
 execute unless score $end _ matches 0 run schedule function soccer:sys/main 3s
 
 ## 次のチームがいなかったら終了
-execute if score $end _ matches 0 run function soccer:term
+execute if score $end _ matches 0 run schedule function soccer:term 5s
 
 ## スコアボードを破棄
 scoreboard players reset $end _
