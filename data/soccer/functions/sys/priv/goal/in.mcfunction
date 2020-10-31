@@ -37,3 +37,7 @@ execute if score $isW _ matches 1 run scoreboard players set $cornor _ 2
 execute if score $isB _ matches 1 run scoreboard players set $cornor _ 3
 function soccer:sys/priv/cornor
 scoreboard players reset $cornor _
+
+# ボールを選手の前にTP
+execute if score $isW _ matches 1 as @e[type=snowball] at @r[scores={_B=1..3},limit=1] run tp @s ~ ~1 ~3
+execute if score $isB _ matches 1 as @e[type=snowball] at @r[scores={_W=1..3},limit=1] run tp @s ~ ~1 ~-3
