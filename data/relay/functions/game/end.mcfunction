@@ -6,4 +6,4 @@ schedule clear relay:sys/wait/loop
 scoreboard players reset * PLAY
 
 ## 終了処理
-function relay:term
+schedule function relay:term 5s

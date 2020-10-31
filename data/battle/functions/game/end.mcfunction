@@ -6,4 +6,4 @@ clear @a diamond_sword
 scoreboard players reset * PLAY
 
 ## 終了処理
-function battle:term
+schedule function battle:term 5s

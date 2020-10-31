@@ -22,4 +22,4 @@ gamemode spectator @a
 scoreboard players reset * PLAY
 
 ## 終了処理
-function dodge:term
+schedule function dodge:term 5s
