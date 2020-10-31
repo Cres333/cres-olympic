@@ -112,10 +112,11 @@ data modify storage lang soccer.goal.yg set value '{"translate":"%s - %s","with"
 # 水泳の説明
 data remove storage lang swim
 data modify storage lang swim.title set value '{"color":"#FFF9C1","text":"= 水泳 ="}'
-data modify storage lang swim.descNum set value 8
+data modify storage lang swim.descNum set value 9
 data modify storage lang swim.desc prepend value '{"translate":"[説明] %s","with":["= 水泳 ="]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["各チーム４人で他のチームよりも速く水の中を泳ぎきる競技です。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["水中は柵や鎖、水流など行く手を阻む障害物があります。"]}'
+data modify storage lang swim.desc prepend value '{"translate":"%s","with":["１マスの隙間はダッシュキーを押しっぱなしにすると通過できます。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["選手には泳ぎ始めるときに、トライデントが渡されます。"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["トライデントを使うと、スピードが上がりますが、"]}'
 data modify storage lang swim.desc prepend value '{"translate":"%s","with":["一定時間経たないと、使うことができません。"]}'
@@ -148,7 +149,7 @@ data modify storage lang clay.desc prepend value '{"translate":"[説明] %s","wi
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["奥から飛んでくるクリーパーを撃ち抜く競技です。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["選手にはクロスボウと、２０本の矢が渡されます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["その後にカウントダウンが始まり、"]}'
-data modify storage lang clay.desc prepend value '{"translate":"%s","with":["５秒ごとに連続で１０匹のクリーパーが飛んできます。"]}'
+data modify storage lang clay.desc prepend value '{"translate":"%s","with":["４秒ごとに連続で１０匹のクリーパーが飛んできます。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["より多くのクリーパーをクロスボウで撃ち抜いてください。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["競技台の赤の部分に乗ってしまうとリタイアとなります。"]}'
 data modify storage lang clay.desc prepend value '{"translate":"%s","with":["２回ずつ競技を行い、より多く撃ち抜いた方が得点となります。"]}'
