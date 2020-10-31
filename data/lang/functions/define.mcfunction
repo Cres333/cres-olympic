@@ -13,6 +13,7 @@ data modify storage lang draft.next set value '{"text":"\\n\\n=> 次の競技を
 ## 競技選択
 data modify storage lang core.select.complete set value '{"color":"#FFF9C1","text":"[システム] プレイする競技を以下の順番で登録しました"}'
 data modify storage lang core.select.reset set value '{"color":"#FFF9C1","text":"[システム] プレイする競技を初期化しました"}'
+data modify storage lang core.select.num set value '{"color":"#FFF9C1","translate":"\\n現在、%s 名がサーバーにいます\\n","with":[{"score":{"name":"$num","objective":"_SERVER_LIST"}}]}'
 data modify storage lang core.setting.update.on set value '{"color":"#FFF9C1","text":"[システム] ゲーム説明を有効化しました"}'
 data modify storage lang core.setting.update.off set value '{"color":"#FFF9C1","text":"[システム] ゲーム説明を無効化しました"}'
 data modify storage lang core.setting.update.short set value '{"color":"#FFF9C1","text":"[システム] 競技間のロード時間を１５秒にしました"}'

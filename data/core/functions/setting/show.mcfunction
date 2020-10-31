@@ -24,4 +24,7 @@ function core:setting/priv/show-message
 data modify storage play show set from storage play games[8].type
 function core:setting/priv/show-message
 
-tellraw @a {"text":""}
+scoreboard objectives add _SERVER_LIST dummy
+execute as @a run scoreboard players add $num _SERVER_LIST 1
+tellraw @a {"interpret":true,"storage":"lang","nbt":"core.select.num"}
+scoreboard objectives remove _SERVER_LIST
