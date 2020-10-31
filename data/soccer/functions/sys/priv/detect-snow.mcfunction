@@ -4,10 +4,8 @@ scoreboard players set @a[scores={_HAS=1}] _COOL 100
 
 # フラグを消す
 effect clear @a[predicate=util:play] glowing
-effect clear @a[predicate=util:play] jump_boost
 effect clear @a[predicate=util:play] speed
 scoreboard players set @a[predicate=util:play] _HAS 0
-effect give @a[predicate=util:play] jump_boost 1000000 2 true
 effect give @a[predicate=util:play] speed 1000000 3 true
 
 # アイテムを消す
