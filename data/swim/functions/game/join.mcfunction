@@ -1,23 +1,23 @@
 # 途中でログインした場合
 execute if entity @s[gamemode=spectator,predicate=swim:2,scores={SCORE=0}] run gamemode adventure @s
 
-execute if entity @s[gamemode=spectator,scores={_R=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_R=1}] run gamemode adventure @s[scores={_R=3}]
-execute if entity @s[gamemode=spectator,scores={_B=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_B=1}] run gamemode adventure @s[scores={_B=3}]
-execute if entity @s[gamemode=spectator,scores={_Y=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_Y=1}] run gamemode adventure @s[scores={_Y=3}]
-execute if entity @s[gamemode=spectator,scores={_G=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_G=1}] run gamemode adventure @s[scores={_G=3}]
 execute if entity @s[gamemode=spectator,scores={_R=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_R=1}] run tp @p[scores={_R=3}] 1056.0 36 -1308 180 0
 execute if entity @s[gamemode=spectator,scores={_B=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_B=1}] run tp @p[scores={_B=3}] 1053.0 36 -1308 180 0
 execute if entity @s[gamemode=spectator,scores={_Y=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_Y=1}] run tp @p[scores={_Y=3}] 1050.0 36 -1308 180 0
 execute if entity @s[gamemode=spectator,scores={_G=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_G=1}] run tp @p[scores={_G=3}] 1047.0 36 -1308 180 0
+execute if entity @s[gamemode=spectator,scores={_R=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_R=1}] run gamemode adventure @s[scores={_R=3}]
+execute if entity @s[gamemode=spectator,scores={_B=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_B=1}] run gamemode adventure @s[scores={_B=3}]
+execute if entity @s[gamemode=spectator,scores={_Y=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_Y=1}] run gamemode adventure @s[scores={_Y=3}]
+execute if entity @s[gamemode=spectator,scores={_G=3,SCORE=0}] unless entity @p[gamemode=adventure,scores={_G=1}] run gamemode adventure @s[scores={_G=3}]
 
-execute if entity @s[gamemode=spectator,scores={_R=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_R=2}] run gamemode adventure @s[scores={_R=4}]
-execute if entity @s[gamemode=spectator,scores={_B=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_B=2}] run gamemode adventure @s[scores={_B=4}]
-execute if entity @s[gamemode=spectator,scores={_Y=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_Y=2}] run gamemode adventure @s[scores={_Y=4}]
-execute if entity @s[gamemode=spectator,scores={_G=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_G=2}] run gamemode adventure @s[scores={_G=4}]
 execute if entity @s[gamemode=spectator,scores={_R=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_R=2}] run tp @p[scores={_R=4}] 1072.0 36 -1383 0 0
 execute if entity @s[gamemode=spectator,scores={_B=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_B=2}] run tp @p[scores={_B=4}] 1069.0 36 -1383 0 0
 execute if entity @s[gamemode=spectator,scores={_Y=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_Y=2}] run tp @p[scores={_Y=4}] 1066.0 36 -1383 0 0
 execute if entity @s[gamemode=spectator,scores={_G=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_G=2}] run tp @p[scores={_G=4}] 1063.0 36 -1383 0 0
+execute if entity @s[gamemode=spectator,scores={_R=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_R=2}] run gamemode adventure @s[scores={_R=4}]
+execute if entity @s[gamemode=spectator,scores={_B=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_B=2}] run gamemode adventure @s[scores={_B=4}]
+execute if entity @s[gamemode=spectator,scores={_Y=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_Y=2}] run gamemode adventure @s[scores={_Y=4}]
+execute if entity @s[gamemode=spectator,scores={_G=4,SCORE=0}] unless entity @p[gamemode=adventure,scores={_G=2}] run gamemode adventure @s[scores={_G=4}]
 
 ## 走り出してよいかチェック
 execute if entity @s[gamemode=adventure,scores={_R=2,SCORE=0}] unless entity @p[predicate=util:play,scores={_R=1}] run scoreboard players set @s PLAY 1
