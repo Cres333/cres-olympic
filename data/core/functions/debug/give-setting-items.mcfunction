@@ -8,7 +8,7 @@ give @p blue_wool{settingItem:true,game:{type:boat},display:{Name:'{"text":"ボ�
 give @p yellow_wool{settingItem:true,game:{type:soccer},display:{Name:'{"text":"サッカー"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低４人"}']}}
 give @p green_wool{settingItem:true,game:{type:fenc},display:{Name:'{"text":"フェンシング"}',Lore:['{"text":"チーム戦・個人戦"}','{"text":"各チーム最低２人"}']}}
 give @p pink_wool{settingItem:true,game:{type:swim},display:{Name:'{"text":"水泳"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低４人"}']}}
-give @p cyan_wool{settingItem:true,game:{type:dodge},display:{Name:'{"text":"ドッヂボール"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低３人"}']}}
+give @p cyan_wool{settingItem:true,game:{type:dodge},display:{Name:'{"text":"ドッジボール"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低３人"}']}}
 give @p orange_wool{settingItem:true,game:{type:weight},display:{Name:'{"text":"ウェイトリフティング"}',Lore:['{"text":"チーム戦・個人戦"}','{"text":"各チーム最低２人"}']}}
 give @p lime_wool{settingItem:true,game:{type:battle},display:{Name:'{"text":"勝ち抜き戦"}',Lore:['{"text":"チーム戦限定"}','{"text":"チーム選択時の最低人数"}']}}
 give @p purple_wool{settingItem:true,game:{type:relay},display:{Name:'{"text":"リレー"}',Lore:['{"text":"チーム戦限定"}','{"text":"各チーム最低４人"}']}}
